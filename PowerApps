@@ -30,7 +30,7 @@ EXPLAIN IN ANSWER:-
 2️⃣ Model-Driven Apps:
 👉 Model-Driven Apps are best for complex scenarios with structured data in Dataverse.
 👉 User Interface(UI) is automatically generated based on data models stored in Dataverse.
-👉 it’s perfect for apps like service ticketing or asset tracking, where the process flow matters more than design.
+👉 We can create forms, views, tables, that are automated generated based on the data entities adn relationships.
 
 ✅ “In short, Canvas = full design control, Model-Driven = full data structure control.”
 ------------------------------------------------------------------------------------------------------------------------------------------------
