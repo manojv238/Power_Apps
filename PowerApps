@@ -1,1 +1,15 @@
+1. Explain in Power Apps?
+
+ANSWER✅:
+Power Apps is a low-code platform by Microsoft that enables us to build custom business applications quickly and efficiently.
+without the need for heavy traditional coding.
+It allows us to connect to various data sources like SharePoint, Dataverse, SQL, and even external APIs using connectors.
+
+I primarily work with Canvas Apps, where I design interactive UIs and implement logic using Power Fx formulas.
+I also integrate Power Apps with Power Automate to automate tasks like sending approvals, notifications, or updating records in real time.
+
+The main goal of Power Apps is to simplify and speed up application development for internal business needs,
+reduce manual work, and improve the productivity.
+
+
 
