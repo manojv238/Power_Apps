@@ -23,13 +23,15 @@ EXPLAIN IN ANSWER:-
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
 1️⃣ Canvas Apps:
-Design-first approach: We can start with a blank screen and design the app using a drag-and-drop components, use Power Fx for logic.
-Canvas gives full control over the app layout and user interface from scratch.
-when I need to build custom, responsive apps with multiple data sources like SharePoint or Excel.
+We can start with a blank screen and design the app using a drag-and-drop components, Use Power Fx formulas to handle logic.
+Canvas gives full control over the app layouts and UI from scratch, adding different elements like buttons,galleries,forms, etc.
+we can Connect to multiple data sources like SharePoint, Excel, SQL, Dataverse, etc.
 
-2️⃣ Model-Driven Apps
-
-
+2️⃣ Model-Driven Apps:
+Model-Driven Apps are best for complex scenarios with structured data in Dataverse.
+User Interface(UI) is automatically generated based on data models stored in Dataverse.
+it’s perfect for apps like service ticketing or asset tracking, where the process flow matters more than design.
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
