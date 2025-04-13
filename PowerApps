@@ -64,7 +64,7 @@ EXPLAIN IN ANSWER:-
 ✅ Syntax: Collect(MyCollection, {Name: "Alice", Age: 25})
 
 2. ClearCollect() Function:
-👉 The ClearCollect() Function is used to remove all the existing records from collection, it allows me to start a new record.
+👉 The ClearCollect() Function is used to remove all the existing records from collection, it allows me add a new record.
 ✅ Syntax: ClearCollect(MyCollection, {Name: "Alice1", Age: 20})
 
 3. Clear() Function:
