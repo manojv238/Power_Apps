@@ -65,7 +65,7 @@ EXPLAIN IN ANSWER:-
 
 2. ClearCollect() Function:
 👉 The ClearCollect() Function is used to remove all the existing records from collection, it allows me to start a new record.
-✅ Syntax: ClearCollect(MyUsers, Filter(Employees, Department = "IT"))
+✅ Syntax: ClearCollect(MyCollection, "India","UK","USA")
 
 3. Clear() Function:
 👉 The Clear() function is used to remove all records (rows) from a collection.
