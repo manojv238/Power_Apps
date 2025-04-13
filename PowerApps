@@ -35,6 +35,46 @@ EXPLAIN IN ANSWER:-
 ✅ “In short, Canvas = full design control, Model-Driven = full data structure control.”
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
+3. What is variables and types of variables in power apps?
+
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━━
+👉 In Power Apps, variables are used to store and manage data temporarily while app is running.
+👉 It allows me to hold values like numbers, text, collections, components, and functions.
+
+🔹 Types of Variables in Power Apps:
+1. Global Variables (Set):
+👉 Used anywhere in the app, across all screens. Created using the Set() function.
+✅ Syntax: Set(varCountry, "india")
+
+2. Context Variables (UpdateContext):
+👉 Only available on the current screen. Created with UpdateContext() function.
+✅ Syntax: UpdateContext({ varName: "Manoj" })
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
