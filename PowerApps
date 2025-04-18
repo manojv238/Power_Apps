@@ -76,12 +76,14 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
-👉 Components are reusable building blocks and customizable UI elements like buttons,text labels,headers, etc..
-    that can be created once and we can used across multiple screens.
+👉 Components are reusable building blocks and customizable UI elements like buttons,text labels,headers and even custom controls.
+    that can be created once and we can used across multiple screens or apps.
 ✅ For example:-
-👉 I created a dynamic left navigation component that was used across all screens in the app. 
-👉 It handled Dynamic Icons, Screen names, navigation logic and Custom properties to highlight the active tabs 
-    and support role-based visibility. 
+👉 I created a dynamic left navigation component as a custom control, which was used across all screens in the app. 
+👉 It included dynamic icons, screen names, navigation logic, and custom properties to handle active tab highlighting and role-based visibility.
+
+👉 Using this component significantly improved the user experience, reduced development effort, 
+    and made updates easy — a single change reflected throughout the app instantly.
 
 ✅ 1. Input Property : Input Property is used to provide values or information to the component from the outside.
 ✅ 2. Output Property: Output Property is used to communicate information or trigger actions based on what happening inside the component.
