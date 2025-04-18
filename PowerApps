@@ -45,7 +45,7 @@ EXPLAIN IN ANSWER:-
 🔹 Types of Variables in Power Apps:
 1. Global Variables (Set):
 👉 Used anywhere in the app, across all screens. Created using the Set() function.
-✅ Syntax: Set(varCountry, "india") 
+✅ Syntax: Set(varCountry, "india") ----- Set(varName,"value")
 
 2. Context Variables (UpdateContext):
 👉 Only available on the current screen. Created with UpdateContext() function.
