@@ -69,7 +69,7 @@ EXPLAIN IN ANSWER:-
 
 3. Clear() Function:
 👉 The Clear() function is used to remove all records (rows) from a collection.
-✅ Syntax: Clear(MyCart)
+✅ Syntax: Clear(MyCollection)
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 
