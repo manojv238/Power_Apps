@@ -80,7 +80,8 @@ EXPLAIN IN ANSWER:-
     that can be created once and we can used across multiple screens.
 ✅ For example:-
 👉 I created a dynamic left navigation component that was used across all screens in the app. 
-👉 It handled Dynamic Icons, Screen names, navigation logic and Custom properties.
+👉 It handled Dynamic Icons, Screen names, navigation logic and Custom properties to highlight the active tabs 
+    and support role-based visibility. 
 
 ✅ 1. Input Property : Input Property is used to provide values or information to the component from the outside.
 ✅ 2. Output Property: Output Property is used to communicate information or trigger actions based on what happening inside the component.
