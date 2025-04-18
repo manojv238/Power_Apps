@@ -61,7 +61,7 @@ EXPLAIN IN ANSWER:-
 🔹 Types of Collections in Power Apps:
 1. Collect() Function:
 👉 The Collect() function is used to create a new collection or add records to an existing collection.
-✅ Syntax: Collect(MyCollection, {Name: "Alice", Age: 25})
+✅ Syntax: Collect(MyCollection, {Name: "Alice", Age: 25}) ------ {Name:TextInput.text, Age:Value(TextInput.text)}
 
 2. ClearCollect() Function:
 👉 The ClearCollect() Function is used to remove all the existing records from collection, it allows me add a new record.
