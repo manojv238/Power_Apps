@@ -40,7 +40,7 @@ EXPLAIN IN ANSWER:-
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
 👉 Variables are used to store and manage data temporarily while app is running.
-👉 It allows me to hold values like numbers, text, collections, components, and functions.
+👉 It allows me to hold values like type numbers, text strings, boolean, record, table..etc.
 
 🔹 Types of Variables in Power Apps:
 1. Global Variables (Set):
