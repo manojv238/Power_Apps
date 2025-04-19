@@ -105,6 +105,24 @@ Dropdown 2 (City) ------------> Items property: Filter(CountriesCities, Country 
 👉 When you select a country from the first dropdown, the second dropdown (City) will only show cities that belong to that selected country.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
+7. Delgations in Power Apps?
+
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 Delegation means some of operations like filtering or sorting that are performed by the data source instead of power apps.
+👉 This is important when you're working with large data — like a SharePoint list with thousands of items.
+
+👉 Power Apps can only pull in a limited number of records like Default 500 or max limit 2000), 
+👉 If a function is not delegable, Power Apps only processes a limited number of records displaying,
+    so disadvantage is some missing the data and become slow performance issues.
+
+👉 To solve this, I replaced the non-delegable functions with Filter and StartsWith, which Power Apps could delegate to SharePoint.
+👉 I also made sure the right columns were indexed. 
+👉 That instantly fixed the issue — the app was faster, more accurate, and users got the results they expected.
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
