@@ -119,6 +119,8 @@ EXPLAIN IN ANSWER:-
 👉 To solve this, I replaced the non-delegable functions with Filter and StartsWith, which Power Apps could delegate to SharePoint.
 👉 I also made sure the right columns were indexed. 
 👉 That instantly fixed the issue — the app was faster, more accurate, and users got the results they expected.
+
+✅ Syntax: SortByColumns(Filter('employee data',StartWith('Full Name, TextInput.text)),"ID",SortOrder.Ascending)
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 
