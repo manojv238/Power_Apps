@@ -100,6 +100,8 @@ EXPLAIN IN ANSWER:-
 Imagine a form with two dropdowns:
 Dropdown 1 (Country) ---------> Items property: Distinct(CountriesCities, Country)
 Dropdown 2 (City) ------------> Items property: Filter(CountriesCities, Country = Dropdown1.Selected.Result)
+---> (Use Distinct to get unique values for the parent dropdown).
+---> (Use Filter to show related child items based on the parent’s selection).
 👉 When you select a country from the first dropdown, the second dropdown (City) will only show cities that belong to that selected country.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
