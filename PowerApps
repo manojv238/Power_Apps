@@ -89,6 +89,19 @@ EXPLAIN IN ANSWER:-
 ✅ 2. Output Property: Output Property is used to communicate information or trigger actions based on what happening inside the component.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
+6. Cascading Dropdown in Power Apps?
+
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 A cascading dropdown in Power Apps refers to a set of dropdowns,
+    where the choices in one dropdown (the "child") depend on the selection made in another dropdown (the "parent").
+
+✅ Example Scenario:
+Imagine a form with two dropdowns:
+Dropdown 1 (Country)
+Dropdown 2 (City)
+👉 When you select a country from the first dropdown, the second dropdown (City) will only show cities that belong to that selected country.
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
