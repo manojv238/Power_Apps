@@ -123,8 +123,22 @@ EXPLAIN IN ANSWER:-
 ✅ Syntax: SortByColumns(Filter('employee data',StartWith('Full Name, TextInput.text)),"ID",SortOrder.Ascending)
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
+8. Validations in Power Apps?
 
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 Data validation is the process of checking user input to ensure that it meets required criteria before the data is saved.
+👉 It helps prevent invalid errors or incorrectly formatted data from being submitted.
 
+🛠️ How it’s done in Power Apps:
+Power Apps provides built-in functions and properties to perform validations, such as:
+
+**IsBlank()  : Checks if a field is empty
+**IsMatch()  : Validates input using patterns (e.g., email, phone number)
+**IsNumeric(): Ensures the value is a number
+**Notify()   : Displays error messages to the user
+**Conditional formatting: Changes border color or displays warning labels when data is invalid.
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
