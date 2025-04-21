@@ -1,4 +1,31 @@
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Explain in Power Apps?
+
+2. Difference between Canvas App and Model-Driven App?
+
+3. Variables and types of Variables in power apps?
+
+4. Collections and types of Collections in power apps?
+
+5. Components in Power Apps?
+
+6. Cascading Dropdown in Power Apps?
+
+7. Delgations in Power Apps?
+
+8. Validations in Power Apps?
+
+9. What are connectors in power apps?
+
+10. Difference between Galleries, Forms and Data Table?
+
+11. How do you handle errors in Power Apps?
+
+12. Can you use Offline Power Apps?
+
+14. What are Environments in Power Apps?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 1. Explain in Power Apps?
 
@@ -268,8 +295,6 @@ EXPLAIN IN ANSWER:-
 👉 It allows to manage access and organize resources based on different stages, such as development, testing, and production.
 👉 Environments help in isolating data and apps for different teams or projects.
 ------------------------------------------------------------------------------------------------------------------------------------------------
-
-15. 
 
 
 
