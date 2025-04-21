@@ -23,7 +23,7 @@ EXPLAIN IN ANSWER:-
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
 1️⃣ Canvas Apps:
-👉 We can start with a blank screen and design the app using a drag-and-drop components, Use Power Fx formulas to handle logic.
+👉 We can start with a blank screen and design the app using a drag-and-drop components,(Use Power Fx formulas to handle logic).
 👉 Canvas gives full control over the app layouts and UI from scratch, adding different elements like buttons,galleries,forms, etc.
 👉 we can Connect to multiple data sources like SharePoint, Excel, SQL, Dataverse, etc.
 
