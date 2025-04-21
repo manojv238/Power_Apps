@@ -4,7 +4,7 @@
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
-👉 Power Apps is a low-code platform Developed by Microsoft that enables us to build custom business applications quickly and efficiently.
+👉 Power Apps is a low-code platform Developed by Microsoft that allows to build custom business applications quickly and efficiently.
     without the need for heavy traditional coding.
 👉 It allows us to connect to various data sources like SharePoint, Dataverse, SQL, and even external APIs using connectors.
 
@@ -16,6 +16,33 @@ EXPLAIN IN ANSWER:-
 
 ✅ Summary Note:
 👉 Power Apps (Canvas and Model-Driven) are for internal business use only and cannot be used to create truly public-facing apps.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Key Features of Power Apps:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Low-Code Development:
+👉 Drag-and-drop interface allows building apps without deep coding knowledge.
+
+2. Data Connectivity:
+👉 Connects to 500+ data sources like SharePoint, Dataverse, SQL, Excel, and custom APIs using connectors.
+
+3. Responsive Design:
+👉 Apps work on mobile, tablet, and desktop automatically.
+
+4. Integration with Power Automate:
+👉 Easily triggers workflows for automation — like sending emails or approvals.
+
+5. Prebuilt Templates and Controls:
+👉 Offers ready-made templates, galleries, forms, and reusable components for faster development.
+
+6. Offline Capability:
+👉 Apps can store data locally and sync when connected — useful for field workers.
+
+7. AI Builder Support:
+👉 Use AI to extract text, predict outcomes, or process forms without writing machine learning models.
+
+8. Role-Based Security:
+👉 Control who can view, edit, or submit data using role-based permissions and Microsoft Dataverse security.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 2. Difference between Canvas App and Model-Driven App?
@@ -23,8 +50,8 @@ EXPLAIN IN ANSWER:-
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
 1️⃣ Canvas Apps:
-👉 We can start with a blank screen and design the app using a drag-and-drop components,(Use Power Fx formulas to handle logic).
 👉 Canvas gives full control over the app layouts and UI from scratch, adding different elements like buttons,galleries,forms, etc.
+👉 We can start with a blank screen and design the app using a drag-and-drop components, (Use Power Fx formulas to handle logic).
 👉 we can Connect to multiple data sources like SharePoint, Excel, SQL, Dataverse, etc.
 
 2️⃣ Model-Driven Apps:
@@ -220,8 +247,29 @@ EXPLAIN IN ANSWER:-
     to update the data source with any changes made offline.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
+13. What are the limitations of Power Apps?
 
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 Power Apps is a powerful low-code tool, but it has some limitations we must consider.
+🔹 For example:
+1. It can only retrieve 500–2000 records from a data source unless delegation is handled properly.
+2. Complex UI customization is limited, and app performance can slow down with too many controls.
+3. Offline functionality must be implemented manually.
+4. Advanced features like premium connectors or Dataverse require extra licensing.
+5. There is no advanced debugging or Git-style version control.
+------------------------------------------------------------------------------------------------------------------------------------------------
 
+14. What are Environments in Power Apps?
+
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 Environments in Power Apps are isolated containers used to manage apps, data, and flows separately.
+👉 It allows to manage access and organize resources based on different stages, such as development, testing, and production.
+👉 Environments help in isolating data and apps for different teams or projects.
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+15. 
 
 
 
