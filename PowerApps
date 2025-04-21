@@ -25,6 +25,10 @@ POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 12. Can you use Offline Power Apps?
 
 14. What are Environments in Power Apps?
+
+15. What are Containers in Power Apps?
+
+16. What is Responsive Design in Power Apps?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 1. Explain in Power Apps?
@@ -296,7 +300,23 @@ EXPLAIN IN ANSWER:-
 👉 Environments help in isolating data and apps for different teams or projects.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
+15. What are Containers in Power Apps?
 
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 Containers in Power Apps are layout controls that help you organize and group multiple UI elements,
+    like buttons, labels, images, text inputs, etc., into a single block. 
+👉 This makes it easier to manage layout and alignment, 
+    especially in responsive design where your app needs to look good on both mobile and desktop.
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+16. What is Responsive Design in Power Apps?
+
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 Responsive design in Power Apps means building apps that automatically adjust their layouts, size, and 
+    alignment of controls based on the screen size or device type — like mobile, tablet, or desktop.
+👉 The goal is to make sure the user interface (UI) looks good and works well on any different devices. 
 
 
 
