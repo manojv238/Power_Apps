@@ -140,16 +140,85 @@ Power Apps provides built-in functions and properties to perform validations, su
 **Conditional formatting: Changes border color or displays warning labels when data is invalid.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
+9. What are connectors in power apps?
 
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 Connectors in Power Apps are pre-built components that enable the app, to communicate with external data sources or services.
 
+✅ There are two main types of connectors:
+1. Standard Connectors – These include Microsoft services like SharePoint, Excel, Outlook, and OneDrive.
+2. Premium Connectors  – These offer access to more advanced or third-party services like SQL Server, Salesforce, 
+                         and custom connectors, but may require additional licensing.
 
+🔹 How do create custom connector in power apps:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+To create a custom connector:
+1. Go to Power Apps Portal
+2. Navigate to Data > Custom Connectors
+3. Click a New Custom Connector and choose a various options to create a connector
+4. Define the connector name, description
+5. Set Up the API Connection: Define authentication type (e.g., No auth, Basic, OAuth 2.0, or API key). 
+   For secure APIs, I usually configure OAuth 2.0 or API Key headers.
+6. Define Actions and Operations: Add actions like GET, POST, PUT, or DELETE.
+7. Test the connectors and use it in our apps.
+------------------------------------------------------------------------------------------------------------------------------------------------
 
+10. Difference between Galleries, Forms and Data Table?
 
+GALLERY:
+━━━━━━━━
+👉 Galleries in Power Apps are controls used to display and interact with multiple records from a data source like SharePoint.
+👉 They support dynamic layouts such as vertical, horizontal, and flexible-height galleries, 
+    and each item can be customized with labels, images, icons, and buttons to create interactive views.
 
+FORMS:
+━━━━━━
+👉 Forms in Power Apps are controls used to view, create, and edit a single record from a connected data source like SharePoint. 
+🔹 There are three types of forms:
+1. Display Form – for read-only data viewing.
+2. Edit Form    – for editing existing records.
+3. New Form     – for creating new records.
+👉 Forms automatically generate fields based on the selected data source, and they handle data binding and submission with minimal configuration.
+👉 We can also customize fields visibility, validation rules, and layout as per our needed.
 
+DATA TABLE:
+━━━━━━━━━━━
+👉 Data Table in Power Apps is a control used to display multiple records from a data source in a tabular format, similar to an Excel sheet.
+👉 They're mainly used for READ-ONLY data, where users need to scan the data, sort, or review structured data across rows and columns.
+👉 Data Tables automatically generate columns based on the connected data source and arrange the records in a spreadsheet-style format.
+------------------------------------------------------------------------------------------------------------------------------------------------
 
+11. How do you handle errors in Power Apps?
 
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 In Power Apps, Errors can be handled using functions like IfError() and Notify().
+🔹 IfError() Function: 
+👉 This is used to catch errors in formulas and specify alternative actions if something goes wrong.
+✅ For example:
+👉 when submitting data to a data source like SharePoint or SQL, 
+👉 I use IfError() to handle any errors that may occur during the process and 
+    provide a fallback action like showing an error message or logging the error for later review.
 
+🔹 Notify() Function:
+👉 This function displays real-time feedback to the user, such as success, warning, or error messages based on the app’s actions.
+✅ For example:
+👉 After submitting a form, I use Notify() to let users know if their data was successfully saved or if there was an issue. 
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+12. Can you use Offline Power Apps?
+
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 Yes, Power Apps Supports can be usd offline apps. Using the SaveData() and LoadData() Functions:
+
+🔹 SaveData(): Allows me to save data locally on the user's device, which can be accessed even when the app is offline.
+🔹 LoadData(): It is used to load that local data when the app is back online.
+
+👉 Once the app is back online, we can implement logic to sync data with the server using funtions like Patch(), Collect(),
+    to update the data source with any changes made offline.
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
