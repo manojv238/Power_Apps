@@ -31,6 +31,10 @@ POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 15. What are Containers in Power Apps?
 
 16. What is Responsive Design in Power Apps?
+
+17. Role-Based Security in Power Apps?
+
+18. Solutions in Power Apps?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 1. Explain in Power Apps?
@@ -297,9 +301,8 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Environments in Power Apps are isolated containers used to manage apps, data, and flows separately.
-👉 It allows to manage access and organize resources based on different stages, such as development, testing, and production.
-👉 Environments help in isolating data and apps for different teams or projects.
+👉 Environments is like "Dedictaed Workspace", whether we can creating an apps, create workflows and data connections separately.
+👉 Environments helps in isolating data and apps for different teams or projects.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 15. What are Containers in Power Apps?
@@ -319,12 +322,29 @@ EXPLAIN IN ANSWER:-
 👉 Responsive design in Power Apps means building apps that automatically adjust their layouts, size, and 
     alignment of controls based on the screen size or device type — like mobile, tablet, or desktop.
 👉 The goal is to make sure the user interface (UI) looks good and works well on any different devices. 
+------------------------------------------------------------------------------------------------------------------------------------------------
 
+17. Role-Based Security in Power Apps?
 
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 Role-based security allows to control access to data, features, or screens in our app based on the user's role.
+🏢 Scenario: Employee Management App:
+👉 We want to control access based on user roles:-
+🔹 Admin → Can view all records and access the Settings screen.
+🔹 Manager → Can view team reports.
+🔹 Employee → Can only view their own profile.
+------------------------------------------------------------------------------------------------------------------------------------------------
 
+18. Solutions in Power Apps?
 
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 Solutions in Power Apps allow me to group related components like apps, workflows, tables, and roles into a single container.
+👉 Making it easier to manage, transport, and deploy our apps and workflows between environments.
 
-
+👉 During development(Editable), I use unmanaged solutions, and for production deployment(Read-only), I export them as managed solutions.
+👉 It Helps with versioning and dependency management, and supports ALM (Application Life-Cycle Management).
 
 
 
