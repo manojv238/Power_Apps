@@ -1,10 +1,34 @@
-1. Explain Dataverse?
+1. Define Dataverse (CDS)? why should use them?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
-Microsoft Dataverse provides a secure and scalable environment for storing and managing data for bussiness applications.
-It allows users to create relationships between tables, apply business rules.
-Dataverse offers some of features like "Data Modeling", Data Integration" and "Data security".
+👉 CDS (Common Data Service) is the former name of what we now call Microsoft Dataverse.
+👉 Microsoft Dataverse provides a secure and scalable environment for storing and managing data for bussiness applications used in PP.
+👉 It allows users to create relationships between tables, apply business rules.
+👉 Dataverse offers some of features like "Data Modeling", Data Integration" and "Data security".
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+2. What is Table, Relationships and Database in Dataverse?
+
+Tables:
+━━━━━━━
+👉 Table in Dataverse is like an Excel sheet, It stores structured data in rows (records) and columns (fields).
+✅ for Example: "A Employee Table might have columns like Name, Email, Department, JoinDate".
+👉 This table stores data about employees.
+
+Relationships:
+━━━━━━━━━━━━━━
+👉 Relationship in Dataverse links two tables together so you can manage connected data easily.
+✅ Types of Relationships:
+1. One-to-many (1:N) – One department → many employees
+2. Many-to-one (N:1) – Many orders → one customer
+3. Many-to-many (N:N) – Students ↔ Courses
+
+Database:
+━━━━━━━━━
+👉 The Dataverse database is the backend storage where all our tables, relationships, business rules, struched data within the Dataverse.
+✅ Each Power Platform environment has one Dataverse database.
+✅ It's managed by Microsoft, highly secure, and automatically scaled.
 
 
 
