@@ -42,11 +42,45 @@
 ➡️ Sort(Employees, Age, Ascending) ---> This will sort the Employees list so that the employees with the youngest age appear first.
 --------------------------------------------------------------------------------------------------------------------------------------
 
-6. SWITCH() function:
-━━━━━━━━━━━━━━━━━━━━━
-👉 The Switch() function provides a way to perform multliple checks or conditions in a single experssion.
---------------------------------------------------------------------------------------------------------------------------------------
+6. IsMatch() Function:
+━━━━━━━━━━━━━━━━━━━━━━
+👉 The IsMatch() function is used to check whether a text string matches a specific pattern.
+👉 It is usually defined by a regular expression (RegEx).
+👉 It returns true or false, making it useful for validating user inputs like: Email addresses, Phone numbers, PIN codes, Password formats.
+✅ Example:
+👉 In a login form, I used IsMatch() Function to check if the email input matched the correct pattern before allowing submission.
+--------------------------------------------------------------------------------------------------------------------------------------------
 
+7. Match() Function:
+━━━━━━━━━━━━━━━━━━━━
+👉 The Match() function is used to find and return the first match of a pattern (regular expression) within a text string.
+👉 It is similar to IsMatch(), but instead of returning true/false. but, match() function it returns the actual matched value.
+✅ Example:
+👉 If I have a log message or input string, and I need to pull out the first number, email, or keyword — I use Match().
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+8. MatchAll() Function:
+━━━━━━━━━━━━━━━━━━━━━━━
+👉 The MatchAll() function is used to find all occurrences of a pattern in a text string. It returns a table of all matches.
+✅ Example:
+👉 If I need to extract all email addresses or numbers from a long message, I use MatchAll() returns them as a table of matches.
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+9. Switch() Function:
+━━━━━━━━━━━━━━━━━━━━━
+👉 The Switch() is used when i want to compare one value against multiple possible Matches and return a different result for each Match.
+👉 It’s cleaner than nesting multiple If() statements. 
+✅ Example: 
+👉 Show Message Based on User Role:
+Switch(
+   UserRole.Text,
+   "Admin", "Welcome Admin!",
+   "Manager", "Welcome Manager!",
+   "Employee", "Welcome Employee!",
+   "Role not recognized"
+)
+👉 If the UserRole is "Manager", it will return "Welcome Manager!".
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 7. Differnce between ComboBox AND DropDown Controls?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
