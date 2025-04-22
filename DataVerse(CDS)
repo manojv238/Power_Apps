@@ -1,7 +1,10 @@
 1. Explain Dataverse?
 
-
-
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━━
+Microsoft Dataverse provides a secure and scalable environment for storing and managing data for bussiness applications.
+It allows users to create relationships between tables, apply business rules.
+Dataverse offers some of features like "Data Modeling", Data Integration" and "Data security".
 
 
 
