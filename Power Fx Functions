@@ -1,6 +1,75 @@
 1. PATCH() Function:
 ━━━━━━━━━━━━━━━━━━━━
-The PATCH() Function in Power Apps is used to create, update or modify records in a data source.
-For example:
-if I only want to update the Specific fields of a record without affecting any other data, that time it will help to me.
-------------------------------------------------------------------------------------------------------------------------------------
+👉 The PATCH() Function in Power Apps is used to create, update or modify records in a data source.
+✅ For example:
+👉 If i only want to update the Specific fields of a record without affecting any other data, that time it will help to me.
+
+🔍 Explanation: You want to UPDATE the age of the employee whose ID = 3 to Age = 35:
+➡️ Patch(Employees, LookUp(Employees, ID = 3), {Age: 35})
+--------------------------------------------------------------------------------------------------------------------------------------
+
+2. LOOKUP() Function:
+━━━━━━━━━━━━━━━━━━━━━
+👉 The LookUp() function is used to search a data source and return a single record (or a single value) that matches a condition.
+✅ For example:
+👉 Find the record of the employee whose ID is 3:
+➡️ LookUp(Employees, ID = 3) ---> This returns the entire record for the employee with ID = 3.
+--------------------------------------------------------------------------------------------------------------------------------------
+
+3. FILTER() Function:
+━━━━━━━━━━━━━━━━━━━━━
+👉 The Filter() function is used to find and return multiple records from a data source that meet a specific condition.
+✅ Example:
+👉 If i want to get all employees who work in the IT department:
+➡️ Filter(Employees, Department = "IT") ---> This will return all records where the Department field is "IT".
+--------------------------------------------------------------------------------------------------------------------------------------
+
+4. SEARCH() Function:
+━━━━━━━━━━━━━━━━━━━━━
+👉 The Search() function is used to search for text within a specific column of a data source and we get the matching results.
+👉 The Search() function is "Case-Insensitive", it doesn't matter whether the text you are searching for is upper or lower case.
+✅ Example:
+👉 To search for employees whose Name contains the text "John":
+➡️ Search(Employees, "John", "Name") ---> This will return all records where the Name column contains the word "John"/"JOHN".
+--------------------------------------------------------------------------------------------------------------------------------------
+
+5. SORT() Function:
+━━━━━━━━━━━━━━━━━━━
+👉 The Sort() function is used to sort records in a data source based on a specific column or fields.
+👉 We can sort the data in either ascending or descending order.
+✅ Example:
+👉 If i want to sort employees by their Age in ascending order (smallest to largest):
+➡️ Sort(Employees, Age, Ascending) ---> This will sort the Employees list so that the employees with the youngest age appear first.
+--------------------------------------------------------------------------------------------------------------------------------------
+
+6. SWITCH() function:
+━━━━━━━━━━━━━━━━━━━━━
+👉 The Switch() function provides a way to perform multliple checks or conditions in a single experssion.
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+7. Differnce between ComboBox AND DropDown Controls?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ DropDown Control: 
+👉 DropDown control lets users select a single value from a list of predefined options.
+👉 It’s simple and ideal when the choices are few and selection is limited to one.
+
+✅ ComboBox Control:
+👉 ComboBox control allows users to select single or multiple values, and also supports searching/filtering through the options.
+👉 It is more flexible and interactive than a DropDown.
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
