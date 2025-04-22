@@ -46,9 +46,10 @@ EXPLAIN IN ANSWER:-
 👉 It supports building apps that connect to various data sources like Dataverse, SharePoint, and SQL with minimal coding effort.
 
 👉 Canvas Apps are primarily used to design rich, interactive user interfaces and implement business logic through Power Fx formulas.
-👉 Integration with Power Automate allows automation of workflows such as approvals, notifications, and real-time record updates.
-👉 The core objective is to simplify and accelerate app development for internal business needs, reduce manual work, and drive productivity improvements.
 
+👉 Integration with Power Automate allows automation of workflows such as approvals, notifications, and real-time record updates.
+
+👉 The core objective is to simplify and accelerate app development for internal business needs, reduce manual work, and drive productivity improvements.
 
 ✅ Summary Note:
 👉 Power Apps (Canvas and Model-Driven) are for internal business use only and cannot be used to create truly public-facing apps.
@@ -86,44 +87,43 @@ Key Features of Power Apps:
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
 1️⃣ Canvas Apps:
-👉 Canvas gives full control over the app layouts and UI from scratch, adding different elements like buttons,galleries,forms, etc.
-👉 We can start with a blank screen and design the app using a drag-and-drop components, (Use Power Fx formulas to handle logic).
-👉 we can Connect to multiple data sources like SharePoint, Excel, SQL, Dataverse, etc.
+👉 Provide full control over app layouts and UI, built from scratch with drag-and-drop components like buttons, galleries, and forms.
+👉 Use Power Fx formulas for custom business logic.
+👉 Connect easily to various data sources such as SharePoint, Excel, SQL, and Dataverse.
 
 2️⃣ Model-Driven Apps:
-👉 Model-Driven Apps are best for complex scenarios with structured data in Dataverse.
-👉 User Interface(UI) is automatically generated based on data models stored in Dataverse.
-👉 We can create forms, views, tables, that are automated generated based on the data entities adn relationships.
+👉 Ideal for complex scenarios with structured data managed in Dataverse.
+👉 The UI is automatically generated based on the data model, including entities and relationships.
+👉 Support automatic creation of forms, views, and tables driven by the data model.
 
 ✅ “In short, Canvas = full design control, Model-Driven = full data structure control.”
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-3. Variables and types of Variables in power apps?
+3. What are Variables and types of Variables in power apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
-👉 Variables are used to store and manage data temporarily while app is running.
-👉 It allows me to hold values like type numbers, text strings, boolean, record, table..etc.
-
-🔹 Types of Variables in Power Apps:
+👉 Variables temporarily store and manage data during app runtime, handling values like numbers, text, booleans, records, or tables.
+🔹 Types:
 1. Global Variables (Set):
-👉 Used anywhere in the app, across all screens. Created using the Set() function.
-✅ Syntax: Set(varCountry, "india") ----- Set(varName,"value")
+Accessible throughout the entire app across all screens. Created using Set().
+Example: Set(varCountry, "India")
 
 2. Context Variables (UpdateContext):
-👉 Only available on the current screen. Created with UpdateContext() function.
-✅ Syntax: UpdateContext({ varName: "Manoj" })
+Scoped only to the current screen, created via UpdateContext().
+Example: UpdateContext({ varName: "Manoj" })
+
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 4. What are Collections and types of Collections in power apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
-👉 “In my experience, I’ve used Collections in Power Apps mainly as temporary in-memory tables 
-    — especially for storing user inputs, managing app state, and handling offline scenarios.
+👉 Collections act as temporary in-memory tables used to store data within the app session. 
+👉 They’re particularly useful for managing user inputs, maintaining app state, and enabling offline functionality.
+👉 Functions like Collect, ClearCollect, and Clear are commonly used to create, update, and reset collections.
+👉 Collections help optimize performance by caching data locally and minimizing frequent calls to external data sources, especially when working with multiple records.
 
-👉 I commonly use Collect, ClearCollect, and Clear to manage them, and they’re really helpful 
-    when I need to cache data or work with multiple records without hitting the data source every time.”
 
 🔹 Types of Collections in Power Apps:
 1. Collect() Function:
