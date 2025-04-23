@@ -2,10 +2,9 @@
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
-👉 CDS (Common Data Service) is the former name of what we now call Microsoft Dataverse.
-👉 Microsoft Dataverse provides a secure and scalable environment for storing and managing data for bussiness applications used in PP.
-👉 It allows users to create relationships between tables, apply business rules.
-👉 Dataverse offers some of features like "Data Modeling", Data Integration" and "Data security".
+👉 Dataverse, formerly known as Common Data Service (CDS),
+👉 It is a cloud-based data platform used to store and manage data for Power Apps and other Power Platform tools.
+👉 It provides a secure, scalable environment that supports data modeling, data integration, and business logic.
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 2. What is Table, Relationships and Database in Dataverse?
