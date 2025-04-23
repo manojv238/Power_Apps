@@ -12,7 +12,7 @@ POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 
 6. Cascading Dropdown in Power Apps?
 
-7. Delgations in Power Apps?
+7. Explain the concept of Delgations in Power Apps?
 
 8. Validations in Power Apps?
 
@@ -32,7 +32,7 @@ POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 
 16. 16. How do you create a Responsive Design in Power Apps?
 
-17. Role-Based Security in Power Apps?
+17. What are the Security roles in Power Apps. How do you manage them?
 
 18. Solutions in Power Apps?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -155,19 +155,15 @@ Dropdown 2 (City) ------------> Items property: Filter(CountriesCities, Country 
 👉 So, when a user selects a country, only cities related to that country appear in the second dropdown.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-7. Delgations in Power Apps?
+7. Explain the concept of Delgations in Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Delegation means pushing data operations like filtering and sorting to the data source instead of processing them locally in Power Apps.
-
+👉 Delegation means pushing the data operations like Filtering and Sorting to the data source instead of processing them locally in Power Apps.
 👉 This is critical when dealing with large data sets, such as SharePoint lists with thousands of records.
-
-👉 Power Apps has a default limit (500 records, max 2000), so non-delegable functions only process that limited subset,
-    which can lead to incomplete data and slow performance.
-
-👉 To address this, non-delegable functions were replaced with delegable alternatives like Filter, Sort and StartsWith,
-    and appropriate columns were indexed in SharePoint.
+👉 Power Apps has a Default limit (500 records, max 2000), so without-delegable functions, leading incomplete or incorrect data handling for large datasets.
+👉 So non-delegable functions were replaced with delegable Functions like Filter, Sort and StartsWith,
+    that ensures efficient performance and correct results for Data source.
 
 👉 This approach improved app speed, ensured data accuracy, and delivered the expected user experience.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -212,14 +208,14 @@ EXPLAIN IN ANSWER:-
 
 10. Difference between Galleries, Forms and Data Table?
 
-GALLERY:
-━━━━━━━━
+✅ GALLERY:
+━━━━━━━━━━━
 👉 Galleries in Power Apps are controls used to display and interact with multiple records from a data source like SharePoint.
 👉 They support dynamic layouts such as vertical, horizontal, and flexible-height, 
     and each item can be customized with labels, images, icons, and buttons to create interactive views.
 
-FORMS:
-━━━━━━
+✅ FORMS:
+━━━━━━━━━
 👉 Forms in Power Apps are controls used to view, create, and edit a single record from a connected data source like SharePoint. 
 🔹 There are three types of forms:
 1. Display Form – for read-only data viewing.
@@ -228,8 +224,8 @@ FORMS:
 👉 Forms automatically generate fields based on the selected data source, and they handle data binding and submission with minimal configuration.
 👉 We can also customize fields visibility, validation rules, and layout as per our needed.
 
-DATA TABLE:
-━━━━━━━━━━━
+✅ DATA TABLE:
+━━━━━━━━━━━━━━
 👉 Data Table in Power Apps is a control used to display multiple records from a data source in a tabular format, similar to an Excel sheet.
 👉 They're mainly used for READ-ONLY data, where users need to scan the data, sort, or review structured data across rows and columns.
 👉 Data Tables automatically generate columns based on the connected data source and arrange the records in a spreadsheet-style format.
@@ -310,15 +306,18 @@ EXPLAIN IN ANSWER:-
 👉 This approach lets the app look good on any device — whether it’s a phone, tablet, or desktop, without having to create separate versions.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-17. Role-Based Security in Power Apps?
+17. What are the Security roles in Power Apps. How do you manage them?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Role-based security allows to control access to data, features, or screens in our app based on the user's role.
-👉 Common Use Case – Employee Management App:
-🔹 Admin    → Full access: all records + Settings screen.
-🔹 Manager  → Limited access: team-specific reports.
-🔹 Employee → Can only view/edit their own profile.
+👉 Power Apps Security roles define what actions user can take on data, (eg: Read, Write, Delete) and controls access to apps, forms and records.
+👉 Security Roles are Managed in Mircosoft Dataverse and we can customized for each user or group.
+👉 We can assign predefined security roles like (System Adminstrator, Environment Maker) or we can create custom roles based on business needs.
+
+✅ For Example – Employee Management App:
+🔹 Admin       → Full access: all records + Settings screen.
+🔹 Manager     → Limited access: team-specific reports.
+🔹 Employee    → Can only view/edit their own profile.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 18. Solutions in Power Apps?
@@ -326,11 +325,8 @@ EXPLAIN IN ANSWER:-
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 👉 Solutions group related components—like apps, flows, tables, and security roles—into a single package.
-
 👉 This simplifies managing, transporting, and deploying across different environments (Dev, Test, Prod).
-
 👉 In development, unmanaged solutions allow edits and ongoing changes.
-
 👉 For production, I export managed solutions—read-only, ensuring stability and controlled updates.
 
 ✅ Benefits:
@@ -339,7 +335,18 @@ EXPLAIN IN ANSWER:-
 3. Supports team collaboration and easier maintenance.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
+19. How do you use Power Apps in implement conditional formatting in your app?
 
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 Conditional formatting in Power Apps mainly through formulas on properties like Color, Fill, or Visible.
+👉 Instead of hardcoding styles, I apply logic using If statements or Switch based on field values or user roles.
+
+✅ Common use cases:
+1. Change label or text color based on status: Color = If(ThisItem.Status = "Completed", Green, Red)
+2. Highlight cards or controls when a condition is met: Fill = If(ThisItem.Score < 50, RGBA(255,0,0,0.1), White)
+3. Show/hide fields depending on user role: Visible = If(User().Email = "admin@domain.com", true, false)
+4. Disable controls until a required field is filled: DisplayMode = If(IsBlank(DataCardValue1.Text), DisplayMode.Disabled, DisplayMode.Edit)
 
 
 
