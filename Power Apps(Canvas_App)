@@ -147,10 +147,10 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Cascading Dropdown is a pair of dropdown controls where the options in the child dropdown,
-    dynamically depend on the selection made in the parent dropdown.
+👉 A Cascading Dropdown is when the choices available in one dropdown depend on the selection made in another dropdown. 
+👉 For example, selecting a Country in the (Parent dropdown) filters the states shown in the (Child dropdown) dynamically.”
 
-✅ For example, a Country–City scenario:
+✅ Country–City scenario:
 Dropdown 1 (Country) ---------> Items property: Distinct(CountriesCities, Country)
 Dropdown 2 (City) ------------> Items property: Filter(CountriesCities, Country = Dropdown1.Selected.Result)
 
