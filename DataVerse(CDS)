@@ -1,7 +1,7 @@
 1. Define Dataverse (CDS)? why should use them?
 
 EXPLAIN IN ANSWER:-
-━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━
 👉 Dataverse, formerly known as Common Data Service (CDS),
 👉 It is a cloud-based data platform used to store and manage data for Power Apps and other Power Platform tools.
 👉 It provides a secure, scalable environment that supports data modeling, data integration, and business rules.
@@ -27,12 +27,21 @@ Database:
 ━━━━━━━━━
 👉 The Dataverse database is the backend storage where all our tables, relationships, business rules, struched data within the Dataverse.
 ✅ Each Power Platform environment has one Dataverse database.
+-----------------------------------------------------------------------------------------------------------------------------------------
 
+3. What are the Forms and Views in Dataverse?
 
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+✅ FORMS: 
+👉 Forms are the primary user interface in Dataverse where users can view, enter, and update data in a table.
+👉 Designed for working with a single record at a time, they support tabs, sections, business rules, conditional visibility, and field validations.
 
-
-
-
+✅ Views: 
+👉 Views are a customized way to display data from one or more tables.
+👉 They allow defining specific filters, sorting, and columns to tailor the data presentation.
+👉 We can create differentviews to show a specific information based on our needs.
+--------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
