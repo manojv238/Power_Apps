@@ -1,6 +1,6 @@
 POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. Explain in Power Apps?
+1. Explain about Power Apps?
 
 2. Difference between Canvas App and Model-Driven App?
 
@@ -8,7 +8,7 @@ POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 
 4. Collections and types of Collections in power apps?
 
-5. Components in Power Apps?
+5. What are Components in Power Apps?
 
 6. Cascading Dropdown in Power Apps?
 
@@ -37,7 +37,7 @@ POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 18. Solutions in Power Apps?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-1. Explain in Power Apps?
+1. Explain about Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
@@ -53,7 +53,6 @@ EXPLAIN IN ANSWER:-
 
 ✅ Summary Note:
 👉 Power Apps (Canvas and Model-Driven) are for internal business use only and cannot be used to create truly public-facing apps.
-
 --------------------------------------------------------------------------------------------------------------------------------------------------
 Key Features of Power Apps:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -96,7 +95,7 @@ EXPLAIN IN ANSWER:-
 👉 The UI is automatically generated based on the data model, including entities and relationships.
 👉 Support automatic creation of forms, views, and tables driven by the data model.
 
-✅ “In short, Canvas = full design control, Model-Driven = full data structure control.”
+✅ In short, Canvas = full design control, Model-Driven = full data structure control.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 3. Variables and types of Variables in power apps?
@@ -120,11 +119,8 @@ Example: UpdateContext({ varName: "Manoj" })
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
 👉 Collections act as temporary in-memory tables used to store data within the app session.
-
 👉 They’re particularly useful for managing user inputs, maintaining app state, and enabling offline functionality.
-
 👉 Functions like Collect, ClearCollect, and Clear are commonly used to create, update, and reset collections.
-
 👉 Collections help optimize performance by caching data locally and minimizing frequent calls to external data sources, 
     especially when working with multiple records.
 
@@ -139,21 +135,19 @@ EXPLAIN IN ANSWER:-
 ✅ Example: Clear(MyCollection)
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
-5. Components in Power Apps?
+5. What are Components in Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
-👉 Components are reusable building blocks and customizable UI elements —like buttons, text labels, headers, or custom controls.
-    created once and used across multiple screens or apps.
+👉 Components are reusable building blocks or custom controls that can be create once and we can use across multiple screens or apps.
+👉 It helps to standardize design, reduced development effort and simiplify maintaince. 
+👉 We can include inputs and outputs properties to make them flexible and customizable.
+✅ For Example: 
+👉 A custom header or navigation menu built as a component can be reused consistently throughout an app, ensuring UI consistency and easier updates.
 
-👉 For example, I developed a dynamic left navigation component that was implemented across all screens in an app.
-    It included dynamic icons, screen names, navigation logic, and custom properties to manage active tab highlighting and role-based visibility.
-    This approach significantly enhanced user experience, reduced development effort, and
-    simplified maintenance any update to the component reflected instantly throughout the app.
-
-✅ Key concepts include:
-1. Input Property: Provides data or parameters into the component from outside.
-2. Output Property: Sends data or triggers actions from inside the component to the outside.
+🔹 Component properties:
+1. Input Property : Used to Provide values or information into the component from outside.
+2. Output Property: Used to communicate information or trigger actions from inside the component.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 6. Cascading Dropdown in Power Apps?
