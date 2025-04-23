@@ -37,6 +37,8 @@ POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 18. Solutions in Power Apps?
 
 19. How do you use Power Apps in implement conditional formatting in your app?
+
+20. Difference between configuration and customization?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 1. Explain about Power Apps?
@@ -338,8 +340,19 @@ EXPLAIN IN ANSWER:-
 2. Highlight cards or controls when a condition is met: Fill = If(ThisItem.Score < 50, RGBA(255,0,0,0.1), White)
 3. Show/hide fields depending on user role: Visible = If(User().Email = "admin@domain.com", true, false)
 4. Disable controls until a required field is filled: DisplayMode = If(IsBlank(DataCardValue1.Text), DisplayMode.Disabled, DisplayMode.Edit)
+------------------------------------------------------------------------------------------------------------------------------------------------
 
+20. Difference between configuration and customization?
 
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 Configuration means changing settings or using built-in tools to make the system work how you want, without any coding. 
+    Like changing forms, adding fields, or creating filters.
+
+👉 Customization means writing code or building new features to change how the system works, 
+    like adding custom logic or integrating with other apps.
+
+👉 So, configuration is easier and faster, and customization is for when you need something more advanced.
 
 
 
