@@ -18,7 +18,7 @@
 
 3. FILTER() Function:
 ━━━━━━━━━━━━━━━━━━━━━
-👉 The Filter() function is used to find and return multiple records from a data source that meet a specific condition.
+👉 The Filter() function is used to retrieves specific records from a data source based on criteria.
 ✅ Example:
 👉 If i want to get all employees who work in the IT department:
 ➡️ Filter(Employees, Department = "IT") ---> This will return all records where the Department field is "IT".
