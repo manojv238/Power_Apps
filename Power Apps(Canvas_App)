@@ -236,19 +236,12 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 In Power Apps, Errors can be handled using functions like IfError() and Notify().
-🔹 IfError() Function: 
-👉 This is used to catch errors in formulas and specify alternative actions if something goes wrong.
+👉 Error handling in Power Apps is mainly done using the IfError() function.
+👉 which catches runtime errors during operations like data submissions or calculations.
 ✅ For example:
-👉 when submitting data to a data source like SharePoint or SQL, 
-👉 I use IfError() to handle any errors that may occur during the process and  provide a fallback action 
-    like showing an error message.
-
-🔹 Notify() Function:
-👉 This function displays real-time feedback to the user, such as success, warning, or error messages based on the app’s actions.
-✅ For example:
-👉 After submitting a form, I use Notify() to let users know if their data was successfully saved or if there was an issue. 
-------------------------------------------------------------------------------------------------------------------------------------------------
+👉 If a data submission fails, IfError() function can show a clear, user-friendly message or trigger a fallback process, 
+    ensuring the app handles issues gracefully without crashing or confusing users.”
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 12. Can you use Offline Power Apps?
 
