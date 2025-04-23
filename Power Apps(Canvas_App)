@@ -32,9 +32,11 @@ POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 
 16. 16. How do you create a Responsive Design in Power Apps?
 
-17. What are the Security roles in Power Apps. How do you manage them?
+17. What are the Role-Based Security roles in Power Apps. How do you manage them?
 
 18. Solutions in Power Apps?
+
+19. How do you use Power Apps in implement conditional formatting in your app?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 1. Explain about Power Apps?
@@ -191,7 +193,6 @@ EXPLAIN IN ANSWER:-
 
 ✅ There are two main connectors:
 1. Standard Connectors — cover common Microsoft services like SharePoint, Excel, Outlook, and OneDrive.
-
 2. Premium Connectors  — provide access to advanced or third-party systems such as SQL Server, Salesforce, and custom APIs, often requiring additional licensing.
 
 🔹 Creating a Custom Connector in Power Apps:
@@ -306,7 +307,7 @@ EXPLAIN IN ANSWER:-
 👉 This approach lets the app look good on any device — whether it’s a phone, tablet, or desktop, without having to create separate versions.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-17. What are the Security roles in Power Apps. How do you manage them?
+17. What are the Role-Based Security roles in Power Apps. How do you manage them?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
