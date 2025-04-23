@@ -27,7 +27,7 @@ Database:
 ━━━━━━━━━
 👉 The Dataverse database is the backend storage where all our tables, relationships, business rules, struched data within the Dataverse.
 ✅ Each Power Platform environment has one Dataverse database.
-✅ It's managed by Microsoft, highly secure, and automatically scaled.
+
 
 
 
