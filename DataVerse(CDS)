@@ -43,6 +43,28 @@ EXPLAIN IN ANSWER:-
 👉 We can create differentviews to show a specific information based on our needs.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
+4. What are the Charts and Dashboards in Dataverse?
+
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 Charts are visual representations of your data—like bar graphs, pie charts, or line charts.
+👉 They help quickly spot trends, patterns, and comparisons in data stored in tables.
+👉 These charts can be placed inside forms, views, or dashboards so users get instant insights.”
+
+👉 Dashboards are collections of charts, views, and other components displayed together on one screen.
+👉 They provide a quick snapshot of important metrics, helping users track performance or status without hunting for data.
+👉 Dashboards are customizable for different roles or business needs.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
