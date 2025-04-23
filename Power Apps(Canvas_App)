@@ -254,13 +254,11 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Yes, Power Apps Supports can be usd offline apps. Using the SaveData() and LoadData() Functions:
+👉 Power Apps supports offline usage by storing data locally using Collections combined with the SaveData() and LoadData() functions.
+👉 Once connectivity is restored, sync logic using functions like Patch() and Collect() updates the server with any offline changes. 
 
-🔹 SaveData(): Allows me to save data locally on the user's device, which can be accessed even when the app is offline.
-🔹 LoadData(): It is used to load that local data when the app is back online.
-
-👉 Once the app is back online, we can implement logic to sync data with the server using funtions like Patch(), Collect(),
-    to update the data source with any changes made offline.
+🔹 SaveData() function: saves data on the user’s device so the app can access it even when offline.
+🔹 LoadData() function: retrieves that saved data when the app starts or comes back online.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 13. What are the limitations of Power Apps?
