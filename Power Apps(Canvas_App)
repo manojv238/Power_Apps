@@ -6,7 +6,7 @@ POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 
 3. Variables and types of Variables in power apps?
 
-4. What are Collections and types of Collections in power apps?
+4. Collections and types of Collections in power apps?
 
 5. Components in Power Apps?
 
@@ -26,11 +26,11 @@ POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 
 13. What are the limitations of Power Apps?
 
-14. What are Environments in Power Apps?
+14. What is the role of Environments in Power Apps?
 
 15. What are Containers in Power Apps?
 
-16. What is Responsive Design in Power Apps?
+16. 16. How do you create a Responsive Design in Power Apps?
 
 17. Role-Based Security in Power Apps?
 
@@ -294,35 +294,35 @@ EXPLAIN IN ANSWER:-
 5. There is no advanced debugging or Git-style version control.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-14. What are Environments in Power Apps?
+14. What is the role of Environments in Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Environments are dedicated workspaces used to manage apps, flows, connections, and Dataverse databases separately.
-
-👉 Environments helps in isolating data and apps for different teams or projects.
-------------------------------------------------------------------------------------------------------------------------------------------------
+👉 Environments are isolated containers let us manage apps, flows, connections, and Dataverse separately.
+👉 Environments helps in isolating data and apps for different teams or projects to work independently and securely.
+✅ For Example:
+👉 We can create seperately environments for developing, testing and production. Each environment can have its own data policies, permissions, and resources.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 15. What are Containers in Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 👉 Containers are layout controls used to group and align multiple controls together—like buttons, labels, inputs—into one unit.
-
 👉 They simplify responsive design, auto-adjust spacing, and help maintain consistent alignment across screen sizes.
-
 👉 Especially useful in mobile-first design or when working with dynamic screen sizes.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-16. What is Responsive Design in Power Apps?
+16. How do you create a Responsive Design in Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Responsive design ensures the app layout adapts automatically across mobile, tablet, and desktop.
-
-👉 Uses relative positioning, screen size formulas (like App.Width, App.Height), and containers for fluid UI.
-
-👉 Helps maintain a consistent and user-friendly experience across different devices without duplicating screens.
+👉 To make apps responsive Design in Power Apps, I use container controls like vertical and horizontal containers based on the requirements.
+👉 These containers automatically arrange the elements inside them based on the screen size.
+👉 Instead of fixing the size and position of each control, I use formulas that adjust their width and height relative to the screen.
+✅ For Example:
+👉 We can use relative properities like parent.width and parent.height to adjust sizes and positions dynamically.
+👉 This approach lets the app look good on any device — whether it’s a phone, tablet, or desktop, without having to create separate versions.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 17. Role-Based Security in Power Apps?
