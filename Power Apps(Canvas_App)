@@ -56,29 +56,21 @@ EXPLAIN IN ANSWER:-
 --------------------------------------------------------------------------------------------------------------------------------------------------
 Key Features of Power Apps:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. Low-Code Development:
-👉 Drag-and-drop interface allows building apps without deep coding knowledge.
+1. Low-Code Development    : Drag-and-drop interface allows building apps without deep coding knowledge.
 
-2. Data Connectivity:
-👉 Connects to 500+ data sources like SharePoint, Dataverse, SQL, Excel, and custom APIs using connectors.
+2. Data Connectivity       : Connects to 500+ data sources like SharePoint, Dataverse, SQL, Excel, and custom APIs using connectors.
 
-3. Responsive Design:
-👉 Apps work on mobile, tablet, and desktop automatically.
+3. Responsive Design       : Apps work on mobile, tablet, and desktop automatically.
 
-4. Integration with Power Automate:
-👉 Easily triggers workflows for automation — like sending emails or approvals.
+4. Integration with Power Automate  : Easily triggers workflows for automation — like sending emails or approvals.
 
-5. Prebuilt Templates and Controls:
-👉 Offers ready-made templates, galleries, forms, and reusable components for faster development.
+5. Prebuilt Templates and Controls  : Offers ready-made templates, galleries, forms, and reusable components for faster development.
 
-6. Offline Capability:
-👉 Apps can store data locally and sync when connected — useful for field workers.
+6. Offline Capability      : Apps can store data locally and sync when connected — useful for field workers.
 
-7. AI Builder Support:
-👉 Use AI to extract text, predict outcomes, or process forms without writing machine learning models.
+7. AI Builder Support      : Use AI to extract text, predict outcomes, or process forms without writing machine learning models.
 
-8. Role-Based Security:
-👉 Control who can view, edit, or submit data using role-based permissions and Microsoft Dataverse security.
+8. Role-Based Security     : Control who can view, edit, or submit data using role-based permissions and Microsoft Dataverse security.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 2. Difference between Canvas App and Model-Driven App?
