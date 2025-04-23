@@ -86,16 +86,15 @@ Key Features of Power Apps:
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
 1️⃣ Canvas Apps:
-👉 Provide full control over app layouts and UI, built from scratch with drag-and-drop components like buttons, galleries, and forms.
-👉 Use Power Fx formulas for custom business logic.
-👉 Connect easily to various data sources such as SharePoint, Excel, SQL, and Dataverse.
+👉 Canvas Apps Provide full flexibility control over app layouts and UI built from scratch using a blank canvas app. 
+👉 The design process using drag-and-drop components like buttons, galleries, forms and more.
+👉 We can Connect easily to various data sources such as SharePoint, Excel, SQL, and Dataverse.
+👉 use Power Fx formulas to drive business logic and interactivity.
 
 2️⃣ Model-Driven Apps:
-👉 Ideal for complex scenarios with structured data managed in Dataverse.
-👉 The UI is automatically generated based on the data model, including entities and relationships.
-👉 Support automatic creation of forms, views, and tables driven by the data model.
-
-✅ In short, Canvas = full design control, Model-Driven = full data structure control.
+👉 Model-driven apps are based on the data model in Dataverse.
+👉 The UI is generated automatically based on the data model —tables, relationships, forms, and views.
+👉 so we don’t have to build the UI manually like in canvas apps.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 3. Variables and types of Variables in power apps?
@@ -146,9 +145,9 @@ EXPLAIN IN ANSWER:-
 👉 A custom header or navigation menu built as a component can be reused consistently throughout an app, ensuring UI consistency and easier updates.
 
 🔹 Component properties:
-1. Input Property : Used to Provide values or information into the component from outside.
-2. Output Property: Used to communicate information or trigger actions from inside the component.
-------------------------------------------------------------------------------------------------------------------------------------------------
+1. Input Property : Used to Provide values or information into the component from outside, like passing a user name or a color choice. 
+2. Output Property: Used to communicate information or trigger actions from inside the component, such as notifying when a button inside the component is clicked.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 6. Cascading Dropdown in Power Apps?
 
