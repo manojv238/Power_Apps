@@ -168,7 +168,7 @@ EXPLAIN IN ANSWER:-
 👉 Data validation ensures that user inputs meet specific rules or criteria before being saved. 
 👉 It helps to maintain data integrity and improves user experience by prevent errors.
 
-🔹 Power Apps offers built-in functions like:
+🔹 Power Apps offers built-in functions for Data Valadition:
 IsBlank() function  : to check empty fields
 IsMatch() function  : for pattern validation (emails, phone numbers)
 IsNumeric() function: to confirm numeric inputs.
