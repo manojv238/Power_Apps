@@ -1,1 +1,51 @@
+Hi [Interviewer’s Name], good morning. First of all, thank you for giving me this opportunity.
+
+My name is Manoj Kumar, and I’m from Tirupati. I completed my graduation in B.Sc. Computer Science from S.V. University, Tirupati.
+
+I have around 2 years of experience as a Power Apps Developer in my current organization, where I worked on multiple projects from scratch
+especially focusing on Canvas Apps development and using SharePoint as the backend Data source.
+
+I have completed two major projects —one for Steelcase and another for Herbalife, both US-based clients.
+
+
+🔹 Roles & Responsibilities:
+-------------------------------
+Firstly, I can understood the business requirements —what exactly the users needed, what users expected from the app.
+
+Designed UI and built Canvas Apps from scratch based on the business requirements or client’s needs.
+
+Used SharePoint Online as a backend Data Source to store and manage all the data.
+I connected my app to SharePoint lists and handled CRUD operations —like creating records, updating records, and deleting records,
+using Power Fx functions like Patch(), Remove(), and Collect().
+
+Worked with various controls such as galleries, forms, buttons, dropdowns, and customized each control based on the specific bussiness use cases.
+
+Built dynamic form features —for example, allowing users to add multiple experience entries using Collections like Collect() and ClearCollect().
+
+Applied data validation using functions like IsMatch() and IsBlank() to improve accuracy and user input quality.
+
+Designed a clean and responsive UI/UX, focusing on making app professional, and a user-friendly experience across all devices.
+
+During app development, I frequently use several Power Fx functions like:
+Filter() and LookUp() ---> to show filtered and specific data,
+Navigate() --------------> for smooth transitions between screens,
+User() ------------------> to personalize content based on the logged-in user.
+
+After development, I handled testing, gathered stakeholder feedback, and made improvements accordingly.
+
+Once finalized, I published and shared the app with the team, which helped automate manual tasks, reduce errors, and save time.
+
+Overall, with my experience in Canvas App development, SharePoint integration, and Power Fx customization,
+I’m confident in my ability to add value and contribute for the growth of your organization.
+
+
+
+
+
+
+
+
+
+
+
 
