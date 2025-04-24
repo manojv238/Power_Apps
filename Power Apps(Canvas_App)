@@ -104,8 +104,7 @@ Example: Set(varCountry, "India")
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
-👉 Collections act as temporary in-memory tables used to store data within the app session.
-👉 They’re particularly useful for managing user inputs, maintaining app state, and enabling offline functionality.
+👉 Collections are like temporary tables I use to store multiple records in memory.
 👉 Functions like Collect, ClearCollect, and Clear are commonly used to create, update, and reset collections.
 👉 Collections help optimize performance by caching data locally and minimizing frequent calls to external data sources, 
     especially when working with multiple records.
