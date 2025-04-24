@@ -203,13 +203,13 @@ EXPLAIN IN ANSWER:-
 
 ✅ GALLERY:
 ━━━━━━━━━━━
-👉 Galleries in Power Apps are controls used to display and interact with multiple records from a data source like SharePoint.
+👉 Galleries are controls used to display and interact with multiple records from a data source like SharePoint.
 👉 They support dynamic layouts such as vertical, horizontal, and flexible-height, 
     and each item can be customized with labels, images, icons, and buttons to create interactive views.
 
 ✅ FORMS:
 ━━━━━━━━━
-👉 Forms in Power Apps are controls used to view, create, and edit a single record from a connected data source like SharePoint. 
+👉 Forms are controls used to view, create, and edit a single record from a connected data source like SharePoint. 
 🔹 There are three types of forms:
 1. Display Form – for read-only data viewing.
 2. Edit Form    – for editing existing records.
@@ -219,7 +219,7 @@ EXPLAIN IN ANSWER:-
 
 ✅ DATA TABLE:
 ━━━━━━━━━━━━━━
-👉 Data Table in Power Apps is a control used to display multiple records from a data source in a tabular format, similar to an Excel sheet.
+👉 Data Table is a control used to display multiple records from a data source in a tabular format, similar to an Excel sheet.
 👉 They're mainly used for READ-ONLY data, where users need to scan the data, sort, or review structured data across rows and columns.
 👉 Data Tables automatically generate columns based on the connected data source and arrange the records in a spreadsheet-style format.
 ------------------------------------------------------------------------------------------------------------------------------------------------
