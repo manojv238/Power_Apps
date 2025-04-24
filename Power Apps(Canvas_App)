@@ -220,7 +220,7 @@ EXPLAIN IN ANSWER:-
 ✅ DATA TABLE:
 ━━━━━━━━━━━━━━
 👉 Data Table is a control used to display multiple records from a data source in a tabular format, similar to an Excel sheet.
-👉 It is mainly used for READ-ONLY data, where users need to scan the data, sort, or review structured data across rows and columns.
+👉 It is mainly used for READ-ONLY data, where users need to scan the data, sort the data, or review the data across rows and columns.
 👉 Data Tables automatically generate columns based on the connected data source and arrange the records in a spreadsheet-style format.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
