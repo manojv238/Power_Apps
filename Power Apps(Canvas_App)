@@ -214,7 +214,7 @@ EXPLAIN IN ANSWER:-
 1. Display Form – for read-only data viewing.
 2. Edit Form    – for editing existing records.
 3. New Form     – for creating new records.
-👉 Forms automatically generate fields based on the selected data source, and they handle data binding and submission with minimal configuration.
+👉 Forms can automatically generate fields based on the selected data source, and it handle data binding and submission with minimal configuration.
 👉 We can also customize fields visibility, validation rules, and layout as per our needed.
 
 ✅ DATA TABLE:
