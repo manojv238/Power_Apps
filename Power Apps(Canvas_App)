@@ -229,7 +229,9 @@ EXPLAIN IN ANSWER:-
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 👉 Error handling in Power Apps is mainly done using the IfError() function.
-👉 which catches runtime errors during operations like data submissions or calculations.
+👉 It catches runtime errors during actions like data submissions submissions or calculations.
+    allowing me to show user-friendly messages and handle issues gracefully.
+
 ✅ For example:
 👉 If a data submission fails, IfError() function can show a clear, user-friendly message or trigger a fallback process, 
     ensuring the app handles issues gracefully without crashing or confusing users.”
