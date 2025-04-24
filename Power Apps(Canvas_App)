@@ -49,8 +49,6 @@ EXPLAIN IN ANSWER:-
 
 👉 It supports building apps that connect to various data sources like Dataverse, SharePoint, and SQL with minimal coding effort.
 
-👉 Canvas Apps are primarily used to design rich, interactive user interfaces and implement business logic through Power Fx formulas.
-
 👉 Integration with Power Automate allows automation of workflows such as approvals, notifications, and real-time record updates.
 
 👉 The core objective is to simplify and accelerate app development for internal business needs, reduce manual work, and drive productivity improvements.
