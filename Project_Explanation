@@ -12,30 +12,33 @@ I have completed two major projects —one for Steelcase and another for Herbali
 -------------------------------
 Firstly, I can understood the business requirements — like what exactly the users needed, what users expected from the app.
 
-Designed UI and built Canvas Apps from scratch based on the business requirements or client’s needs.
+I can Designed UI and built Canvas Apps from scratch based on the business requirements or client’s needs.
 
-Used SharePoint Online as a backend Data Source to store and manage all the data.
-I connected my app to SharePoint lists and handled CRUD operations —like creating records, updating records, and deleting records,
-using Power Fx functions like Patch(), Remove(), and Collect().
+So I Used SharePoint Online as a backend Data Source to store and manage all the data information.
+and I connected my app to SharePoint lists and handled CRUD operations ntg but —like creating records, review a recrods, updating records, and deleting records,
+Similarly using Power Fx functions like Patch(), Remove(), and Collect().
 
-Worked with various controls such as galleries, forms, buttons, dropdowns, and customized each control based on the specific bussiness use cases.
+And i Worked with various controls such as galleries, forms, buttons, dropdowns, and customized each control based on the specific bussiness use cases.
 
-Built dynamic form features —for example, allowing users to add multiple experience entries using Collections like Collect() and ClearCollect().
+So I can Built dynamic form features —for example, allowing users to add multiple experience entries using Collections like Collect() and ClearCollect().
 
-Applied data validation using functions like IsMatch() and IsBlank() to improve accuracy and user input quality.
+And Applied data validation using functions like IsMatch() and IsBlank() to improve accuracy and user input quality.
 
-Designed a clean and responsive UI/UX, focusing on making app professional, and a user-friendly experience across all devices.
+So i can Designed a responsive UI/UX Ideas, focusing on making app professional, and a user-friendly experience across all devices.
 
 During app development, I frequently use several Power Fx functions like:
 Filter() and LookUp() ---> to show filtered and specific data,
 Navigate() --------------> for smooth transitions between screens,
 User() ------------------> to personalize content based on the logged-in user.
 
-After development, I handled testing, gathered stakeholder feedback, and made improvements accordingly.
+Once the app development was completed, I personally handled the testing phase to ensure everything worked as expected across all screens and data scenarios.
 
-Once finalized, I published and shared the app with the team, which helped automate manual tasks, reduce errors, and save time.
+After internal validation, I shared the app with stakeholders for feedback. I received valuable inputs regarding both UI and user flow, 
+based on that I made refinements to the layouts, logics, and validations to improve the user experience.
 
-Overall, with my experience in Canvas App development, SharePoint integration, and Power Fx customization,
+Once everything was finalized, I published the app and assigned proper permissions for users, which helped to automate manual tasks and reduce errors and save time.
+
+Overall, with my experience in Canvas Apps development and integration with SharePoint,
 I’m confident in my ability to add value and contribute for the growth of your organization.
 
 
