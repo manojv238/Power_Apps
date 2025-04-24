@@ -241,7 +241,7 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Power Apps supports offline usage by storing data locally using Collections combined with the SaveData() and LoadData() functions.
+👉 Power Apps supports offline Capabilities usage by storing data locally by using Collections and combined with the SaveData() and LoadData() functions.
 👉 Once connectivity is restored, sync logic using functions like Patch() and Collect() updates the server with any offline changes. 
 
 🔹 SaveData() function: saves data on the user’s device so the app can access it even when offline.
