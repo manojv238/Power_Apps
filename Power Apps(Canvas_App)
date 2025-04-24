@@ -170,7 +170,7 @@ EXPLAIN IN ANSWER:-
 
 🔹 Power Apps offers built-in functions for Data Valadition:
 IsBlank() function  : to check empty fields
-IsMatch() function  : for pattern validation (emails, phone numbers)
+IsMatch() function  : for validation patterna like (emails, phone numbers)
 IsNumeric() function: to confirm numeric inputs.
 
 👉 Along with Notify() function to show error messages and conditional formatting (like changing border colors or displaying warnings) to guide users in real-time.
