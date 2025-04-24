@@ -92,12 +92,10 @@ EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
 👉 Variables temporarily store and manage data during app runtime, handling values like numbers, text, booleans, records, or tables.
 🔹 Types of Variables:
-1. Context Variables (UpdateContext):
-Scoped only to the current screen, created via UpdateContext().
+1. Context Variables (UpdateContext): Scoped only to the current screen, created via UpdateContext().
 Example: UpdateContext({ varName: "Manoj" })
 
-2. Global Variables (Set):
-Accessible throughout the entire app across all screens. Created using Set().
+2. Global Variables (Set): Accessible throughout the entire app across all screens. Created using Set().
 Example: Set(varCountry, "India")
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
