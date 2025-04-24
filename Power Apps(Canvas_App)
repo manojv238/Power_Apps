@@ -310,7 +310,7 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Solutions group related components—like apps, flows, tables, and security roles—into a single package.
+👉 Solutions are group of related components—like apps, flows, tables, and security roles—into a single package.
 👉 This simplifies managing, transporting, and deploying across different environments (Dev, Test, Prod).
 👉 In development, unmanaged solutions allow edits and ongoing changes.
 👉 For production, I export managed solutions—read-only, ensuring stability and controlled updates.
