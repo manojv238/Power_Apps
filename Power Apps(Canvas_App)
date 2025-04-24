@@ -165,7 +165,7 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Data validation ensures user inputs meet specific criteria before saving, preventing errors and bad data.
+👉 Data validation ensures that user inputs meet specific rules or criteria before being saved, helping prevent errors, maintain data quality.
 
 🔹 Power Apps offers built-in functions like:
 IsBlank() function  : to check empty fields
