@@ -152,7 +152,7 @@ Dropdown 2 (City) ------------> Items property: Filter(CountriesCities, Country 
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Delegation means pushing the data operations like Filtering and Sorting to the data source instead of processing them locally in Power Apps.
+👉 Delegation means pushing the data operations like Filtering and Sorting are performed by the data source instead of Power Apps.
 👉 This is critical when dealing with large data sets, such as SharePoint lists with thousands of records.
 👉 Power Apps has a Default limit (500 records, max 2000), so without-delegable functions, leading incomplete or incorrect data handling for large datasets.
 👉 So non-delegable functions were replaced with delegable Functions like Filter, Sort and StartsWith,
