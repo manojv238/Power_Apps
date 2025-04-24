@@ -112,10 +112,10 @@ EXPLAIN IN ANSWER:-
 1. Collect() function: Creates a new collection or adds records to an existing one.
 ✅ Example: Collect(MyCollection, {Name: "Alice", Age: 25}) or using input controls like {Name: TextInput.Text, Age: Value(TextInput.Text)}
 
-2. ClearCollect() function: Clears all existing records from a collection and adds new records in one step.
+2. ClearCollect() function: Clears all existing records from a collection and adds a new records.
 ✅ Example: ClearCollect(MyCollection, {Name: "Alice1", Age: 20})
 
-3. Clear() function: Removes all records from a collection, effectively emptying it.
+3. Clear() function: Removes all records from a collection.
 ✅ Example: Clear(MyCollection)
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
