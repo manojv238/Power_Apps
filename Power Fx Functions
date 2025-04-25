@@ -1,8 +1,8 @@
 1. PATCH() Function:
 ━━━━━━━━━━━━━━━━━━━━
-👉 The PATCH() Function in Power Apps is used to create, update or modify records in a data source.
+👉 The PATCH() Function is used to create, update or modify records in a data source.
 ✅ For example:
-👉 If i only want to update the Specific fields of a record without affecting any other data, that time it will help to me.
+👉 If I want to update only specific fields of a record without affecting other data, Patch() is the best choice.
 
 🔍 Explanation: You want to UPDATE the age of the employee whose ID = 3 to Age = 35:
 ➡️ Patch(Employees, LookUp(Employees, ID = 3), {Age: 35})
