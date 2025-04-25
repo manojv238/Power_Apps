@@ -34,7 +34,7 @@ POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 
 17. What are the Role-Based Security roles in Power Apps. How do you manage them?
 
-18. Solutions in Power Apps?
+18. How do you manage version control and deployment (Solutions & ALM)?
 
 19. How do you use Power Apps in implement conditional formatting in your app?
 
@@ -296,19 +296,18 @@ EXPLAIN IN ANSWER:-
 🔹 Employee    → Can only view and edit their own profile.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-18. Solutions in Power Apps?
+18. How do you manage version control and deployment (Solutions & ALM)?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Solutions are group of related components —like apps, flows, tables, and security roles into a single package together.
-👉 This simplifies managing, transporting, and deploying across different environments (Dev, Test, Prod).
-👉 During development, unmanaged solutions allow ongoing edits and changes.
-👉 For production, I export managed solutions, which are read-only to ensure stability and controlled updates.
+✅ I follow ALM (Application Lifecycle Management) best practices using Solutions in Power Apps:
 
-✅ Benefits:
-1. Streamlines version control and dependency management.
-2. Enables smooth ALM (Application Lifecycle Management).
-3. Supports team collaboration and easier maintenance.
+👉 I use Solutions in Power Apps to group related components like apps, flows, tables, and security roles into a single package together.
+👉 During development, I use Unmanaged Solutions — these allow easy editing and collaboration.
+👉 Once the app is tested and finalized, I export it as a Managed Solution for the Production environment.
+    which are read-only to ensure stability and controlled updates.
+👉 I also maintain separate environments for Dev, Test, and Prod.
+👉 We move solutions across environments using Export/Import to maintain version control and ensure smooth deployment.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 19. How do you use Power Apps in implement conditional formatting in your app?
