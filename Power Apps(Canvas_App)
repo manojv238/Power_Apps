@@ -104,9 +104,9 @@ Example: Set(varCountry, "India")
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
-👉 Collections are groups of items or data that I use to store and manipulate multiple records within the app.
-👉 It is useful for improving app performance and temporary data handling without hitting the data source repeatedly.
-👉 Collections can supports offline capabilities by storing data locally within the app.
+👉 Collections are groups of information or data it is used to store and manipulate multiple records within the app.
+👉 It helps improving app performance by handling temporary data locally without hitting the data source repeatedly.
+👉 Collections also support offline capabilities by storing data locally within the app.
 
 🔹 Types of Collections:
 1. Collect() function: Creates a new collection or adds records to an existing one.
