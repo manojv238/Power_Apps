@@ -1,84 +1,84 @@
 1. PATCH() Function:
 ━━━━━━━━━━━━━━━━━━━━
 👉 The PATCH() Function is used to create, update or modify records in a data source.
-✅ For example:
-👉 If I want to update only specific fields of a record without affecting other data, Patch() is the best choice.
+💛 Syntax: Patch(DataSource, BaseRecord, ChangeRecord)
 
-🔍 Explanation: You want to UPDATE the age of the employee whose ID = 3 to Age = 35:
-➡️ Patch(Employees, LookUp(Employees, ID = 3), {Age: 35})
+✅ For example: If I want to update only specific fields of a record without affecting other data, Patch() is the best choice.
+🔍 Explanation: You want to UPDATE the age of the employee whose ID = 3 to Age = 35,
+➡️ Patch(Employees, LookUp(Employees, ID = 3), {Age: 35}) 
 --------------------------------------------------------------------------------------------------------------------------------------
 
 2. LOOKUP() Function:
 ━━━━━━━━━━━━━━━━━━━━━
-👉 The LookUp() function is used to search a data source and return a single record (or a single value) that matches a condition.
-✅ For example:
-👉 Find the record of the employee whose ID is 3:
-➡️ LookUp(Employees, ID = 3) ---> This returns the entire record for the employee with ID = 3.
+👉 The LookUp() function is used to search a data source and return a single record or value that matches a specific condition.
+💛 Syntax: LookUp(DataSource, Condition [column])
+
+✅ For example: Find the name of the employee whose ID = 3.
+➡️ LookUp(Employees, ID = 3, Name) ---> This returns the Name field only from the employee record where ID = 3.
 --------------------------------------------------------------------------------------------------------------------------------------
 
 3. FILTER() Function:
 ━━━━━━━━━━━━━━━━━━━━━
-👉 The Filter() function is used to retrieves specific records from a data source based on certain conditions.
-✅ Example:
-👉 If i want to get all employees who work in the IT department:
-➡️ Filter(Employees, Department = "IT") ---> This will return all records where the Department field is "IT".
+👉 The Filter() function is used to retrieve multiple records from a data source that match a specific condition.
+💛 Syntax: Filter(DataSource, Condition)
+
+✅ For Example: Get all employees who work in the IT department.
+➡️ Filter(Employees, Department = "IT") ---> This returns all records where the Department field is "IT".
 --------------------------------------------------------------------------------------------------------------------------------------
 
 4. SEARCH() Function:
 ━━━━━━━━━━━━━━━━━━━━━
-👉 The Search() function is used to search for text within a specific column of a data source and we get the matching results.
-👉 The Search() function is "Case-Insensitive", it doesn't matter whether the text you are searching for is upper or lower case.
-✅ Example:
-👉 To search for employees whose Name contains the text "John":
-➡️ Search(Employees, "John", "Name") ---> This will return all records where the Name column contains the word "John"/"JOHN".
+👉 The Search() function is used to search for text within a specific column of a data source and and returns all matching records.
+👉 It is a "Case-Insensitive", it doesn't matter whether the text searching for is upper or lower case.
+💛 Syntax: Search(DataSource, SearchString, ColumnName)
+
+✅ For Example: To search for employees whose Name contains the text "John".
+➡️ Search(Employees, "John", "Name") ---> This returns all records where the Name column contains the word "John"/"JOHN".
 --------------------------------------------------------------------------------------------------------------------------------------
 
 5. SORT() Function:
 ━━━━━━━━━━━━━━━━━━━
-👉 The Sort() function is used to sort records in a data source based on a specific column or fields.
+👉 The Sort() function is used to sort records in a data source based on a specific column or field.
 👉 We can sort the data in either ascending or descending order.
-✅ Example:
-👉 If i want to sort employees by their Age in ascending order (smallest to largest):
-➡️ Sort(Employees, Age, Ascending) ---> This will sort the Employees list so that the employees with the youngest age appear first.
+💛 Syntax: Sort(DataSource, ColumnName, SortOrder)
+
+✅ Example: Sort employees by their Age in ascending order (youngest to oldest):
+➡️ Sort(Employees, Age, Ascending) --->  This sorts the Employees list so that employees with the smallest age appear first.
 --------------------------------------------------------------------------------------------------------------------------------------
 
 6. IsMatch() Function:
 ━━━━━━━━━━━━━━━━━━━━━━
-👉 The IsMatch() function is used to check whether a text string matches a specific pattern.
-👉 It is usually defined by a regular expression (RegEx).
+👉 The IsMatch() function is used to check whether a text string matches a specific pattern, usually defined by a regular expression (RegEx).
 👉 It returns true or false, making it useful for validating user inputs like: Email addresses, Phone numbers, PIN codes, Password formats.
+💛 Syntax: IsMatch(EmailInput.Text, pattern) 
 ✅ Example:
-👉 In a login form, I used IsMatch() Function to check if the email input matched the correct pattern before allowing submission.
+In a login form, I used IsMatch() Function to check if the email input matched the correct pattern before allowing submission.
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 7. Match() Function:
 ━━━━━━━━━━━━━━━━━━━━
-👉 The Match() function is used to find and return the first match of a pattern (regular expression) within a text string.
-👉 It is similar to IsMatch(), but instead of returning true/false. but, match() function it returns the actual matched value.
+👉 The Match() function is used to find and return the first match of a pattern within a text string. (regular expression)
+👉 It is similar to IsMatch(), which returns true/false, Match() returns the actual matched value found in the text.
 ✅ Example:
-👉 If I have a log message or input string, and I need to pull out the first number, email, or keyword — I use Match().
+If I have a log message or input string, and I want to extract the first number, email, or keyword, I use Match().
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 8. MatchAll() Function:
 ━━━━━━━━━━━━━━━━━━━━━━━
-👉 The MatchAll() function is used to find all occurrences of a pattern in a text string. It returns a table of all matches.
+👉 The MatchAll() function is used to find all occurrences of a pattern within a text string.
+👉 It returns a table of all matched values, not just the first one.
 ✅ Example:
-👉 If I need to extract all email addresses or numbers from a long message, I use MatchAll() returns them as a table of matches.
+If I need to extract all email addresses or all numbers from a long message, I use MatchAll(), It returns all matches as a table.
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 9. Switch() Function:
 ━━━━━━━━━━━━━━━━━━━━━
-👉 The Switch() is used when i want to compare one value against multiple possible Matches and return a different result for each Match.
-👉 It’s cleaner than nesting multiple If() statements. 
-✅ Example: 
-👉 Show Message Based on User Role:
-Switch(
-   UserRole.Text,
-   "Admin", "Welcome Admin!",
-   "Manager", "Welcome Manager!",
-   "Employee", "Welcome Employee!",
-   "Role not recognized"
-)
+👉 The Switch() is used to compare one value against multiple possible Matches and return a different result for each Match.
+👉 It’s cleaner and more readable than using multiple nested If() statements.
+💛 Syntax: Switch(Formula, Match1, Result1, Match2, Result2, ..., DefaultResult)
+
+✅ Example: Show a welcome message based on the user role.
+Switch(UserRole.Text, "Admin", "Welcome Admin!", "Manager", "Welcome Manager!", "Role not recognized")
 👉 If the UserRole is "Manager", it will return "Welcome Manager!".
 --------------------------------------------------------------------------------------------------------------------------------------------
 
