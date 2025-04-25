@@ -101,6 +101,7 @@ EXPLAIN IN ANSWER:-
 👉 It acts as a centralized backend for managing documents, lists, and other data, and integrates easily with Power Apps.
 👉 Using SharePoint as a data source, we can quickly build business apps with seamless data connectivity and secure data management.
 
+👉 I connected Power Apps to SharePoint lists using standard connectors to view, edit, and submit data.
 
 
 
