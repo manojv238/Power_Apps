@@ -11,17 +11,20 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-Power Automate has mainly three types of flows:
-1. Automated Flow: 
+🔹 Power Automate has mainly three types of flows:
+1. AUTOMATED FLOW: 
+------------------
 👉 Triggered automatically by specific events or conditions.
 👉 For Example, when a new item is added to a SharePoint list, an email is received, or a file is created in OneDrive,
     the flow runs automatically to perform predefined actions.
 
-2. Instant Flow: 
+2. INSTANT FLOW: 
+-----------------
 👉 Manually triggered by users, typically through a button press. (in Power Apps or the Power Automate mobile app).
 👉 It allows users to start actions on demand, such as sending approvals, notifications, or triggering a process when needed.
 
-3. Scheduled Flow: 
+3. SCHEDULED FLOW:
+------------------
 👉 Runs at a set schedule — like daily, weekly, or monthly — to automate repetitive tasks.
 👉 For Example, such as generating reports, data synchronization, or system cleanups.
 
