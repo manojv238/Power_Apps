@@ -1,13 +1,29 @@
 1. What is Power Automate?
 
 EXPLAIN IN ANSWER:-
-━━━━━━━━━━━━━━━━━━━━
-Power Automate is a cloud-based service that allows users to automate workflows between apps and services, without writing code.
-It allows users to create automated workflows by connectiong different "triggers and actions",
-such as a sending notifications or managing approvals and syncing data across platforms.
+━━━━━━━━━━━━━━━━━━━
+👉 Power Automate is a cloud-based service that allows users to automate workflows between apps and services, without writing code.
+👉 It allows users to create automated workflows by connectiong different "triggers and actions",
+    such as a sending notifications or managing approvals and syncing data across platforms.
 ----------------------------------------------------------------------------------------------------------------------------------------
 
+2. How many types of flows in Power Automate?
 
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+Power Automate has mainly three types of flows:
+1. Automated Flow: 
+👉 Triggered automatically by specific events or conditions.
+👉 For Example, when a new item is added to a SharePoint list, an email is received, or a file is created in OneDrive,
+    the flow runs automatically to perform predefined actions.
+
+2. Instant Flow: 
+👉 Manually triggered by users, typically through a button press. (in Power Apps or the Power Automate mobile app).
+👉 It allows users to start actions on demand, such as sending approvals, notifications, or triggering a process when needed.
+
+3. Scheduled Flow: 
+👉 Runs at a set schedule — like daily, weekly, or monthly — to automate repetitive tasks.
+👉 For Example, such as generating reports, data synchronization, or system cleanups.
 
 
 
