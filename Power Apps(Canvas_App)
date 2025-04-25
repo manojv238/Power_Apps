@@ -90,8 +90,8 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
-👉 Variables are temporarily stroage boxes used to hold values like numbers, text, booleans, records, or even tables.
-👉 We can reuse data across screens, formulas, and controls throughout the app.
+👉 Variables is ntg but name that used to refer to a piece of information or data. This data can be of any type, such as number, string, boolean, etc.
+👉 We can reuse this data across screens throughout the app.
 🔹 Types of Variables:
 1. Context Variables (UpdateContext): Scoped only to the current screen, created via UpdateContext().
 Example: UpdateContext({ varName: "Manoj" })
