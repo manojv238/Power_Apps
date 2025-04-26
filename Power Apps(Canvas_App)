@@ -143,10 +143,10 @@ Dropdown 2 (City) ------------> Items property: Filter(CountriesCities, Country 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 👉 Delegation means pushing data operations like "filtering and sorting" to the data source instead of processing them inside Power Apps.
-👉 This is important when working with large datasets, like SharePoint lists with thousands of records.
-👉 Power Apps has a default limit of 500 records (max 2000), so using non-delegable functions can cause incomplete or incorrect data results.
-👉 To avoid this, non-delegable functions are replaced with delegable ones like "Filter, Sort, and StartsWith", 
-    ensuring efficient performance and accurate data retrieval.
+👉 This is important when working with large datasets, for example; SharePoint lists have thousands of records.
+👉 Power Apps has a default limit of 500 records (increased upto max 2000), so using non-delegable functions can cause incorrect data results.
+👉 To avoid this, we replaced non-delegable functions with delegable functions, ensuring efficient performance and correct data retrieval.
+    ("Filter, Sort, and StartsWith")
 
 👉 This approach improved app speed, ensured data accuracy and delivers a better user experience.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -156,26 +156,25 @@ EXPLAIN IN ANSWER:-
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 👉 Data validation ensures that user inputs meet specific rules or criteria before being saved. 
-👉 It helps to maintain data integrity and improves user experience by prevent errors.
+👉 It helps to maintain data integrity and improves user experience by preventing errors.
 
 🔹 Power Apps offers built-in functions for Data Valadition:
 👉 IsBlank()  — checks if a field is empty.
 👉 IsMatch()  — validates patterns like emails or phone numbers.
 👉 IsNumeric() — confirms numeric inputs.
 👉 Notify()   — displays error messages to users.
-👉 Conditional formatting — like changing border colors or showing warnings.
-
-👉 This approach helps maintain data integrity and enhances the overall user experience.
+👉 Conditional formatting — like changing border colors or showing warnings based on input.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 9. What are connectors in power apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Connectors are pre-built components that allows the app to communicate with external data sources or services.
+👉 Connectors are pre-built components that allows apps to communicate with external data sources or services.
 🔹 There are two main types of connectors:
-1. Standard Connectors — connect to common Microsoft services like SharePoint, Excel, Outlook, and OneDrive.
-2. Premium Connectors  — provide access to advanced or third-party systems such as SQL Server, Salesforce, and custom APIs, often requiring additional licensing.
+1. Standard Connectors — connect to Microsoft services like SharePoint, Excel, Outlook, and OneDrive.
+2. Premium Connectors  — provide access to advanced or third-party systems such as SQL Server, Salesforce.
+👉 Using connectors helps to integrate external data easily without writing custom APIs.
 
 🔹 Creating a Custom Connector in Power Apps:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -189,17 +188,17 @@ EXPLAIN IN ANSWER:-
 7. This approach enables secure and reusable integration with external APIs beyond standard connectors.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-10. Difference between Galleries, Forms and Data Table?
+10. Difference between Gallery, Form and Data Table?
 
 ✅ GALLERY:
 ━━━━━━━━━━━
-👉 Galleries are controls used to display and interact with multiple records from a data source like SharePoint.
+👉 Gallery is a control that used to display and interact with multiple records from a data source like SharePoint.
 👉 It support for dynamic layouts such as vertical, horizontal, and flexible-height galleries. 
-👉 Each item can be customizable with labels, images, icons, and buttons to create interactive views.
+👉 In gallery, Each item can be customized using labels, images, icons, and buttons to create interactive views for users.
 
 ✅ FORMS:
 ━━━━━━━━━
-👉 Forms are controls used to viewing, creating, and editing a single record from a connected data source. 
+👉 Form is a control that used to view, create, and edit single record at a time from a connected data source.
 🔹 There are three types of forms:
 1. Display Form – for read-only data viewing.
 2. Edit Form    – for editing existing records.
@@ -209,7 +208,7 @@ EXPLAIN IN ANSWER:-
 
 ✅ DATA TABLE:
 ━━━━━━━━━━━━━━
-👉 Data Table is a control used to display multiple records in a tabular format, similar to an Excel sheet.
+👉 Data Table is a control that used to display multiple records in a tabular format, similar to an Excel sheet.
 👉 It is mainly used for READ-ONLY data, where users need review the data, sorting, and scanning across rows and columns.
 👉 Data tables are automatically generates rows and columns based on the connected data source.
 ------------------------------------------------------------------------------------------------------------------------------------------------
@@ -219,7 +218,7 @@ EXPLAIN IN ANSWER:-
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 👉 Error handling in Power Apps is mainly done using the IfError() function.
-👉 It catches runtime errors during actions like data submissions or calculations, allowing me to show user-friendly messages and handle issues gracefully.
+👉 It catches runtime errors during actions like data submissions or calculations, allowing me to show user-friendly messages and handle issues smoothly.
 
 ✅ For example:
 👉 If a data submission fails, the IfError() function can display a clear message or trigger a fallback process,
@@ -241,30 +240,27 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Power Apps is a powerful low-code tool, but it has some limitations we must consider.
-🔹 For example:
-1. It can only retrieve 500–2000 records from a data source unless delegation is handled properly.
+🔹 limitations of Power Apps:
+1. Power Apps can retrieve only 500 to 2000 records from a data source unless delegation is managed properly.
 2. Complex UI customization are limited, and app performance can slow down with too many controls.
 3. Offline functionality requires manual implementation.
-4. Advanced features like premium connectors or Dataverse require extra licensing.
-5. There is no built-in advanced debugging or Git-style version control.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 14. What is the role of Environments in Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Environments are isolated containers that let us manage apps, flows, connections, and Dataverse separately.
+👉 Environments are isolated containers that used to manage apps, flows, connections, and Dataverse separately.
 👉 It helps isolating data and apps for different teams or projects to work independently and securely.
 ✅ For Example:
-👉 We can create seperately environments for developing, testing and production. Each environment can have its own data policies, permissions, and resources.
---------------------------------------------------------------------------------------------------------------------------------------------------------------
+👉 We can create seperately environments for development, testing, and production. Each environment can have its own data policies, permissions, and resources.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 15. What are Containers in Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Containers are layout controls used to group and align multiple controls together —like buttons, labels, inputs into one unit.
+👉 Containers are layout controls used to group and align multiple controls together — like buttons, labels, inputs into one unit.
 👉 They simplify responsive design by auto-adjust spacing, and maintaining consistent alignment across different screen sizes.
 👉 Containers are especially useful for mobile-first designs or when handling dynamic screen sizes.
 ------------------------------------------------------------------------------------------------------------------------------------------------
@@ -300,7 +296,10 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-✅ I follow ALM (Application Lifecycle Management) best practices using Solutions in Power Apps:
+👉 A Solution is a package that groups apps, flows, tables, components, and other resources together into one unit.
+👉 It is mainly used for managing, moving, and deploying related components across different environments — like development, testing, and production.
+
+✅ I follows ALM (Application Lifecycle Management) best practices using Solutions in Power Apps:
 
 👉 I use Solutions in Power Apps to group related components like apps, flows, tables, and security roles into a single package together.
 👉 During development, I use Unmanaged Solutions — these allow easy editing and collaboration.
