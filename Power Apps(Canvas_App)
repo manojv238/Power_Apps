@@ -81,34 +81,36 @@ EXPLAIN IN ANSWER:-
 3. Variables and types of Variables in power apps?
 
 EXPLAIN IN ANSWER:-
-━━━━━━━━━━━━━━━━━━━━
-👉 Variables is ntg but name that used to refer to a piece of information or data. This data can be of any type, such as number, string, boolean, etc.
-👉 We can reuse this data across screens throughout the app.
-🔹 Types of Variables:
-1. Context Variables (UpdateContext): Scoped only to the current screen, created via UpdateContext().
-Example: UpdateContext({ varName: "Manoj" })
+━━━━━━━━━━━━━━━━━━━
+👉 A variable is a name that used to store and refer a piece of information or data. This data can be of any type, such as number, string, boolean, etc.
+👉 We can reuse this data across screens depending on the variable type.
 
-2. Global Variables (Set): Accessible throughout the entire app across all screens. Created using Set().
-Example: Set(varCountry, "India")
+🔹 Types of Variables:
+1️⃣ Context Variables: Scoped only to the current screen.
+💛 Syntax: UpdateContext({ VariableName: Value }) || Example: UpdateContext({ varName: "Manoj" })  
+
+2️⃣ Global Variables: Accessible throughout the app across all screens.
+💛 Syntax: Set( VariableName, Value ) || Example: Set(varCountry, "India") 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 4. Collections and types of Collections in power apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
-👉 Collections are groups of information or data it is used to store and manipulate multiple records within the app.
-👉 It helps improving app performance by handling temporary data locally without hitting the data source repeatedly.
+👉 Collections are groups of information or data that used to store and manage multiple records within the app.
+👉 It helps to improve app performance by handling temporary data locally without hitting the data source repeatedly.
 👉 Collections also support offline capabilities by storing data locally within the app.
 
 🔹 Types of Collections:
 1. Collect() function: Creates a new collection or adds records to an existing one.
-✅ Example: Collect(MyCollection, {Name: "Alice", Age: 25}) or using input controls like {Name: TextInput.Text, Age: Value(TextInput.Text)}
+💛 Syntax: Collect(CollectionName, Record1, Record2, ...)
+👉 Example: Collect(MyCollection, {Name: "Alice", Age: 25}) or using input controls like {Name: TextInput.Text, Age: Value(TextInput.Text)}
 
 2. ClearCollect() function: Clears all existing records from a collection and adds a new records.
-✅ Example: ClearCollect(MyCollection, {Name: "Alice1", Age: 20})
+👉 Example: ClearCollect(MyCollection, {Name: "Alice1", Age: 20})
 
 3. Clear() function: Removes all records from a collection.
-✅ Example: Clear(MyCollection)
+👉 Example: Clear(MyCollection)
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
 5. What are Components in Power Apps?
@@ -117,14 +119,12 @@ EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
 👉 Components are reusable building blocks or custom controls that can be create once and we can use across multiple screens.
 👉 It helps to standardize design, reduced development effort and simiplify maintaince. 
-👉 We can have inputs and outputs properties to make them flexible and customizable.
-✅ For Example: 
-👉 A custom header or navigation menu built as a component can be reused across the app.
-👉 This ensures consistent UI design and makes updates easier since changes in the component reflect everywhere it’s used.
+👉 Components can have inputs and outputs properties, making them flexible and customizable.
 
+✅ For Example: A custom header or navigation menu built as a component can be reused across the app, ensuring consistent UI and making updates easier.
 🔹 Component properties:
-1. Input Property : Used to Provide values or information into the component from outside, like passing a user name or a color choice. 
-2. Output Property: Used to communicate information or trigger actions from inside the component, such as notifying when a button inside the component is clicked.
+1️⃣ Input Property: Passes values or information into the component (e.g., user name, color choice).
+2️⃣ Output Property: Sends data or triggers actions from inside the component (e.g., button click notification).
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 6. Cascading Dropdown in Power Apps?
@@ -134,7 +134,6 @@ EXPLAIN IN ANSWER:-
 👉 A Cascading Dropdown filter the options in one dropdown based on the selection made in another dropdown.
 ✅ For Example: when a user selects a country, only the cities related to that country appear in the second dropdown.
 
-✅ Country–City scenario:
 Dropdown 1 (Country) ---------> Items property: Distinct(CountriesCities, Country)
 Dropdown 2 (City) ------------> Items property: Filter(CountriesCities, Country = Dropdown1.Selected.Result)
 ------------------------------------------------------------------------------------------------------------------------------------------------
