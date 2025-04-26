@@ -44,38 +44,38 @@ POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 1. Explain about Power Apps?
 
 EXPLAIN IN ANSWER:-
-━━━━━━━━━━━━━━━━━━━━
-👉 Power Apps is a low-code platform developed by Microsoft that lets us quickly build custom business applications without needing deep coding skills.
+━━━━━━━━━━━━━━━━━━━
+👉 Power Apps is a low-code platform developed by Microsoft that lets us quickly build custom business applications without any needing coding skills.
 👉 It supports connecting with multiple data sources like SharePoint, Dataverse, SQL, and others with minimal effort.
 
 ✅ Power Apps provides three types of apps — Canvas, Model-Driven, and Power Pages.
-👉 Canvas and Model-Driven are used mainly for internal business needs, while Power Pages is used for building secure, public-facing apps for external users.
+👉 Canvas and Model-Driven are used mainly for internal business needs, while Power Pages is used for building secure and public-facing apps for external users.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🔹 Key Features of Power Apps:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-👉 1. Low-Code Development    : Build apps easily using drag-and-drop, no deep coding needed.
-👉 2. Data Connectivity       : Connect your app to 500+ data sources like SharePoint, Excel, SQL, and more.
-👉 3. Responsive Design       : Apps work on phones, tablets, and desktops automatically.
-👉 4. Integration with Power Automate  : Easily triggers workflows for automation — like sending emails or approvals.
-👉 5. Prebuilt Templates and Controls  : Use ready-made templates and components to build apps faster.
-👉 6. Offline Capability      : Apps can store data locally and sync when connected.
-👉 7. AI Builder Support      : Add AI features like text recognition or predictions without coding AI.
-👉 8. Role-Based Security     : Control who can view, edit, or submit data using role-based permissions.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Low-Code Development ---> Build apps easily using drag-and-drop, no deep coding needed.
+2. Data Connectivity    ---> Connect your app to 500+ data sources like SharePoint, Excel, SQL, and more.
+3. Responsive Design    ---> Helps a lot since our apps are accessed from mobiles and desktops.
+4. Integration with Power Automate ---> For automating email approvals or status updates.
+5. Prebuilt Templates and Controls ---> Use ready-made templates and components to build apps faster.
+6. Offline Capability   ---> Apps can store data locally and automatically sync with the server once the connection is restored.
+7. AI Builder Support   ---> Add AI features like text recognition or predictions without writing any AI code.
+8. Role-Based Security  ---> To control access for different user groups such as who can create, view, edit, or delete data.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 2. Difference between Canvas App and Model-Driven App?
 
 EXPLAIN IN ANSWER:-
-━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━
 1️⃣ Canvas Apps:
-👉 Canvas Apps Provide full flexibility control over app layouts and UI built from scratch using a blank canvas app. 
-👉 The design process using drag-and-drop components like buttons, galleries, forms and more.
-👉 We can Connect easily to various data sources such as SharePoint, Excel, SQL, and Dataverse.
+👉 Canvas Apps gives more flexibility control over the app layouts and UI design from scratch on a blank Canvas App. 
+👉 We build apps using drag-and-drop components like buttons, galleries, forms and more.
+👉 It easily connects to multiple data sources such as SharePoint, Excel, Dataverse, SQL, and more.
 
 2️⃣ Model-Driven Apps:
 👉 Model-driven apps are based on the data model in Dataverse.
-👉 The UI is generated automatically based on the data model —tables, relationships, forms, and views.
-👉 so we don’t have to build the UI manually like in canvas apps.
+👉 The UI is automatically generated based on tables, relationships, forms, and views defined in the data model.
+👉 so we don’t have to design the UI manually like Canvas Apps.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 3. Variables and types of Variables in power apps?
