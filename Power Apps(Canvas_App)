@@ -82,14 +82,14 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 A variable is a name that used to store and refer a piece of information or data. This data can be of any type, such as number, string, boolean, etc.
-👉 We can reuse this data across screens depending on the variable type.
+👉 Variables are mainly used to store and manage data temporarily during app execution. 
+👉 This data can hold different types such as numbers, strings, or booleans, depending on the situation.
 
 🔹 Types of Variables:
-1️⃣ Context Variables: Scoped only to the current screen.
+1️⃣ Context Variables are Scoped only to the current screen.
 💛 Syntax: UpdateContext({ VariableName: Value }) || Example: UpdateContext({ varName: "Manoj" })  
 
-2️⃣ Global Variables: Accessible throughout the app across all screens.
+2️⃣ Global variables are accessible across multiple screens.
 💛 Syntax: Set( VariableName, Value ) || Example: Set(varCountry, "India") 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -97,9 +97,7 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
-👉 Collections are groups of information or data that used to store and manage multiple records within the app.
-👉 It helps to improve app performance by handling temporary data locally without hitting the data source repeatedly.
-👉 Collections also support offline capabilities by storing data locally within the app.
+👉 Collections are like group of information or data that used to store and manage multiple records temporarily during app runtime.
 
 🔹 Types of Collections:
 1. Collect() function: Creates a new collection or adds records to an existing one.
@@ -117,11 +115,12 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
-👉 Components are reusable building blocks or custom controls that can be create once and we can use across multiple screens.
-👉 It helps to standardize design, reduced development effort and simiplify maintaince. 
-👉 Components can have inputs and outputs properties, making them flexible and customizable.
+👉 Components are reusable building blocks or custom controls that we can create once and we can use across multiple screens in the app.
+👉 This helps to maintain consistency and reduces development effort across the app.
+👉 Components can have inputs and outputs properties, making them flexible and customizable based on the app’s needs.
 
-✅ For Example: A custom header or navigation menu built as a component can be reused across the app, ensuring consistent UI and making updates easier.
+✅ For Example: 
+👉 A custom header or navigation menu built as a component can be reused across multiple screens in the app, ensuring consistent and making updates easier.
 🔹 Component properties:
 1️⃣ Input Property: Passes values or information into the component (e.g., user name, color choice).
 2️⃣ Output Property: Sends data or triggers actions from inside the component (e.g., button click notification).
