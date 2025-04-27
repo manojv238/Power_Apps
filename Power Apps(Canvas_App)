@@ -267,9 +267,9 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Containers are layout controls used to group and align multiple controls together — like buttons, labels, inputs into one unit.
-👉 They simplify responsive design by auto-adjust spacing, and maintaining consistent alignment across different screen sizes.
-👉 Containers are especially useful for mobile-first designs or when handling dynamic screen sizes.
+👉 Containers are like group and align multiple controls together — like (buttons, text inputs, labels) inside a single unit.
+👉 Containers support responsive design by automatically adjusting spacing, and alignment on different screen sizes.
+👉 They help maintain consistent spacing and alignment, so the app looks good and professional without extra effort.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 16. How do you create a Responsive Design in Power Apps?
