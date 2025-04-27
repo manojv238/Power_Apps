@@ -117,7 +117,7 @@ EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
 👉 Components are reusable building blocks or custom controls that we can create once and we can use across multiple screens in the app.
 👉 This helps to maintain consistency and reduces development effort across the app.
-👉 Components can have inputs and outputs properties, making them flexible and customizable based on the app’s needs.
+👉 Components have inputs and outputs properties, making them flexible and customizable based on the app’s needs.
 
 ✅ For Example: 
 👉 A custom header or navigation menu built as a component can be reused across multiple screens in the app, ensuring consistent and making updates easier.
@@ -141,10 +141,11 @@ Dropdown 2 (City) ------------> Items property: Filter(CountriesCities, Country 
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Delegation means pushing data operations like "filtering and sorting" to the data source instead of processing them inside Power Apps.
-👉 This is important when working with large datasets, for example; SharePoint lists have thousands of records.
-👉 Power Apps has a default limit of 500 records (increased upto max 2000), so using non-delegable functions can cause incorrect data results.
-👉 To avoid this, we replaced non-delegable functions with delegable functions, ensuring efficient performance and correct data retrieval.
+👉 Delegation means pushing data operations to the data source instead of bringing all the data into Power Apps.
+👉 Power Apps has a default limit of 500 records (we can increase upto max 2000 records).
+👉 When working with large datasets — for example, SharePoint lists with thousands of records.
+👉 So using non-delegable functions can cause some incorrect data results.
+👉 To problem slove this, we replaced non-delegable functions with delegable functions to handle data efficiently and correct data retrieval.
     ("Filter, Sort, and StartsWith")
 
 👉 This approach improved app speed, ensured data accuracy and delivers a better user experience.
@@ -154,26 +155,28 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Data validation ensures that user inputs meet specific rules or criteria before being saved. 
-👉 It helps to maintain data integrity and improves user experience by preventing errors.
+👉 Data validation means checking the user inputs to make sure the entered data must be in the correct or complete in the expected format,
+    before it’s saving or processing them.
+👉 This helps to prevent errors as well as improves overall the data quality.
 
-🔹 Power Apps offers built-in functions for Data Valadition:
-👉 IsBlank()  — checks if a field is empty.
-👉 IsMatch()  — validates patterns like emails or phone numbers.
-👉 IsNumeric() — confirms numeric inputs.
-👉 Notify()   — displays error messages to users.
-👉 Conditional formatting — like changing border colors or showing warnings based on input.
+✅ Power Apps offers built-in functions for Data Valadition:
+IsBlank()  — checks if a field is empty.
+IsMatch()  — validates patterns like emails or phone numbers.
+IsNumeric() — confirms numeric inputs.
+Notify()   — displays error messages to users.
+Conditional formatting — like changing border colors or showing warnings based on input.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 9. What are connectors in power apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Connectors are pre-built components that allows apps to communicate with external data sources or services.
-🔹 There are two main types of connectors:
+👉 Connectors are pre-built components that power apps to communicate with external data sources or services.
+🔹 There are two main types of Connectors:
 1. Standard Connectors — connect to Microsoft services like SharePoint, Excel, Outlook, and OneDrive.
 2. Premium Connectors  — provide access to advanced or third-party systems such as SQL Server, Salesforce.
-👉 Using connectors helps to integrate external data easily without writing custom APIs.
+
+👉 Using connectors helps to integrate external data easily without writing custom API's.
 
 🔹 Creating a Custom Connector in Power Apps:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
