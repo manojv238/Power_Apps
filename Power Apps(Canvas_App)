@@ -151,7 +151,7 @@ Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Delegation means pushing data processing to the data source instead of the app, so the app can handle large datasets efficiently.
+👉 Delegation means pushing data operations to the data source instead of the app, so the app can handle large datasets efficiently.
 👉 This is crucial When working with large datasets — for example, SharePoint lists with thousands of records.
 👉 Power Apps has a default limit of 500 records (Which can be increase upto max 2000 records).
 👉 but without delegation, only those limited records are retrieved, leading to incomplete data.
