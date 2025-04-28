@@ -49,8 +49,8 @@ EXPLAIN IN ANSWER:-
 👉 It suports creating apps with drag-and-drop components, connecting to different data sources like SharePoint, Dataverse, SQL, and more.
 
 👉 Power Apps supports building an apps mainly two types:
-1. Canvas Apps — fully customizable UI and drag and drop components, good for designing screens how we want.
-2. Model-Driven Apps — based on data model, auto-generated UI, good for data-focused apps.
+1. Canvas Apps.
+2. Model-Driven Apps.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🔹 Key Features of Power Apps:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
