@@ -163,7 +163,8 @@ To slove this,
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Data validation are checking the user inputs to make sure the entered data must be in the correct or complete in the expected format, before submitting a form.
+👉 Validations are checking the user inputs to make sure the entered data must be in the correct or complete in the expected format, before submitting a form.
+From my experience:
 🔹 I use required field checks (IsBlank) to make sure important fields are not empty.
 🔹 I apply pattern validations using functions like IsMatch() — for example, validating email or phone number formats.
 🔹 I also use conditional visibility — like changing border colors or showing warnings based on input.
@@ -176,71 +177,78 @@ Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Connectors are pre-built components that power apps to communicate with external data sources or services.
+👉 Connectors are allows apps to communicate with external data sources like SharePoint, Dataverse, SQL, Outlook.
+👉 Connectors are key when buliding apps because it helps to easily integrate external data, without write any custom API's
+
 🔹 There are two main types of Connectors:
 1. Standard Connectors — connect to Microsoft services like SharePoint, Excel, Outlook, and OneDrive.
 2. Premium Connectors  — provide access to advanced or third-party systems such as SQL Server, Salesforce.
 
-👉 Using connectors helps to integrate external data easily without writing custom API's.
-
-🔹 Creating a Custom Connector in Power Apps:
+✅ Creating a Custom Connector in Power Apps:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-✅ To create a custom connector:
-1. Navigate to Power Apps Portal > Data > Custom Connectors
-2. Select New Custom Connector and choose a creation method (from blank, Postman file, or OpenAPI definition)
-3. Define the connector’s name and description
-4. Configure API authentication (No auth, Basic, OAuth 2.0, or API key). For secure APIs, OAuth 2.0 or API key is recommended
-5. Define the connector’s actions and operations (GET, POST, PUT, DELETE) matching the API endpoints
-6. Test the connector thoroughly before integrating it into apps
-7. This approach enables secure and reusable integration with external APIs beyond standard connectors.
+👉 Custom Connectors are used when I need to connect my app to an external system or API that is not available through standard connectors.
+👉 I create custom connectors when working with third-party APIs or internal company APIs.
+
+1. Navigate to Power Apps Portal > Data > Custom Connectors.
+2. Select New Custom Connector and choose a creation method (from blank, Postman file, or OpenAPI definition).
+3. Define the connector’s name and description.
+4. Configure API authentication (No auth, Basic, OAuth 2.0, or API key). For secure APIs, OAuth 2.0 or API key is recommended.
+5. Define the connector’s actions and operations (GET, POST, PUT, DELETE) matching the API endpoints.
+6. Test the connector thoroughly before integrating it into apps.
+7. It allows me to securely call external services directly from my app with easy functions.
+
+Example:
+👉 In one project, I built a custom connector to connect Power Apps to a payment gateway API, allowing users to process transactions directly inside the app.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 10. Difference between Gallery, Form and Data Table?
 
 ✅ GALLERY:
 ━━━━━━━━━━━
-👉 Gallery is used to display multiple records from a data source like SharePoint.
-👉 It support for dynamic layouts such as vertical, horizontal, and flexible-height galleries. 
-👉 In gallery, Each item can be customized using labels, images, icons, and buttons to create interactive views for users.
+👉 I use Galleries to display multiple records in a list or card layout. 
+👉 It's very flexible — I can fully customize the design, add buttons, images, and even build small forms based on the app’s needs.
+👉 Good for displaying data from Collections or SharePoint lists.
 
 ✅ FORMS:
 ━━━━━━━━━
-👉 Form is used to view, create, and edit single record at a time.
-👉 Forms can automatically generate fields based on the data source and handle data submission and validation.
-🔹 There are three types of form:
-1. Display Form – for read-only data viewing.
-2. Edit Form    – for editing existing records.
-3. New Form     – for creating new records.
+👉 I use forms when I need users to view, create, or edit one record at a time easily.
+👉 It automatically bind the fields to the data source, its saves a lot of time when building input screens.
+🔹 There are mainly three types of Forms I work with:
+👉 Display Form – for read-only data viewing, 
+👉 Edit Form    – for editing existing records,
+👉 New Form     – for creating new records.
 
 ✅ DATA TABLE:
 ━━━━━━━━━━━━━━
-👉 Data Table is used to displays multiple records in a tabular format, similar to an Excel sheet.
-👉 It is less customizable than a gallery but useful for (READ-ONLY)showing data in a spreadsheet-style view.
-👉 Data tables are automatically generates rows and columns based on the connected data source.
-------------------------------------------------------------------------------------------------------------------------------------------------
+👉 I use Data Tables when I need to display multiple records in a tabular format (similar to Excel), but compared to gallery, data tables have less customization.
+👉 It’s a good when users mainly need to view data quickly, without a lot of custom UI work.
+
+Example:
+👉 In one app, I used a Gallery to show a list of products, a Form to edit product details, and a Data Table to show a quick, read-only summary of orders.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 11. How do you handle errors in Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 👉 In Power Apps, I handle errors mainly using the IfError() function to catch runtime errors, especially during data submissions or calculations. 
-👉 This helps me show clear, user-friendly messages instead of the app crashing or behaving unexpectedly.
+👉 I also use validation checks before actions to prevent errors, and show user-friendly messages using labels when something goes wrong.
 
-✅ For example:
-👉 If a data submission fails, the IfError() function can display a clear message or trigger a fallback process,
-    ensuring the app handles issues smoothly without crashing or confusing users.
-----------------------------------------------------------------------------------------------------------------------------------------------------
+Example:
+👉 In one app, I wrapped my data submission calls in IfError() to catch failures and display clear error messages to users, improving app reliability and user experience.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-12. Can you use Offline Power Apps?
+12. Can you use Offline Capabilities in Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Power Apps supports offline usage by allowing us to store data locally on the user's device.
+👉 Offline Capabilities let users work without internet by storing data locally on the device.
 👉 We mainly use Collections along with SaveData() and LoadData() functions to make the app work even without internet connectivity.
-👉 For example, when users are offline, we collect their inputs and save them locally using SaveData().
 👉 Once the network is back, we use functions like Patch() or Collect() to sync the offline data back to the server.
+🔹 SaveData() saves the collection locally, and LoadData() loads it back when the app starts or reconnects.
 
-🔹 For example, SaveData() saves the collection locally, and LoadData() loads it back when the app starts or reconnects.
+Example:
+👉 In a field service app, technicians could fill forms offline and sync updates once they had internet.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 13. What are the limitations of Power Apps?
@@ -248,26 +256,23 @@ EXPLAIN IN ANSWER:-
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 🔹 Power Apps have some limitations:
-👉 There are delegation limits when working with large data sources,
-    — for example, only 500 to 2000 records can be retrieved unless we optimize with delegable queries.
 
-👉 Complex UI customizations or very heavy logic sometimes need workarounds because Power Apps is low-code.
-
-👉 Also, apps may perform slower if not optimized well, especially with large forms, media files, or poor network connections.
-
-👉 Licensing costs can be high if we use Premium connectors like SQL Server or Dataverse.
-
-👉 Finally, offline capabilities need to be manually handled — it’s not automatic, so we need to build sync logic properly.
+Delegation limits — only 500 to 2000 records can be processed efficiently, which can affect large datasets.
+Complex UI customization — Canvas apps offer flexibility but can get tricky for very complex designs or animations.
+Performance — apps can slow down if too many controls are used on one screen.
+Limited offline support — offline capabilities exist but require extra work and have constraints.
+Licensing costs — advanced features and premium connectors need paid plans.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 14. What is the role of Environments in Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Environments are isolated containers or workspaces that used to manage apps, flows, connections, and Dataverse separately.
-👉 It helps isolating data and apps for different teams or projects to work independently and securely.
-✅ For Example:
-👉 We can create seperately environments for development, testing, and production. Each environment can have its own data policies, permissions, and resources.
+👉 Environments in Power App are containers that separate apps, data, and resources for different teams or projects.
+
+For Example:
+👉 I can create seperate environments for development, testing, and production.
+👉 Each environment can have its own data policies, permissions, and security settings.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 15. What are Containers in Power Apps?
@@ -275,21 +280,24 @@ EXPLAIN IN ANSWER:-
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 👉 Containers are like group and align multiple controls together — like (buttons, text inputs, labels) inside a single unit.
-👉 Containers support responsive design by automatically adjusting spacing, and alignment on different screen sizes.
-👉 They help maintain consistent spacing and alignment, so the app looks good and professional without extra effort.
+
+For Example:
+👉 I use Horizontal and Vertical Containers to keep related controls neatly arranged.
+👉 This makes it easier to create responsive designs that adjust automatically across different screen sizes, without manually adjusting every control.
+👉 It helps to maintain consistent spacing and alignment, so the app looks good and professional without extra effort.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 16. How do you create a Responsive Design in Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
+👉 Responsive design in Power Apps means building apps that work well on different devices — desktop, tablet, or mobile.
 👉 To create a responsive Design in Power Apps, I use container controls like vertical and horizontal containers based on the app’s needs.
 👉 These containers automatically arrange the elements inside them based on the screen size.
 👉 Instead of fixing each control’s size and position, I use formulas to adjust width and height relative to the screen.
-✅ For Example:
-👉 Uisng relative properities like "parent.width and parent.height" it helps to adjust their sizes and positions dynamically.
 
-👉 This approach ensures the app looks good on any device — phone, tablet, or desktop.
+For Example:
+👉 Uisng relative properities like "parent.width and parent.height" it helps to adjust their sizes and positions dynamically.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 17. What are the Role-Based Security in Power Apps. How do you manage them?
