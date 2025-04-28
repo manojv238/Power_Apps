@@ -97,11 +97,11 @@ Switch(UserRole.Text, "Admin", "Welcome Admin!", "Manager", "Welcome Manager!", 
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
-👉 SharePoint is a Microsoft web-based collaboration platform that helps organizations securely store data and share information from anywhere.
+👉 SharePoint is a Microsoft web-based collaboration platform.
+👉 I use SharePoint as a common data source in Power Apps for storing and managing lists and documents.
 👉 It acts as a centralized backend for managing documents, lists, and other data, and integrates easily with Power Apps.
-👉 Using SharePoint as a data source, we can quickly build business apps with seamless data connectivity and secure data management.
+👉 Using SharePoint helps deliver quick solutions without complex backend setups.
 
-👉 I connected Power Apps to SharePoint lists using standard connectors to view, edit, and submit data.
 
 
 
