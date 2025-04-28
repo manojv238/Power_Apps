@@ -163,17 +163,14 @@ To slove this,
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Data validation means checking the user inputs to make sure the entered data must be in the correct or complete in the expected format,
-    before it’s saving or processing them.
-👉 This helps to prevent errors as well as improves overall the data quality.
+👉 Data validation are checking the user inputs to make sure the entered data must be in the correct or complete in the expected format, before submitting a form.
+🔹 I use required field checks (IsBlank) to make sure important fields are not empty.
+🔹 I apply pattern validations using functions like IsMatch() — for example, validating email or phone number formats.
+🔹 I also use conditional visibility — like changing border colors or showing warnings based on input.
 
-✅ Power Apps offers built-in functions for Data Valadition:
-IsBlank()  — checks if a field is empty.
-IsMatch()  — validates patterns like emails or phone numbers.
-IsNumeric() — confirms numeric inputs.
-Notify()   — displays error messages to users.
-Conditional formatting — like changing border colors or showing warnings based on input.
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Example:
+👉 In one app, I built a registration form where I validated email format, mandatory fields, and showed custom error messages to guide users before submission.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 9. What are Connectors in power apps?
 
