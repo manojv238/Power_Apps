@@ -46,7 +46,7 @@ POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 👉 Power Apps is a Microsoft low-code/no-code platform, that allows we can quickly build custom business applications without need any coding skills.
-👉 It suports creating apps with drag-and-drop components, connecting to different data sources like SharePoint, Dataverse, SQL, and more.
+👉 It suports creating apps with drag-and-drop controls, connecting to different data sources like SharePoint, Dataverse, SQL, and more.
 
 👉 Power Apps supports building an apps mainly two types:
 1. Canvas Apps.
@@ -54,7 +54,7 @@ EXPLAIN IN ANSWER:-
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🔹 Key features of Power Apps (based on my experience):
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. Low-code development             ---> I build apps quickly using drag-and-drop components without need any coding skills.
+1. Low-code development             ---> I build apps quickly using drag-and-drop conrols without need any coding skills.
 2. Canvas and Model-Driven apps     ---> I choose based on UI needs or data focus.
 3. Multiple data connections        ---> I connect apps easily to SharePoint, Dataverse, SQL, Excel, etc.
 4. Integration with PowerAutomate   ---> I automate workflows from inside the app itself.
