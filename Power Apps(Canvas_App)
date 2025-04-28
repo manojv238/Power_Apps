@@ -34,7 +34,7 @@ POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 
 17. What are the Role-Based Security roles in Power Apps. How do you manage them?
 
-18. How do you manage version control and deployment (Solutions & ALM)?
+18. Solutions in Power Apps?
 
 19. How do you use Power Apps in implement conditional formatting in your app?
 
@@ -268,7 +268,7 @@ Licensing costs — advanced features and premium connectors need paid plans.
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Environments in Power App are containers that separate apps, data, and resources for different teams or projects.
+👉 Environments in Power Apps are containers that separate apps, data, and resources for different teams or projects.
 
 For Example:
 👉 I can create seperate environments for development, testing, and production.
@@ -304,32 +304,28 @@ For Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Power Apps security roles define what actions users can perform on data (e.g., Read, Write, Delete) and control access to apps, forms, and records.
-👉 Security roles are managed in Microsoft Dataverse and we can be customized for individual users or groups.
-👉 We can assign predefined security roles like (System Adminstrator, Environment Maker) or we can create custom roles based on business needs.
+👉 Role-Based Security controls define the what users can see and do in Power Apps and Dataverse based on their assigned roles (like Admin, Manager, Employee).
+👉 In Dataverse, I assign security roles directly to users or teams.
+👉 Each role defines specific permissions (like Read, Write, Delete) on tables, forms, apps, or even specific records.
+👉 This ensures that sensitive data and critical actions are accessible only to authorized users.
 
-✅ For Example – Employee Management App:
-🔹 Admin       → Full access to all records and Settings.
-🔹 Manager     → Limited access to team-specific reports.
-🔹 Employee    → Can only view and edit their own profile.
+Example:
+👉 In my recent project, Managers had access to update employee data, while Employees could only view their own profile.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-18. How do you manage version control and deployment (Solutions & ALM)?
+18. Solutions in Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 A Solution is a package that groups apps, flows, tables, components, and other resources together into one unit.
-👉 It is mainly used for managing, moving, and deploying related components across different environments — like development, testing, and production.
-
-✅ I follows ALM (Application Lifecycle Management) best practices using Solutions in Power Apps:
-
-👉 I use Solutions in Power Apps to group related components like apps, flows, tables, and security roles into a single package together.
+👉 Solutions in Power Apps are like containers where I group apps, flows, tables, and other components together.
 👉 During development, I use Unmanaged Solutions — these allow easy editing and collaboration.
 👉 Once the app is tested and finalized, I export it as a Managed Solution for the Production environment.
     which are read-only to ensure stability and controlled updates.
-👉 I also maintain separate environments for Dev, Test, and Prod.
-👉 We move solutions across environments using Export/Import to maintain version control and ensure smooth deployment.
-------------------------------------------------------------------------------------------------------------------------------------------------
+👉 Solutions help me easily move apps between different environments (like Dev ➔ QA ➔ Prod) without missing any pieces.
+
+Example:
+👉 In one project, I built an onboarding app inside a Solution, and then exported it from Dev and imported it into the QA and Production environments smoothly.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 19. How do you use Power Apps in implement conditional formatting in your app?
 
@@ -349,7 +345,7 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Configuration means changing settings or using built-in tools to make the system work how you want, without any coding. 
+👉 Configuration means  using built-in settings to make the system work how you want, without any coding. 
     Like changing forms, adding fields, or creating filters.
 
 👉 Customization means writing code or building new features to change how the system works, 
