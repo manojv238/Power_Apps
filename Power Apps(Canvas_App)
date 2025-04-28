@@ -48,7 +48,7 @@ EXPLAIN IN ANSWER:-
 👉 Power Apps is a Microsoft low-code/no-code platform, that allows we can quickly build custom business applications without need any coding skills.
 👉 It suports creating apps with drag-and-drop components, connecting to different data sources like SharePoint, Dataverse, SQL, and more.
 
-👉 Power Apps supports building two main types of apps:
+👉 Power Apps supports building an apps mainly two types:
 1. Canvas Apps — fully customizable UI and drag and drop components, good for designing screens the way we want.
 2. Model-Driven Apps — based on data model, auto-generated UI, good for data-focused apps.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
