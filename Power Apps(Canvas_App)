@@ -52,16 +52,15 @@ EXPLAIN IN ANSWER:-
 1. Canvas Apps.
 2. Model-Driven Apps.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-🔹 Key Features of Power Apps:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. Low-Code Development ---> Build apps easily using drag-and-drop, no deep coding needed.
-2. Data Connectivity    ---> Connect your app to 500+ data sources like SharePoint, Excel, SQL, and more.
-3. Responsive Design    ---> Helps a lot since our apps are accessed from mobiles and desktops.
-4. Integration with Power Automate ---> For automating email approvals or status updates.
-5. Prebuilt Templates and Controls ---> Use ready-made templates and components to build apps faster.
-6. Offline Capability   ---> Apps can store data locally and automatically sync with the server once the connection is restored.
-7. AI Builder Support   ---> Add AI features like text recognition or predictions without writing any AI code.
-8. Role-Based Security  ---> To control access for different user groups such as who can create, view, edit, or delete data.
+🔹 Key features of Power Apps (based on my experience):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Low-code development             ---> I build apps quickly using drag-and-drop components without need any coding skills.
+2. Canvas and Model-Driven apps     ---> I choose based on UI needs or data focus.
+3. Multiple data connections        ---> I connect apps easily to SharePoint, Dataverse, SQL, Excel, etc.
+4. Responsive design                ---> Especially with Model-Driven apps, it adjusts automatically for mobile and Desktop.
+5. Security and permissions         ---> I manage user access through Dataverse security roles.
+6. Integration with PowerAutomate   ---> I automate workflows from inside the app itself.
+7. Reusable components              ---> I create custom components to maintain consistency across apps.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 2. Difference between Canvas App and Model-Driven App?
