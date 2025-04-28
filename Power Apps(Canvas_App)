@@ -57,9 +57,9 @@ EXPLAIN IN ANSWER:-
 1. Low-code development             ---> I build apps quickly using drag-and-drop components without need any coding skills.
 2. Canvas and Model-Driven apps     ---> I choose based on UI needs or data focus.
 3. Multiple data connections        ---> I connect apps easily to SharePoint, Dataverse, SQL, Excel, etc.
-4. Responsive design                ---> Especially with Model-Driven apps, it adjusts automatically for mobile and Desktop.
+4. Integration with PowerAutomate   ---> I automate workflows from inside the app itself.
 5. Security and permissions         ---> I manage user access through Dataverse security roles.
-6. Integration with PowerAutomate   ---> I automate workflows from inside the app itself.
+6. Responsive design                ---> Especially with Model-Driven apps, it adjusts automatically for mobile and Desktop.
 7. Reusable components              ---> I create custom components to maintain consistency across apps.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
