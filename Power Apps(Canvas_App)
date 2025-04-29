@@ -139,7 +139,7 @@ EXPLAIN IN ANSWER:-
 👉 Cascading dropdowns are filter the options in one dropdown depend on the selection made in another dropdown.
 For Example: 
 👉 We have a two dropdowns one is country another is state.
-👉 if a user selects a country in the first dropdown, the second dropdown shows only states from that country.
+👉 When a user selects a country in the first dropdown, the second dropdown shows only states from that country.
 Dropdown 1 (Country) ---> Items property: Distinct(CountriesCities, Country)
 Dropdown 2 (state)   ---> Items property: Filter(CountriesCities, Country = Dropdown1.Selected.Result)
 
