@@ -78,7 +78,7 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Variables are mainly used to store and manage data temporarily while the app is running. 
+👉 Variables are mainly used to store data temporarily while the app is running. 
 👉 This data can any type, such as numbers, strings, or booleans, depending on the situation.
 
 🔹 Types of Variables:
