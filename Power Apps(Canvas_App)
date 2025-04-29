@@ -151,12 +151,12 @@ Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Delegation means pushing data operations to the data source instead of the app, so the app can handle large datasets efficiently.
+👉 Delegation means pushing data operations to the data source instead of the  powewr apps, so the app can handle large datasets efficiently.
 👉 This is crucial When working with large datasets — for example, SharePoint lists with thousands of records.
 👉 Power Apps has a default limit of 500 records (Which can be increase upto max 2000 records).
 👉 but without delegation, only those limited records are retrieved, leading to incomplete data.
 To slove this, 
-👉 I always use delegable functions like Filter, Sort, and StartsWith so the heavy lifting happens on the server, ensuring accurate and efficient data retrieval.
+👉 I always use delegable functions like Filter, Sort, and StartsWith, for optimal performance.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 8. Validations in Power Apps?
@@ -177,8 +177,8 @@ Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Connectors are allows apps to communicate with external data sources like SharePoint, Dataverse, SQL, Outlook.
-👉 Connectors are key when buliding apps because it helps to easily integrate external data, without write any custom API's
+👉 Connectors allows apps to communicate with external data sources like SharePoint, Dataverse, SQL, Outlook.
+👉 Connectors are key when buliding apps because it helps to easily integrate external data, without write any custom API's.
 
 🔹 There are two main types of Connectors:
 1. Standard Connectors — connect to Microsoft services like SharePoint, Excel, Outlook, and OneDrive.
@@ -211,7 +211,7 @@ Example:
 
 ✅ FORMS:
 ━━━━━━━━━
-👉 I use forms when I need users to view, create, or edit one record at a time easily.
+👉 I use forms when I need users to view, create, or edit single record at a time easily.
 👉 It automatically bind the fields to the data source, its saves a lot of time when building input screens.
 🔹 There are mainly three types of Forms I work with:
 👉 Display Form – for read-only data viewing, 
@@ -221,7 +221,7 @@ Example:
 ✅ DATA TABLE:
 ━━━━━━━━━━━━━━
 👉 I use Data Tables when I need to display multiple records in a tabular format (similar to Excel), but compared to gallery, data tables have less customization.
-👉 It’s a good when users mainly need to view data quickly, without a lot of custom UI work.
+👉 It’s a good when users mainly need to view data quickly.
 
 Example:
 👉 In one app, I used a Gallery to show a list of products, a Form to edit product details, and a Data Table to show a quick, read-only summary of orders.
