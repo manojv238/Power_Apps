@@ -243,7 +243,7 @@ Example:
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 👉 Offline Capabilities let users work without internet by storing data locally on the device.
-👉 We mainly use Collections along with SaveData() and LoadData() functions to make the app work even without internet connectivity.
+👉 We mainly use Collections along with SaveData() and LoadData() functions to make the app.
 👉 Once the network is back, we use functions like Patch() or Collect() to sync the offline data back to the server.
 🔹 SaveData() saves the collection locally, and LoadData() loads it back when the app starts or reconnects.
 
