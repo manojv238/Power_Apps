@@ -73,8 +73,8 @@ If I need to extract all email addresses or all numbers from a long message, I u
 
 9. Switch() Function:
 ━━━━━━━━━━━━━━━━━━━━━
-👉 The Switch() is used to compare one value against multiple possible Matches and return a different result for each Match.
-👉 It’s cleaner and more readable than using multiple nested If() statements.
+👉 The Switch function is used to check one condition against multiple values.
+👉 It’s cleaner than using multiple If statements when comparing the same variable.
 💛 Syntax: Switch(Formula, Match1, Result1, Match2, Result2, ..., DefaultResult)
 
 ✅ Example: Show a welcome message based on the user role.
