@@ -1,1 +1,48 @@
+🔤 Power Apps Text Functions & Definitions:
+-------------------------------------------
+Text() – Converts numbers, dates, and times into a text format. ---> Example: Text(Today(), "dd-mm-yyyy")
+
+Concatenate() – Combines multiple text strings into one. ---> Example: Concatenate("Hello ", "World")
+
+& (Ampersand) – Shortcut to join text values. ---> Example: "First" & "Name"
+
+Left() – Returns a specified number of characters from the start of a string. ---> Example: Left("PowerApps", 5) → "Power"
+
+Right() – Returns characters from the end of a string. ---> Example: Right("PowerApps", 4) → "Apps"
+
+Mid() – Returns a substring from the middle of a string. ---> Example: Mid("PowerApps", 6, 4) → "Apps"
+
+Len() – Returns the number of characters in a string. --->  Example: Len("PowerApps") → 9
+
+Upper() – Converts all text to uppercase. ---> Example: Upper("hello") → "HELLO"
+
+Lower() – Converts all text to lowercase. ---> Example: Lower("HELLO") → "hello"
+
+Trim() – Removes spaces from the beginning and end of a string. --->  Example: Trim(" Hello ") → "Hello"
+
+Substitute() – Replaces part of a string with another string. ---> Example: Substitute("Power Apps", " ", "") → "PowerApps"
+
+Find() – Returns the position of a substring within a string (case-sensitive). ---> Example: Find("A", "PowerApps") → 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
