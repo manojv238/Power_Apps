@@ -21,6 +21,49 @@ Trim() – Removes spaces from the beginning and end of a string. ━━━━�
 Substitute() – Replaces part of a string with another string.   ━━━━━ Example: Substitute("Power Apps", " ", "") → "PowerApps"
 
 Find() – Returns the position of a substring within a string (case-sensitive). ━━━━━ Example: Find("A", "PowerApps") → 6
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+➗ Power Apps Math Functions & Definitions:
+-------------------------------------------
+Sum() – Calculate the sum of numbers. ━━━━━ Example: Sum(1,2,3,4) → 10
+
+Average() – Calculates the average of numbers. ━━━━━ Example: Average(5,10,15,20) → 5+10+15+20/5
+
+Max() – Returns the highest value. ━━━━━ Example: Max(4,3,2,1) → 4
+
+Min() – Returns the lowest value.  ━━━━━ Example: Min(1,2,3,4) → 1
+
+Round() – Rounds a number to the specified decimal places. ━━━━━ Example: Round(12.345, 2) → 12.35
+
+RoundDown() – Rounds a number down. ━━━━━ Example: RoundDown(12.9, 0) → 12
+
+RoundUp() – Rounds a number up. ━━━━━ Example: RoundUp(12.1, 0) → 13
+
+Mod() – Returns the remainder of a division operation. ━━━━━ Example: Mod(10, 3) → 1
+
+Abs() – Returns the absolute (positive) value of a number. ━━━━━ Example: Abs(-5) → 5
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📅 Power Apps Date Functions & Definitions:
+-------------------------------------------
+Today() – Returns the current date (without time). ━━━━━ Example: Today() → 03-05-2025
+
+Now() – Returns the current date and time. ━━━━━ Example: Now() → 03-05-2025 11:45 AM
+
+DateAdd() – Adds or subtracts days, months, or years to/from a date. ━━━━━ Example: DateAdd(Today(), 5) → 5 days from today
+
+DateDiff() – Calculate the difference between two dates in days, months, or years. ━━━━━ Example: DateDiff(Today(), DatePicker1.SelectedDate)
+
+Year() – Extracts the year from a date. ━━━━━ Example: Year(Today()) → 2025
+
+Month() – Extracts the month from a date. ━━━━━ Example: Month(Today()) → 5
+
+Day() – Extracts the day from a date. ━━━━━ Example: Day(Today()) → 3
+
+Time() – Creates a time value from hours, minutes, and seconds. ━━━━━ Example: Time(10, 30, 0) → 10:30 AM
+
+DateValue() – Converts a text string to a date. ━━━━━ Example: DateValue("03/05/2025")
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
 
