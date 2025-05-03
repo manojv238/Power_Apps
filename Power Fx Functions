@@ -1,6 +1,6 @@
 1. PATCH() Function:
 ━━━━━━━━━━━━━━━━━━━━
-👉 The PATCH() Function is used to create, update or modify records in a data source.
+👉 The PATCH() Function is used to create a record, update a record in a data source.
 💛 Syntax: Patch(DataSource, BaseRecord, ChangeRecord)
 
 ✅ For example: If I want to update only specific fields of a record without affecting other data, Patch() is the best choice.
