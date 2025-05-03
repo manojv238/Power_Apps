@@ -2,7 +2,7 @@
 -------------------------------------------
 Text() – Converts numbers, dates, and times into a text format. ━━━━━ Example: Text(Today(), "dd-mm-yyyy")
 
-Concatenate() – Combines multiple text strings into one place.  ━━━━━ Example: Concatenate("Hello ", "World")
+Concatenate() – Combines multiple text strings into together.  ━━━━━ Example: Concatenate("Hello ", "World")
 
 & (Ampersand) – Shortcut to join text values. ━━━━━ Example: "First" & "Name"
 
