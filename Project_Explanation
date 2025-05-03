@@ -2,17 +2,17 @@ Hi [Interviewer’s Name], good morning. First of all, thank you for giving me t
 
 My name is Manoj Kumar, and I’m from Tirupati. I completed my graduation in B.Sc. Computer Science from S.V. University, Tirupati.
 
-I have around 2 years of experience as a Power Apps Developer in my current organization, where I worked on multiple projects from scratch
-especially i'm focusing on Canvas Apps development and using SharePoint as the backend Data source.
+I have around 2 years of experience as a Power Apps Developer in my current organization, I worked on multiple projects from scratch
+especially i'm focusing on Canvas Apps development and integrate with SharePoint as the backend Data source.
 
-I have completed two major projects —one for Steelcase and another for Herbalife, both US-based clients.
+I have completed two major projects — one for Steelcase and another for Herbalife, both are US-based clients.
 
 
 🔹 Roles & Responsibilities:
 -------------------------------
 Firstly, I can understood the business requirements — like what exactly the users needed, what users expected from the app.
 
-I can Designed UI and built Canvas Apps from scratch based on the business requirements or client’s needs.
+I can Designed UI and built Canvas Apps from scratch based on the or client’s needs.
 
 So I Used SharePoint Online as a backend Data Source to store and manage all the data information.
 and I connected my app to SharePoint lists and handled CRUD operations ntg but —like creating records, review a recrods, updating records, and deleting records,
@@ -22,24 +22,20 @@ And i Worked with different controls such as galleries, forms, buttons, dropdown
 
 So i can Designed a responsive UI/UX, focusing on making app professional, and a user-friendly experience across all devices.
 
-Once the building an app, I personally handled thorough testing across all screens and data scenarios.
+Once the app was developed, I personally handled thorough testing across all screens and data scenarios.
 
-After internal validation, I shared the app with stakeholders for feedback. I received valuable inputs regarding both UI and user flow, 
-based on that I made refinements to the layouts, logics, and validations to improve the user experience.
+After internal testing, I shared the app with stakeholders and gathered valuable feedback regarding UI improvements and user experience.
+based on that I made refining layouts, validations and business logic.
 
 Once finalized, I published the app and set up proper permissions to ensure secure access.
 
-Overall, with my experience in Canvas Apps development and integration with SharePoint,
-I’m confident in my ability to add value and contribute for the growth of your organization.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Overall, with my hands-on experience with Canvas Apps development and integration with SharePoint, customizing functionality using Power Fx formulas.
+
+I’m confident I can add value to your team and contribute to the organization’s growth.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-
-
-
-(So i Built dynamic form features — for example, allowing users to add multiple experience entries using Collections like Collect() and ClearCollect().
-
-And i Applied data validation using functions like IsMatch() and IsBlank()  to improve data accuracy and user input quality.)
+i Applied data validation using functions like IsMatch() and IsBlank() to improve data accuracy and user input quality.
 
 
 
