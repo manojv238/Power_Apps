@@ -85,14 +85,6 @@ Not() – Reverses the result of a condition (true becomes false). ━━━━�
 
 Coalesce() – Returns the first non-blank value from a list. ━━━━━ Coalesce(TextInput1.Text, "Default Value")
 
-Switch() – Compares one value against multiple values and returns a match). ━━━━━ 
-
-| **Switch()**   | Compares one value against multiple values and returns a match  | `Switch(Status, "New", 1, "Approved", 2, "Closed", 3)`   |
-| **IsMatch()**  | Checks if text matches a regular expression (pattern matching)  | `IsMatch(Email.Text, "^\w+@\w+\.\w+$")`                  |
-| **In**         | Checks if a value exists in a table or list                     | `"Admin" in UserRoles`                                   |
-| **Exactin**    | Case-sensitive version of `In`                                  | `Exactin("Admin", UserRoles)`                            |
-| **Blank()**    | Returns a blank value (used to reset or compare)                | `UpdateContext({Name: Blank()})`                         |
-| **With()**     | Defines a temporary variable within a formula block             | `With({x: 5}, x + 10)`                                   |
 
 
 
