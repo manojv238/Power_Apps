@@ -69,8 +69,6 @@ DateValue() – Converts a text string to a date. ━━━━━ Example: DateV
 ----------------------------------------------
 If() – Checks a condition and returns different results for true/false. ━━━━━ If(Age > 18, "Adult", "Minor") 
 
-IfError() – Handles errors and provides a fallback result. ━━━━━ IfError(1/0, "Error occurred")   
-
 IsBlank() – Check if a value is blank and returns true. ━━━━━ If(IsBlank(TextInput1.Text), "Required", "OK")        
 
 IsEmpty() – Check if a collection or table has no records and returns true. ━━━━━ If(IsEmpty(MyCollection), "No Data", "Data Available")
