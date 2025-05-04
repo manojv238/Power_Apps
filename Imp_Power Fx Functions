@@ -77,9 +77,9 @@ If I need to extract all email addresses or all numbers from a long message, I u
 👉 It’s cleaner than using multiple If statements when comparing the same variable.
 💛 Syntax: Switch(Formula, Match1, Result1, Match2, Result2, ..., DefaultResult)
 
-✅ Example: Show a welcome message based on the user role.
-Switch(UserRole.Text, "Admin", "Welcome Admin!", "Manager", "Welcome Manager!", "Role not recognized")
-👉 If the UserRole is "Manager", it will return "Welcome Manager!".
+✅ Example: Show a welcome message based on the Dropdown Options.
+Switch(Dropdown.Selected.Value, "Admin", "Welcome Admin!", "Manager", "Welcome Manager!", "Selected from the Dropdown")
+👉 If the User selects "Manager", it will return "Welcome Manager!".
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 7. Differnce between ComboBox AND DropDown Controls?
