@@ -65,6 +65,34 @@ Time() – Creates a time value from hours, minutes, and seconds. ━━━━�
 DateValue() – Converts a text string to a date. ━━━━━ Example: DateValue("03/05/2025")
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+✅ Power Apps Logical Functions & Definitions:
+----------------------------------------------
+If() – Checks a condition and returns different results for true/false. ━━━━━ If(Age > 18, "Adult", "Minor") 
+
+IfError() – Handles errors and provides a fallback result. ━━━━━ IfError(1/0, "Error occurred")   
+
+IsBlank() – Check if a value is blank and returns true. ━━━━━ If(IsBlank(TextInput1.Text), "Required", "OK")        
+
+IsEmpty() – Check if a collection or table has no records and returns true. ━━━━━ If(IsEmpty(MyCollection), "No Data", "Data Available")
+
+And() – Check if all conditions are true and returns true. ━━━━━ If(1=1 And 2=2,true,false) / If(1=1 && 2=2,true,false)
+(t*f,f*t,f*f – false) || (t*t – true)
+
+Or() – Check if any condition is true and returns true. ━━━━━ If(1=1 || 1=2,true,false) / If(1=1 Or 1=2,true,false)
+(t+f,f+t,t+t – true) || (f+f – false)
+
+Not() – Reverses the result of a condition (true becomes false). ━━━━━ If(!(1=1),true,false) / If(Not(1=2),true,false)
+
+Coalesce() – Returns the first non-blank value from a list. ━━━━━ Coalesce(TextInput1.Text, "Default Value")
+
+Switch() – Compares one value against multiple values and returns a match). ━━━━━ 
+
+| **Switch()**   | Compares one value against multiple values and returns a match  | `Switch(Status, "New", 1, "Approved", 2, "Closed", 3)`   |
+| **IsMatch()**  | Checks if text matches a regular expression (pattern matching)  | `IsMatch(Email.Text, "^\w+@\w+\.\w+$")`                  |
+| **In**         | Checks if a value exists in a table or list                     | `"Admin" in UserRoles`                                   |
+| **Exactin**    | Case-sensitive version of `In`                                  | `Exactin("Admin", UserRoles)`                            |
+| **Blank()**    | Returns a blank value (used to reset or compare)                | `UpdateContext({Name: Blank()})`                         |
+| **With()**     | Defines a temporary variable within a formula block             | `With({x: 5}, x + 10)`                                   |
 
 
 
