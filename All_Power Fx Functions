@@ -75,6 +75,8 @@ IsBlank() – Check if a value is blank and returns true. ━━━━━ If(IsB
 
 IsEmpty() – Check if a collection or table has no records and returns true. ━━━━━ If(IsEmpty(MyCollection), "No Data", "Data Available")
 
+IsNumeric() – Check if a value is Numeric and returns true. ━━━━━ IsNumeric(TextInput.text)
+
 And() – Check if all conditions are true and returns true. ━━━━━ If(1=1 And 2=2,true,false) / If(1=1 && 2=2,true,false)
 (t*f,f*t,f*f – false) || (t*t – true)
 
