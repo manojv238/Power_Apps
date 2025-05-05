@@ -25,7 +25,8 @@
 ✅ For Example: Get all employees who work in the IT department.
 ➡️ Filter(Employees, Department = "IT") ---> This returns all records where the Department field is "IT".
 ➡️ Filter(Employees, Department =Dropdown.Selected.Value) ---> Users selects the dropdown and returns that specific criteria.
---------------------------------------------------------------------------------------------------------------------------------------
+➡️ If(Dropdown.Selected.Value= "All",Employess, Filter(Employees, Department=Dropdown.Selected.Value)) ---> Users selects all & returns all data.
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 4. SEARCH() Function:
 ━━━━━━━━━━━━━━━━━━━━━
