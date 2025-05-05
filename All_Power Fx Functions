@@ -84,6 +84,20 @@ Or() – Check if any condition is true and returns true. ━━━━━ If(1=1
 Not() – Reverses the result of a condition (true becomes false). ━━━━━ If(!(1=1),true,false) / If(Not(1=2),true,false)
 
 Coalesce() – Returns the first non-blank value from a list. ━━━━━ Coalesce(TextInput1.Text, "Default Value")
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Power Apps Collection functions & Definitions:
+-------------------------------------------------
+Remove() – Remove a first/last record from a collection. ━━━━━ Remove(CollectionName,First/Last(CollectionName))
+
+RemoveIf() – Remove a specific record from a collection. ━━━━━ Remove(CollectionName,ID=2)
+
+CountRows()  – Counts the number of records in a collection. ━━━━━ CountRows(MyCollection)
+
+
+
+
+
 
 
 
