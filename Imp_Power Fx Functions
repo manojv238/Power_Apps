@@ -10,7 +10,7 @@
 
 2. LOOKUP() Function:
 ━━━━━━━━━━━━━━━━━━━━━
-👉 The LookUp() function is used to search a data source and return a single record or value that matches a specific condition.
+👉 The LookUp() function is used to retrieve single record or value that matches a specific condition.
 💛 Syntax: LookUp(DataSource, Condition [column])
 
 ✅ For example: Find the name of the employee whose ID = 3.
@@ -19,7 +19,7 @@
 
 3. FILTER() Function:
 ━━━━━━━━━━━━━━━━━━━━━
-👉 The Filter() function is used to retrieve multiple records from a data source that match a specific condition.
+👉 The Filter() function is used to retrieve multiple records from a data source that matches a specific condition.
 💛 Syntax: Filter(DataSource, Condition)
 
 ✅ For Example: Get all employees who work in the IT department.
