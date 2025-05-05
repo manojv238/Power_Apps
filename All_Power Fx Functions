@@ -86,13 +86,15 @@ Not() – Reverses the result of a condition (true becomes false). ━━━━�
 Coalesce() – Returns the first non-blank value from a list. ━━━━━ Coalesce(TextInput1.Text, "Default Value")
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-✅ Power Apps Collection functions & Definitions:
--------------------------------------------------
+✅ Power Apps Data Source functions & Definitions:
+--------------------------------------------------
 Remove() – Remove a first/last record from a collection. ━━━━━ Remove(CollectionName,First/Last(CollectionName))
 
 RemoveIf() – Remove a specific record from a collection. ━━━━━ Remove(CollectionName,ID=2)
 
 CountRows()  – Counts the number of records in a collection. ━━━━━ CountRows(MyCollection)
+
+
 
 
 
