@@ -5,7 +5,7 @@
 
 ✅ For example: If I want to update only specific fields of a record without affecting other data, Patch() is the best choice.
 🔍 Explanation: You want to UPDATE the age of the employee whose ID = 3 to Age = 35,
-➡️ Patch(Employees, LookUp(Employees, ID = 3), {Age: 35}) 
+➡️ Patch(Employees, LookUp(Employees, ID = 3), {Age: 35} or {Name:"Manoj"}) 
 --------------------------------------------------------------------------------------------------------------------------------------
 
 2. LOOKUP() Function:
