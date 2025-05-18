@@ -275,7 +275,7 @@ Licensing costs — advanced features and premium connectors need paid plans.
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━ 
-👉 Environment in Power Apps is like Workspace that helps to create seperate apps, data, and resources based on teams, projects, or stages like Dev, QA, and Prod.
+👉 Environment in Power Apps is like Workspace that helps to create seperate apps, data, and resources based on teams, projects.
 
 For Example:
 👉 I can create seperate environments for development, testing, and production.
