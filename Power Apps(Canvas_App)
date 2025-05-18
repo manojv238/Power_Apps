@@ -206,9 +206,10 @@ Example:
 
 ✅ GALLERY:
 ━━━━━━━━━━━
-👉 I use Galleries to display multiple records in a list or card layout. 
-👉 It's very flexible — I can fully customize the design, add buttons, images, and even build small forms based on the app’s needs.
-👉 Good for displaying data from Collections or SharePoint lists.
+👉 I use Galleries to display multiple records in a scrollable list or card-style layout, especially when working with data from SharePoint lists or Collections. 
+👉 It's very flexible — I can fully customize each gallery item by adding buttons, images, icons, 
+    and even embed mini forms or conditional visuals, based on the app’s needs.
+👉 I also leverage (Gallery.Selected) to pass data between screens, such as opening a detail form or edit form(screen) based on the user’s selection.
 
 ✅ FORMS:
 ━━━━━━━━━
