@@ -121,7 +121,7 @@ EXPLAIN IN ANSWER:-
 👉 Components are reusable building blocks — like custom controls that I can create once and use across multiple screens or apps.
 For example:
 👉 I build a custom header or navigation menu as a component and reuse it on every screen.
-👉 This way, if I need to make any changes, I can only update the component, and it automatically reflects across all screens.
+👉 In this way, if I need to make any changes, I can only update the component, and it automatically reflects across all screens.
 👉 It saves a lot of time because I don’t have to copy-paste the same design on every screen.
 
 🔹 I can pass data into components using input and output properties.
