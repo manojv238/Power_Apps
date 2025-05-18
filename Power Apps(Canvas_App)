@@ -233,7 +233,8 @@ Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 In Power Apps, I handle errors mainly using the IfError() function to catch runtime errors, especially during data submissions or calculations. 
+👉 In Power Apps, I handle errors mainly using the IfError() function to catch runtime errors during data operations like Patch(), SubmitForm(), or calculations.
+👉 To leverage these error-handling functions effectively, I always ensure "Formula-level error management" is enabled in the app settings.
 👉 I also use validation checks before actions to prevent errors, and show user-friendly messages using labels when something goes wrong.
 
 Example:
