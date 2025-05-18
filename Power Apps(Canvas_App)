@@ -298,14 +298,15 @@ For Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Responsive design in Power Apps means building apps that automatically adapt their layout and controls to fit different screen sizes,
-    — desktop, tablet, or mobile.
-👉 To create a responsive Design, I use container controls like vertical and horizontal containers based on the app’s needs.
+👉 Responsive design in Power Apps means building apps that automatically adjust their layout and controls to fit any screen size,
+   — whether it's desktop, tablet, or mobile.
+👉 To create a responsive Design, I use layout controls like horizontal and vertical containers depending on the app’s structure.
 👉 These containers automatically arrange the elements inside them based on the screen size.
-👉 Instead of fixing each control’s size and position, I use formulas to adjust width and height relative to the screen.
+👉 Instead of fixing each control’s size and position, I use formulas to set width and height.
 
 For Example:
-👉 Uisng relative properities like "parent.width and parent.height" it helps to adjust their sizes and positions dynamically.
+👉 Uisng relative properities like "parent.width and parent.height", 
+   — that controls automatically adjust their sizes and positions dynamically.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 17. What are the Role-Based Security in Power Apps. How do you manage them?
