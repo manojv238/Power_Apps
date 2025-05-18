@@ -213,7 +213,7 @@ Example:
 
 ✅ FORMS:
 ━━━━━━━━━
-👉 I use forms when I need users to view, create, or edit single record at a time easily.
+👉 I use Forms when I need users to view, create, or edit single record at a time easily.
 👉 It automatically bind the fields to the data source, its saves a lot of time when building input screens.
 🔹 There are mainly three types of Forms I work with:
 👉 Display Form – for read-only data viewing, 
