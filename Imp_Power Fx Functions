@@ -1,21 +1,22 @@
 1. PATCH() Function:
 ━━━━━━━━━━━━━━━━━━━━
 👉 The PATCH() Function is used to create a record, update a record in a data source.
-💛 Syntax: Patch(DataSource, BaseRecord, ChangeRecord)
+✅ Syntax: Patch(DataSource, Defaults(DataSource), { Column1: Value1, Column2: Value2, Column3: Value3 })
+💛 Syntax: Patch(Employees, Defaults(Employees), { Name: "Manoj", Age: 25, Department: "IT" })
 
-✅ For example: If I want to update only specific fields of a record without affecting other data, Patch() is the best choice.
-🔍 Explanation: You want to UPDATE the age of the employee whose ID = 3 to Age = 35,
-➡️ Patch(Employees, LookUp(Employees, ID = 3), {Age: 35} or {Name:"Manoj"}) 
---------------------------------------------------------------------------------------------------------------------------------------
+👉 If I want to update only specific fields of a record without affecting other data, Patch() is the best choice.
+✅ For example: If you want to update a specific employee whose name is "John Doe":-
+💛 Syntax: Patch(Employees, LookUp(Employees, Name = "Manoj"),{Age: 20, Department: "HR"})
+-------------------------------------------------------------------------------------------------------------------
 
 2. LOOKUP() Function:
 ━━━━━━━━━━━━━━━━━━━━━
 👉 The LookUp() function is used to retrieve single record from a data source that matches a specific condition.
 💛 Syntax: LookUp(DataSource, Condition [column])
 
-✅ For example: Find the name of the employee whose ID = 3.
-➡️ LookUp(Employees, ID = 3, Name) ---> This returns the Name field only from the employee record where ID = 3.
---------------------------------------------------------------------------------------------------------------------------------------
+✅ For example: Find the Name field only from the employee record.
+➡️ LookUp(Employees, Name:"Manoj") 
+--------------------------------------------------------------------------------------------------------------------
 
 3. FILTER() Function:
 ━━━━━━━━━━━━━━━━━━━━━
