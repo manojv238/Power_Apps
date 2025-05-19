@@ -325,14 +325,15 @@ Example:
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 👉 Solutions are used to transport apps and related components from one environment to another — like moving from development to testing or production.
-👉 A solution can include one or more apps and other components like tables or flows and other customizations.
+👉 A solution can include one or more apps, along with other components like Dataverse tables, flows, and other customizations.
 👉 This allows for structured deployment, better version control, and effective application lifecycle management (ALM).
 
 🔹 There are two main types of Solutions:
 1. Unmanaged Solution: 
-👉 While building an app in the dev environment, I used an unmanaged solution so I could freely editing tables, flows, and UI components.
+👉 During Development, I used an unmanaged solution so I could freely editing tables, flows, and UI components.
 2. Managed Solution: 
-👉 Once the app was finalized, I exported the app as a managed solution for the Production environment, Components are read-only; can't be edited directly.
+👉 Once the app was finalized, I exported the app as a managed solution and deployed it to the production environment. 
+👉 Managed Solution are read-only; can't be edited directly.
 
 🔹 Why Solutions are important (Real-world value):
 🔄 ALM (Application Lifecycle Management): Ideal for moving apps from Dev → Test → Prod.
