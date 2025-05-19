@@ -51,7 +51,7 @@
 
 6. IsMatch() Function:
 ━━━━━━━━━━━━━━━━━━━━━━
-👉 The IsMatch() function is used to check whether a text string matches a specific pattern, usually defined by a regular expression (RegEx).
+👉 The IsMatch() function is used to check if a text string matches a specific pattern, usually defined by a regular expression (RegEx).
 👉 It returns true or false, making it useful for validating user inputs like: Email addresses, Phone numbers, PIN codes, Password formats.
 💛 Syntax: IsMatch(EmailInput.Text, pattern) 
 ✅ Example:
