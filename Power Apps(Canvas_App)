@@ -343,8 +343,8 @@ Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Conditional formatting is mainly through formulas on properties like Color, Fill, or Visible.
-👉 Instead of hardcoding styles, I apply logic using If statements or Switch based on field values or user roles.
+👉 I implement Conditional formatting is mainly by using formulas in control properties — like Color, Fill, and Visible.
+👉 Instead of hardcoding styles, I apply dynamic logic using If or Switch statements based on data values or user roles.
 
 ✅ Common use cases:
 1. Change label or text color based on status.          Color ---> If(ThisItem.Status = "Completed", Green, Red)
