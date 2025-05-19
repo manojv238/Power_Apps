@@ -286,7 +286,7 @@ For Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Containers are like group and align multiple controls together — like (gallery, buttons, text inputs and labels).
+👉 Containers are like group and align multiple controls together — like (gallery, buttons, text inputs, icons and labels).
 
 For Example:
 👉 I use Horizontal and Vertical Containers to keep related controls neatly arranged.
