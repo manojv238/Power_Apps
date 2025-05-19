@@ -358,10 +358,10 @@ EXPLAIN IN ANSWER:-
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 👉 Configuration means using built-in settings to make the system work how you want, without any coding. 
-    Like changing forms, adding fields, or creating filters.
+-> Example: Changing app themes, modifying forms, enabling features, adding fields, or setting security roles. 
 
-👉 Customization means writing code or building new features to change how the system works, 
-    like adding custom logic or integrating with other apps.
+👉 Customization means writing code or building new features to change how the system works. 
+-> Example: Creating custom connectors, writing Power Automate flows, or building custom controls.    
 
 👉 So, configuration is easier and faster, and customization is for when you need something more advanced.
 
