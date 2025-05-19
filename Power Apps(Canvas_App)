@@ -324,7 +324,7 @@ Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 I use Solutions to package, manage and deploy related components — like apps, tables, flows — all in one place.
+👉 Solutions are used to package, manage and deploy related components — like apps, tables, flows — all in one place.
 👉 Solutions help me easily migration apps between different environments from Dev to QA ➔ Prod.
 👉 During development, I use Unmanaged Solutions for easy editing and team collaboration.
 👉 Once the app is tested and finalized, I export the app as a Managed Solution for the Production environment.
