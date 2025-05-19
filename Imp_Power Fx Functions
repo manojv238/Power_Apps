@@ -79,9 +79,11 @@ If I need to extract all email addresses or all numbers from a long message, I u
 👉 It’s cleaner than using multiple If statements when comparing the same variable.
 💛 Syntax: Switch(Formula, Match1, Result1, Match2, Result2, ..., DefaultResult)
 
-✅ Example: Show a welcome message based on the Dropdown Options.
-Switch(Dropdown.Selected.Value, "Admin", "Welcome Admin!", "Manager", "Welcome Manager!", "Selected from the Dropdown")
-👉 If the User selects "Manager", it will return "Welcome Manager!".
+✅ Example: Show a welcome message based on the Dropdown Options:
+🔹 If the User selects "Manager", it will return "Welcome Manager!".
+👉 Switch(Dropdown.Selected.Value, "Admin", "Welcome Admin!", "Manager", "Welcome Manager!", "Selected from the Dropdown")
+                      (OR)
+👉 Switch(Listbox.Selected.Value, "1",Red, "2",Green, "3",Yellow)
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 7. Differnce between ComboBox AND DropDown Controls?
