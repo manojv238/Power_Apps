@@ -345,19 +345,6 @@ EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 👉 I implement Conditional formatting is mainly by using formulas in control properties — like Color, Fill, and Visible.
 👉 Instead of hardcoding styles, I apply dynamic logic using If or Switch statements based on data values or user roles.
-
-✅ Common use cases:
-1. Change label or text colour based on the selection list box.
-👉 Color: If(Listbox.Selected.Value = "1",Red,
-          If(Listbox.Selected.Value = "2", Green,
-          If(Listbox.Selected.Value = "3",Yellow))
-                            (OR)
-👉 Fill: Switch(Listbox.Selected.Value, "1",Red, "2",Green, "3",Yellow) 
-
-2. Highlight cards or controls when a condition is met.  Fill: If(ThisItem.Score < 50, RGBA(255,0,0,0.1), White)
-
-3. Show/hide fields depending on user role.             Visible ---> If(User().Email = "admin@domain.com", true, false)
-4. Disable controls until a required field is filled.   DisplayMode ---> If(IsBlank(DataCardValue1.Text), DisplayMode.Disabled, DisplayMode.Edit)
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
 20. Difference between configuration and customization?
