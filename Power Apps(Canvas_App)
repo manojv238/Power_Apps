@@ -289,7 +289,7 @@ EXPLAIN IN ANSWER:-
 👉 Containers are like group and align multiple controls together — like (gallery, buttons, text inputs, icons and labels).
 
 For Example:
-👉 I use Horizontal and Vertical Containers to keep related controls neatly arranged.
+👉 I use vertical or horizontal containers to keep related controls neatly arranged.
 👉 It helps create responsive designs that automatically adapt to any screen size, so there's no need to manually adjust each control.
 👉 It helps to maintain consistent spacing and alignment, making app looks good and professional without requiring extra effort.
 ------------------------------------------------------------------------------------------------------------------------------------------------
@@ -300,7 +300,7 @@ EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 👉 Responsive design in Power Apps means building apps that automatically adapt their layout and controls to fit any screen size,
    — whether it's desktop, tablet, or mobile.
-👉 To create a responsive Design, I use layout controls like horizontal and vertical containers depending on the app’s structure.
+👉 To create a responsive Design, I use layout controls like vertical or horizontal containers depending on the app’s structure.
 👉 These containers automatically arrange the elements inside them based on the screen size.
 👉 Instead of fixing each control’s size and position, I use formulas to set width and height.
 
