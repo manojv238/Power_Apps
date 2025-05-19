@@ -290,15 +290,15 @@ EXPLAIN IN ANSWER:-
 
 For Example:
 👉 I use Horizontal and Vertical Containers to keep related controls neatly arranged.
-👉 This makes it easier to create responsive designs that adjust automatically across different screen sizes, without manually adjusting every control.
-👉 It helps to maintain consistent spacing and alignment, so the app looks good and professional without extra effort.
+👉 It helps create responsive designs that automatically adapt to any screen size, so there's no need to manually adjust each control.
+👉 It helps to maintain consistent spacing and alignment, making app looks good and professional without requiring extra effort.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 16. How do you create a Responsive Design in Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Responsive design in Power Apps means building apps that automatically adjust their layout and controls to fit any screen size,
+👉 Responsive design in Power Apps means building apps that automatically adapt their layout and controls to fit any screen size,
    — whether it's desktop, tablet, or mobile.
 👉 To create a responsive Design, I use layout controls like horizontal and vertical containers depending on the app’s structure.
 👉 These containers automatically arrange the elements inside them based on the screen size.
