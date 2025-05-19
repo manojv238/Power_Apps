@@ -275,7 +275,7 @@ Licensing costs — advanced features and premium connectors need paid plans.
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━ 
-👉 Environment in Power Apps is like Workspace that helps to create seperate apps, data, and resources based on teams or projects.
+👉 Environment is like Workspace that helps to create seperate apps, data, and resources based on teams or projects.
 
 For Example:
 👉 I can create seperate environments for development, testing, and production.
@@ -290,16 +290,15 @@ EXPLAIN IN ANSWER:-
 
 For Example:
 👉 I use vertical or horizontal containers to keep related controls neatly arranged.
-👉 It helps create responsive designs that automatically adapt to any screen size, so there's no need to manually adjust each control.
-👉 It helps to maintain consistent spacing and alignment, making app looks good and professional without requiring extra effort.
-------------------------------------------------------------------------------------------------------------------------------------------------
+👉 It helps create responsive designs that automatically adapt their layout and controls to fit any screen size, so there's no need to manually adjust each control.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 16. How do you create a Responsive Design in Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Responsive design in Power Apps means building apps that automatically adapt their layout and controls to fit any screen size,
-   — whether it's desktop, tablet, or mobile.
+👉 Responsive design means building apps that automatically adapt their layout and controls to fit any screen size,
+    — whether it's desktop, tablet, or mobile.
 👉 To create a responsive Design, I use layout controls like vertical or horizontal containers depending on the app’s structure.
 👉 These containers automatically arrange the elements inside them based on the screen size.
 👉 Instead of fixing each control’s size and position, I use formulas to set width and height.
@@ -326,7 +325,7 @@ Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 I use Solutions in Power Apps to package and manage related components like apps, tables, flows in one place.
+👉 I use Solutions to package and manage related components like apps, tables, flows in one place.
 👉 Solutions help me easily migration apps between different environments from Dev to QA ➔ Prod.
 👉 During development, I use Unmanaged Solutions for easy editing and team collaboration.
 👉 Once the app is tested and finalized, I export the app as a Managed Solution for the Production environment.
@@ -345,21 +344,21 @@ Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Conditional formatting in Power Apps mainly through formulas on properties like Color, Fill, or Visible.
+👉 Conditional formatting is mainly through formulas on properties like Color, Fill, or Visible.
 👉 Instead of hardcoding styles, I apply logic using If statements or Switch based on field values or user roles.
 
 ✅ Common use cases:
-1. Change label or text color based on status: Color = If(ThisItem.Status = "Completed", Green, Red)
-2. Highlight cards or controls when a condition is met: Fill = If(ThisItem.Score < 50, RGBA(255,0,0,0.1), White)
-3. Show/hide fields depending on user role: Visible = If(User().Email = "admin@domain.com", true, false)
-4. Disable controls until a required field is filled: DisplayMode = If(IsBlank(DataCardValue1.Text), DisplayMode.Disabled, DisplayMode.Edit)
-------------------------------------------------------------------------------------------------------------------------------------------------
+1. Change label or text color based on status.          Color ---> If(ThisItem.Status = "Completed", Green, Red)
+2. Highlight cards or controls when a condition is met. Fill ---> If(ThisItem.Score < 50, RGBA(255,0,0,0.1), White)
+3. Show/hide fields depending on user role.             Visible ---> If(User().Email = "admin@domain.com", true, false)
+4. Disable controls until a required field is filled.   DisplayMode ---> If(IsBlank(DataCardValue1.Text), DisplayMode.Disabled, DisplayMode.Edit)
+--------------------------------------------------------------------------------------------------------------------------------------------------
 
 20. Difference between configuration and customization?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Configuration means  using built-in settings to make the system work how you want, without any coding. 
+👉 Configuration means using built-in settings to make the system work how you want, without any coding. 
     Like changing forms, adding fields, or creating filters.
 
 👉 Customization means writing code or building new features to change how the system works, 
