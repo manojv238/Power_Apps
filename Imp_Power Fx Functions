@@ -75,9 +75,10 @@ If I need to extract all email addresses or all numbers from a long message, I u
 
 9. Switch() Function:
 ━━━━━━━━━━━━━━━━━━━━━
-👉 The Switch function is used to check one condition against multiple values.
-👉 It’s cleaner than using multiple If statements when comparing the same variable.
-💛 Syntax: Switch(Formula, Match1, Result1, Match2, Result2, ..., DefaultResult)
+👉 The Switch function is used to check one condition or one expression against multiple values.
+👉 It’s cleaner and more readable than writing multiple If() statements when comparing the same variable, 
+   — for example, checking different user roles or status.
+💛 Syntax: Switch(expression, value1, result1, value2, result2, ..., default)
 
 ✅ Example Use Cases:
 🔹 If the User selects "Manager", it will return "Welcome Manager!".
@@ -87,7 +88,20 @@ If I need to extract all email addresses or all numbers from a long message, I u
 👉 Switch(Listbox.Selected.Value, "1",Red, "2",Green, "3",Yellow)
 --------------------------------------------------------------------------------------------------------------------------------------------
 
-7. Differnce between ComboBox AND DropDown Controls?
+10. If() Function:
+━━━━━━━━━━━━━━━━━━
+👉 If() function is used for multiple logical conditions like ranges or combined expressions using operators like (>, <, =, And, Or).
+👉 It’s more flexible when you need to evaluate different types of conditions, not just one variable.
+💛 Syntax: If(condition, result, [condition2, result2, ..., default])
+
+✅ Example Use Cases:
+🔹 Change label or text colour based on the selection list box.
+👉 If(Listbox.Selected.Value = "1",Red,
+    If(Listbox.Selected.Value = "2", Green,
+    If(Listbox.Selected.Value = "3",Yellow))
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+11. Differnce between ComboBox AND DropDown Controls?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ✅ DropDown Control: 
 👉 DropDown control lets users select a single value from a list of predefined options.
@@ -98,7 +112,7 @@ If I need to extract all email addresses or all numbers from a long message, I u
 👉 It is more flexible and interactive than a DropDown.
 --------------------------------------------------------------------------------------------------------------------------------------
 
-8. SharePoint in Power Apps?
+12. SharePoint in Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
