@@ -31,8 +31,8 @@
 
 4. SEARCH() Function:
 ━━━━━━━━━━━━━━━━━━━━━
-👉 The Search() function is used to search for text within a specific column of a data source and and returns all matching records.
-👉 It is a "Case-Insensitive", it doesn't matter whether the text searching for is upper or lower case.
+👉 The Search() function is used to search for text within a specific column of a data source and returns all matching records.
+👉 It is a "Case-Insensitive", it doesn't matter whether the text searching for upper or lower case.
 💛 Syntax: Search(DataSource, SearchString, ColumnName)
 
 ✅ For Example: To search for employees whose Name contains the text "John".
