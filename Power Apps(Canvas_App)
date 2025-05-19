@@ -312,10 +312,9 @@ For Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Role-Based Security in Power Apps and Dataverse controls what users can see and do based on their assigned roles —such as Admin, Manager, or Employee.
+👉 Role-Based Security in Power Apps and Dataverse controls what users can see and do based on their assigned roles — such as Admin, Manager, or Employee.
 👉 In Dataverse, I assign security roles directly to users or teams depending on their responsibilities.
-👉 Each role defines specific permissions (like Read, Write,create or Delete) on tables, forms, apps, or even specific records.
-👉 This ensures that sensitive data and critical actions are accessible only to authorized users.
+👉 Each role defines specific permissions — like Read, Write, create or Delete — on tables, forms, apps, or even specific records.
 
 Example:
 👉 In my recent project, Managers had access to update employee data, while Employees could only view their own profile.
