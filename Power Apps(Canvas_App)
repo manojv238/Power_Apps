@@ -195,7 +195,7 @@ EXPLAIN IN ANSWER:-
 1. Navigate to Power Apps Portal > Data > Custom Connectors.
 2. Select New Custom Connector and choose a creation method (from blank, Postman file, or OpenAPI definition).
 3. Define the connector’s name and description.
-4. Configure API authentication (No auth, Basic, OAuth 2.0, or API key). For secure APIs, OAuth 2.0 or API key is recommended.
+4. Configure the Security, API authentication (No auth, Basic, OAuth 2.0, or API key). For secure APIs, OAuth 2.0 or API key is recommended.
 5. Define the connector’s actions and operations (GET, POST, PUT, DELETE) matching the API endpoints.
 6. Test the connector thoroughly before integrating it into apps.
 7. It allows me to securely call external services directly from my app with easy functions.
