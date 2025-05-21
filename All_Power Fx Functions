@@ -90,7 +90,7 @@ Remove() – Remove a first/last record from a collection. ━━━━━ Remov
 
 RemoveIf() – Remove a specific record from a collection. ━━━━━ Remove(CollectionName,ID=2)
 
-CountRows()  – Counts the number of records in a collection. ━━━━━ "Total no. of records: "& CountRows(MyCollection)
+CountRows()  – Counts the number of records in a Gallery. ━━━━━ "Total no. of records: "& CountRows(Gallery1.AllItems)
 
 Distinct() – Returns a unique list of values from a column. ━━━━━ Distinct(Employees, Department)
 
