@@ -180,7 +180,7 @@ Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Connectors allows apps to communicate with external data sources like SharePoint, Dataverse, SQL, Outlook.
+👉 Connectors allows apps to communicate with external data sources like SharePoint, Dataverse, SQL, Outlook and many more.
 👉 Connectors are key when buliding apps because it helps to easily integrate external data, without write any custom API's.
 
 🔹 There are two main types of Connectors:
