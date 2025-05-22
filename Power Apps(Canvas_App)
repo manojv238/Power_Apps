@@ -340,16 +340,9 @@ EXPLAIN IN ANSWER:-
 👉 This enables structured deployments, improves version control, and supports effective Application Lifecycle Management (ALM).
 
 🔹 There are two main types of Solutions:
-1. Unmanaged Solution: 
-👉 During Development, I used an unmanaged solution for easy editing and team collabortion.
-2. Managed Solution: 
-👉 Once the app was finalized, I exported the app as a managed solution and deployed to the production environment. 
-👉 Managed Solution are read-only; can't be edited directly.
-
-🔹 Why Solutions are important (Real-world value):
-🔄 ALM (Application Lifecycle Management): Ideal for moving apps from Dev → Test → Prod.
-♻️ Supports version control and rollback.
-🔄 Easily export/import entire apps + data schema + logic.
+1. Unmanaged Solution: During Development, I used an unmanaged solution for easy editing and team collabortion.
+2. Managed Solution:  Once the app was finalized, I exported the app as a managed solution and deployed to the production environment.  
+                      — Managed Solution are read-only; can't be edited directly.
 
 Example:
 👉 In one project, I built an onboarding app inside a Solution, and then exported it from Dev and imported it into the QA and Production environments smoothly.
