@@ -259,7 +259,6 @@ EXPLAIN IN ANSWER:-
 🔹 SaveData() saves the collection locally, and LoadData() loads it back when the app starts or reconnects.
 
 Example:
-✅ NOTE: "Dataverse offline only works in solutions".
 👉 In a field service app, technicians could fill forms offline and sync updates once they had internet.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
