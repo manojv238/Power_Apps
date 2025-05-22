@@ -26,7 +26,7 @@ POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 
 13. What are the limitations of Power Apps?
 
-14. What is the role of Environments in Power Apps?
+14. What is the Environment in Power Apps?
 
 15. What are Containers in Power Apps?
 
@@ -282,12 +282,11 @@ Use collections to temperaily store data locally.
 Minimize the number of controls and avoid unnecessary complex formulas in the app.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-14. What is the role of Environment in Power Apps?
+14. What is the Environment in Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━ 
-👉 Environment is like Workspace that helps to create seperate apps, data, and resources based on teams or projects.
-
+👉 An Environment is like a workspace that helps to create and manage separate apps, flows, tables, and other resources — organized by teams or projects.
 For Example:
 👉 I can create seperate environments for development, testing, and production.
 👉 Each environment can have its own data policies, permissions, and security settings.
