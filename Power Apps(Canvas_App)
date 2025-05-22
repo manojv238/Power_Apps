@@ -335,9 +335,9 @@ Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Solutions are used to package and related components from one environment to another — like moving from development to testing or production.
-👉 A solution can include one or more apps, along with other components like Dataverse tables, flows, and other customizations.
-👉 This allows for structured deployment, better version control, and effective application lifecycle management (ALM).
+👉 Solutions are used to package and related components apps, tables, flows & other customizations.
+👉 It helps us move components from one environment to another environment — like from development to testing or production 
+👉 This enables structured deployments, improves version control, and supports effective Application Lifecycle Management (ALM).
 
 🔹 There are two main types of Solutions:
 1. Unmanaged Solution: 
