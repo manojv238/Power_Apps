@@ -252,12 +252,14 @@ Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
+
 👉 Yes, Its Supports Offline Capabilities let users work without internet by storing data locally on the device.
-👉 We mainly use Collections along with SaveData() and LoadData() functions to make the app.
-👉 Once the network is back, we use functions like Patch() or Collect() to sync the offline data back to the server.
+👉 We mainly use Collections along with SaveData() and LoadData() functions to manage offline scenarios.
+👉 Once the network is back, we use Patch() or Collect() to sync the offline data back to the server.
 🔹 SaveData() saves the collection locally, and LoadData() loads it back when the app starts or reconnects.
 
 Example:
+✅ NOTE: "Dataverse offline only works in solutions".
 👉 In a field service app, technicians could fill forms offline and sync updates once they had internet.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -272,6 +274,13 @@ Complex UI customization — Canvas apps offer flexibility but can get tricky fo
 Performance — apps can slow down if too many controls are used on one screen.
 Limited offline support — offline capabilities exist but require extra work and have constraints.
 Licensing costs — advanced features and premium connectors need paid plans.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔹 To optimize Power Apps performance:
+
+Use delegable data operations like filter and sort to work on the large data sets.
+Limit the number of columns retrived by using specific column names instead of *.
+Use collections to temperaily store data locally.
+Minimize the number of controls and avoid unnecessary complex formulas in the app.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 14. What is the role of Environment in Power Apps?
@@ -351,9 +360,9 @@ Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 I implement Conditional formatting is mainly by using formulas in control properties — like Color, Fill, and Visible.
-👉 Instead of hardcoding styles, I apply dynamic logic using If or Switch statements based on data values or user roles.
---------------------------------------------------------------------------------------------------------------------------------------------------
+👉 I can implement conditional formating by using the If() and Switch() funtions in combination with control properties like Fill, Colour or Visible.
+👉 For example: To change the colour of a label based on a condition.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 20. Difference between configuration and customization?
 
