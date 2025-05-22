@@ -235,13 +235,14 @@ Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 In Power Apps, I handle errors mainly using the IfError() function to catch runtime errors during data operations like Patch() or SubmitForm().
-👉 To leverage these error-handling functions, I always turn on "Formula-level error management" in the app settings.
-🔹 Steps to enable Formula-level error management:-
+👉 I handle errors mainly using the IfError() function it helps catch runtime errors, especially during data operations like Patch() or SubmitForm().
+👉 For example: capturing errors when submitting data to data source and displaying user-friendly messages using the notify() funtion when something goes wrong.
+
+🔹 To leverage these error-handling functions, I always turn on "Formula-level error management" in the app settings.
+Steps to enable Formula-level error management:-
 1. First, click on File in Canvas App.
 2. Go to Settings -> Advanced Settings.
 3. Go to Formula-level error management and enable it.
-👉 I also use validation checks before actions to prevent errors, and display user-friendly messages using labels or notifications when something goes wrong.
 
 Example:
 👉 In one app, I wrapped my data submission calls in IfError() to catch failures and display clear error messages to users, improving app reliability and user experience.
