@@ -335,7 +335,7 @@ Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Solutions are used to transport apps and related components from one environment to another — like moving from development to testing or production.
+👉 Solutions are used to package and related components from one environment to another — like moving from development to testing or production.
 👉 A solution can include one or more apps, along with other components like Dataverse tables, flows, and other customizations.
 👉 This allows for structured deployment, better version control, and effective application lifecycle management (ALM).
 
