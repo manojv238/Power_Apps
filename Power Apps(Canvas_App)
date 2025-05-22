@@ -343,6 +343,9 @@ EXPLAIN IN ANSWER:-
 2. Managed Solution:  Once the app was finalized, I exported the app as a managed solution and deployed to the production environment.  
                       — Managed Solution are read-only; can't be edited directly.
 
+✅ Environment Variables are reusable configuration settings used within a solution. 
+   — they store values like SharePoint site URLs or API keys, that may change between environments such as development, testing, or production.
+
 Example:
 👉 In one project, I built an onboarding app inside a Solution, and then exported it from Dev and imported it into the QA and Production environments smoothly.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
