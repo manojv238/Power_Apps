@@ -286,7 +286,7 @@ Minimize the number of controls and avoid unnecessary complex formulas in the ap
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━ 
-👉 An Environment is like a workspace that helps to create and manage separate apps, flows, tables, and other resources — organized by teams or projects.
+👉 An Environment is like a workspace to store and manage separate apps, flows, tables, and other resources — organized by teams or projects.
 For Example:
 👉 I can create seperate environments for development, testing, and production.
 👉 Each environment can have its own data policies, permissions, and security settings.
