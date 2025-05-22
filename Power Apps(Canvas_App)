@@ -235,8 +235,8 @@ Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 In Power Apps, I handle errors mainly using the IfError() function to catch runtime errors during data operations like Patch(), SubmitForm(), or calculations.
-👉 To leverage these error-handling functions effectively, I always ensure "Formula-level error management" is enabled in the app settings.
+👉 In Power Apps, I handle errors mainly using the IfError() function to catch runtime errors during data operations like Patch() or SubmitForm().
+👉 To leverage these error-handling functions, I always turn on "Formula-level error management" in the app settings.
 🔹 Steps to enable Formula-level error management:-
 1. First, click on File in Canvas App.
 2. Go to Settings -> Advanced Settings.
