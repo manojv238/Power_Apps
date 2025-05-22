@@ -341,9 +341,9 @@ EXPLAIN IN ANSWER:-
 
 🔹 There are two main types of Solutions:
 1. Unmanaged Solution: 
-👉 During Development, I used an unmanaged solution so I could freely editing tables, flows, and UI components.
+👉 During Development, I used an unmanaged solution for easy editing and team collabortion.
 2. Managed Solution: 
-👉 Once the app was finalized, I exported the app as a managed solution and deployed it to the production environment. 
+👉 Once the app was finalized, I exported the app as a managed solution and deployed to the production environment. 
 👉 Managed Solution are read-only; can't be edited directly.
 
 🔹 Why Solutions are important (Real-world value):
