@@ -124,8 +124,27 @@ If I need to extract all email addresses or all numbers from a long message, I u
 👉 I use SharePoint as a common data source in Power Apps for storing and managing lists and documents.
 👉 It acts as a centralized backend for managing documents, lists, and other data, and integrates easily with Power Apps.
 👉 Using SharePoint helps deliver quick solutions without complex backend setups.
+--------------------------------------------------------------------------------------------------------------------------------------
 
+✅ SharePoint Team Site:
+━━━━━━━━━━━━━━━━━━━━━━━━
+👉 Used for: Team work and collaboration
+👉 Who uses it: Small team (like a project team, department)
+What you can do:
+👉 Everyone can edit, upload files, and work together
+👉 Integrated with Microsoft Teams, Outlook, Planner
+Example:
+👉 You and your project team are building a product. You need to share files, assign tasks, track progress — use a Team Site.
 
+📢 SharePoint Communication Site:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+👉 Used for: Sharing information with a large audience
+👉 Who uses it: HR, Management, or Company-wide announcements
+What you can do:
+👉 Few people create content, others can only read
+👉 Looks more like a website or news portal
+Example:
+👉 HR wants to share company policies, holidays, or news to all employees — use a Communication Site.
 
 
 
