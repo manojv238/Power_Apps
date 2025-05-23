@@ -78,15 +78,16 @@ If I need to extract all email addresses or all numbers from a long message, I u
 ━━━━━━━━━━━━━━━━━━━━━
 👉 The Switch function is used to check one condition or one expression against multiple values.
 👉 It’s cleaner and more readable than writing multiple If() statements when comparing the same variable, 
-   — for example, checking different user roles or status.
+   — for example, checking different user roles or change the label color based on condition.
 💛 Syntax: Switch(expression, value1, result1, value2, result2, ..., default)
 
 ✅ Example Use Cases:
 🔹 If the User selects "Manager", it will return "Welcome Manager!".
-👉 Switch(Dropdown.Selected.Value, "Admin", "Welcome Admin!", "Manager", "Welcome Manager!", "Selected from the Dropdown")
+👉 Fill Property: Switch(Dropdown1.Selected.Value,"Admin",Color.Red,"Manager",Color.Yellow,"HR")
+👉 Text Property: Switch(Dropdown.Selected.Value, "Admin", "Welcome Admin!", "Manager", "Welcome Manager!")
                       (OR)
-🔹 Change label or text colour based on the selection list box.
-👉 Switch(Listbox.Selected.Value, "1",Red, "2",Green, "3",Yellow)
+🔹 Change label or text colour based on the selection Dropdown value.
+👉 Fill: Switch(Dropdown.Selected.Value, "1",Color.Red, "2",Color.Green, "3",Color.Yellow)
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 10. If() Function:
@@ -97,9 +98,13 @@ If I need to extract all email addresses or all numbers from a long message, I u
 
 ✅ Example Use Cases:
 🔹 Change label or text colour based on the selection list box.
-👉 If(Listbox.Selected.Value = "1",Red,
-    If(Listbox.Selected.Value = "2", Green,
-    If(Listbox.Selected.Value = "3",Yellow))
+👉 Fill Property: If(Listbox.Selected.Value = "1",Color.Red,
+                  If(Listbox.Selected.Value = "2",Color.Green,
+                  If(Listbox.Selected.Value = "3",Color.Yellow)))
+
+👉 Text Property: If(Listbox.Selected.Value = "1","Welcome to 1",
+                  If(Listbox.Selected.Value = "2","Welcome to 2"
+                  If(Listbox.Selected.Value = "3","Welcome to 3")))
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 11. Differnce between ComboBox AND DropDown Controls?
