@@ -32,7 +32,7 @@ POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 
 16. How do you create a Responsive Design in Power Apps?
 
-17. What are the Role-Based Security roles in Power Apps. How do you manage them?
+17. How do you implement role based security in Power Apps?
 
 18. Solutions in Power Apps?
 
@@ -318,12 +318,12 @@ For Example:
    — that controls automatically adjust their sizes and positions dynamically.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-17. What are the Role-Based Security in Power Apps. How do you manage them?
+17. How do you implement role based security in Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Role-Based Security in Power Apps and Dataverse controls what users can see and do based on their assigned roles — such as Admin, Manager, or Employee.
-👉 In Dataverse, I assign security roles directly to users or teams depending on their responsibilities.
+👉 Implementing role-based security in Power Apps invloves desining the app to restrict access to certain features, data or functionality, 
+    — based on roles assigned to users.
 👉 Each role defines specific permissions — like Read, Write, create or Delete — across tables, forms, apps, or even specific records.
 
 Example:
