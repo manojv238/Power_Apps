@@ -126,25 +126,29 @@ If I need to extract all email addresses or all numbers from a long message, I u
 👉 Using SharePoint helps deliver quick solutions without complex backend setups.
 --------------------------------------------------------------------------------------------------------------------------------------
 
-✅ SharePoint Team Site:
-━━━━━━━━━━━━━━━━━━━━━━━━
-👉 Used for: Team work and collaboration
-👉 Who uses it: Small team (like a project team, department)
-What you can do:
-👉 Everyone can edit, upload files, and work together
-👉 Integrated with Microsoft Teams, Outlook, Planner
-Example:
-👉 You and your project team are building a product. You need to share files, assign tasks, track progress — use a Team Site.
+🔷 1. Team Sites (TAM Sites) – typically Microsoft 365 Group-connected.
+✅ Purpose: Collaboration among team members (e.g., project teams)
+🔐 Security Model: Permission inheritance from Microsoft 365 Group.
+👉 Three default SharePoint groups:
+Owners → Full Control
+Members → Edit
+Visitors → Read (not present by default unless added)
+👉 Users added to the Microsoft 365 Group get permissions automatically.
+🔄 Integrated With: Microsoft Teams, Planner, Outlook Group
+👤 How to Manage:
+👉 Add/remove users via Microsoft 365 Group.
+👉 Fine-grained permissions can still be configured at the SharePoint level (not best practice).
 
-📢 SharePoint Communication Site:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-👉 Used for: Sharing information with a large audience
-👉 Who uses it: HR, Management, or Company-wide announcements
-What you can do:
-👉 Few people create content, others can only read
-👉 Looks more like a website or news portal
-Example:
-👉 HR wants to share company policies, holidays, or news to all employees — use a Communication Site.
+
+🔷 2. Communication Sites – for broadcasting info.
+✅ Purpose: One-way communication (e.g., HR portal, announcements)
+🔐 Security Model: No Microsoft 365 Group association, Permissions are managed directly in SharePoint.
+👉 Three default groups:
+Site Owners → Full Control
+Site Members → Edit
+Site Visitors → Read
+👉 You must manually add users and assign permissions.
+🎯 Typical Use: Many readers (Visitors), few content creators (Members), one or two admins (Owners).
 
 
 
