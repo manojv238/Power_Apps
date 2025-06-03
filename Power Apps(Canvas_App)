@@ -39,6 +39,8 @@ POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 19. How do you use Power Apps in implement conditional formatting in your app?
 
 20. Difference between configuration and customization?
+
+21. What is pagination in Power Apps?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 1. Explain about Power Apps?
@@ -369,10 +371,22 @@ EXPLAIN IN ANSWER:-
 -> Example: Creating custom connectors, writing Power Automate flows, or building custom controls.    
 
 👉 So, configuration is easier and faster, and customization is for when you need something more advanced.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+21. What is pagination in Power Apps?
 
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 Pagination in Power Apps is the technique of displaying data in smaller chunks or "pages" instead of loading all records at once.
+👉 It helps with:
+✅ Better performance.
+✅ Handling large datasets.
+✅ Avoiding delegation issues.
 
-
+💡 When I used it:
+In one of my Power Apps integrated with SharePoint, I had to show 1000+ leave requests in a gallery.
+🔹 Loading everything made the app slow and hit the delegation limit (max 2000 items).
+🔹 So I implemented pagination to show 10 records per page, with Next and Previous buttons.
 
 
 
