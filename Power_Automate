@@ -1,3 +1,23 @@
+POWER AUTOMATE INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. What is Power Automate?
+
+2. How many types of flows in Power Automate?
+
+3. What are Triggers and Actions in Power Automate?
+
+4. What is the purpose of Conditions in Power Automate?
+
+5. What is Parallel branching in Power Automate?
+
+6. What is a Scope in Power Automate?
+
+7. How can you handle Errors in Power Automate flows?
+
+8. What are Expressions in Power Automate?
+
+9. Describe a flow you have built end-to-end: Have you used approval flows? How did you implement them?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 1. What is Power Automate?
 
 👉 Power Automate is a cloud-based service that enables users to automate workflows between apps and services, without writing code.
@@ -37,7 +57,7 @@ ACTIONS:
 👉 It’s what the flow actually does — like sending an email, updating records, creating files, etc.
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-4. What is the purpose of conditions in Power Automate?
+4. What is the purpose of Conditions in Power Automate?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
@@ -46,7 +66,7 @@ EXPLAIN IN ANSWER:-
 👉 In a leave approval process, I set a condition to check if the leave days are more than 5. If yes, the approval goes to the senior manager; if no, it goes to the team lead. 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-5. What is parallel branching in Power Automate?
+5. What is Parallel branching in Power Automate?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
@@ -69,7 +89,7 @@ EXPLAIN IN ANSWER:-
 👉 This way, I could log the error and send a Teams alert without stopping the flow.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-7. How can you handle errors in Power Automate flows?
+7. How can you handle Errors in Power Automate flows?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
