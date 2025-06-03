@@ -17,6 +17,8 @@ POWER AUTOMATE INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 8. What are Expressions in Power Automate?
 
 9. Describe a flow you have built end-to-end: Have you used approval flows? How did you implement them?
+
+10. What is Concurrency Control in Power Automate?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 1. What is Power Automate?
 
@@ -145,10 +147,17 @@ EXPLAIN IN ANSWER:-
 
 🔹 Step 5 – Notifications: 
 👉 The flow sends an email via Outlook and a Teams message to notify the employee about the outcome.
+------------------------------------------------------------------------------------------------------------------
 
+10. What is Concurrency Control in Power Automate?
 
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 Concurrency Control is used to manage how many flow runs happen in parallel when looping through items — especially in actions like "Apply to Each."
 
-
+🔹 How I used it: In one flow, I was processing SharePoint list items and sending emails. 
+👉 Initially, Power Automate ran all iterations in parallel, which caused issues — like Rate limits ⛔ and Sending emails out of order 📬.
+👉 So, I turned on Concurrency Control, set the degree of parallelism to 1, and ensured that actions ran one at a time in sequence ✅
 
 
 
