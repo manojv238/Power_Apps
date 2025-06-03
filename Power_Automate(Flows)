@@ -2,7 +2,7 @@ POWER AUTOMATE INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 1. What is Power Automate?
 
-2. How many types of flows in Power Automate?
+2. What are the different types of flows in Power Automate?
 
 3. What are Triggers and Actions in Power Automate?
 
@@ -25,7 +25,17 @@ POWER AUTOMATE INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
     such as a sending notifications or managing approvals and syncing data across platforms.
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-2. How many types of flows in Power Automate?
+2. What are the different types of flows in Power Automate?
+
+There are theree main types of flows:
+1. Cloud flows:
+2. Desktop flows: 
+👉 Used for Robotic Process Automation (RPA) to automate tasks on desktop apps or legacy systems that don't have APIs.
+👉 Tool: Built using Power Automate Desktop.
+
+3. Business process flows: 
+👉 Guides users through defined steps in a business process inside Model-Driven Apps/Dataverse.
+👉 Tool: Configured in Power Apps using BPF designer.
 
 1. AUTOMATED FLOW: 
 ━━━━━━━━━━━━━━━━━━
