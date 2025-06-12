@@ -378,11 +378,17 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Pagination in Power Apps is the technique of displaying data in smaller chunks or "pages" instead of loading all records at once.
-👉 It helps with:
-✅ Better performance.
-✅ Handling large datasets.
-✅ Avoiding delegation issues.
+👉 Pagination in Power Apps refers to dividing a large dataset into smaller chunks or pages.
+   — so that only a limited number of records are loaded or displayed at a time.
+
+🔹 Why pagination is needed:
+👉 To improve performance by avoiding loading all records at once.
+👉 To handle delegation limits (e.g., SharePoint, Dataverse often return max 500 or 2000 records).
+👉 To create user-friendly UI where users can navigate records in steps (Next/Previous).
+
+✅ Example – Pagination in a Gallery:
+Suppose you have a collection with 1000+ records.
+You want to show 10 records per page using a gallery.
 
 💡 When I used it:
 In one of my Power Apps integrated with SharePoint, I had to show 1000+ leave requests in a gallery.
