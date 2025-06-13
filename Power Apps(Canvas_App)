@@ -390,10 +390,5 @@ EXPLAIN IN ANSWER:-
 Suppose you have a collection with 1000+ records.
 You want to show 10 records per page using a gallery.
 
-💡 When I used it:
-In one of my Power Apps integrated with SharePoint, I had to show 1000+ leave requests in a gallery.
-🔹 Loading everything made the app slow and hit the delegation limit (max 2000 items).
-🔹 So I implemented pagination to show 10 records per page, with Next and Previous buttons.
-
 
 
