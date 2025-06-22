@@ -160,7 +160,7 @@ EXPLAIN IN ANSWER:-
 👉 This is especially important When working with large datasets — for example, SharePoint lists with thousands of records.
 👉 By default, Power Apps limit only pulls 500 records (Which can be increase upto max 2000 records).
 👉 So using without delegation, only those limited records are retrieved, Which can lead to incomplete or missing data.
-To slove this, 
+To problem slove this, 
 👉 I always use delegable functions like Filter, Sort, and StartsWith, and it return accurate results efficiently. 
 🔹 This improved both accuracy and performance.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
