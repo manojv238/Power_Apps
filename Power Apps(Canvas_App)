@@ -123,7 +123,7 @@ Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
-👉 Components are reusable building blocks so that we can create once custom controls and reuse them multiple screens.
+👉 Components are reusable building blocks so that we can create once custom controls and reuse them across all screens.
 For example:
 👉 I build a custom header or navigation menu as a component and reuse it on every screen.
 👉 Suppose in this way, if I need to make any changes, I can only update the component, and it automatically reflects across all screens.
