@@ -22,13 +22,17 @@ POWER AUTOMATE INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 1. What is Power Automate?
 
-👉 Power Automate is a cloud-based service that enables users to automate workflows between apps and services, without writing code.
-👉 It allows users to create automated workflows by connectiong different "triggers and actions",
-    such as a sending notifications or managing approvals and syncing data across platforms.
-----------------------------------------------------------------------------------------------------------------------------------------
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 Power Automate is a cloud-based service that helps to automate workflows across different apps and services — without writing much code.
+👉 It allows users to create automated workflows by connectiong different "triggers and actions".
+   – such as a sending notifications or managing approval processes and syncing data across platforms.
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 2. What are the different types of flows in Power Automate?
 
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
 There are theree main types of flows:
 1. Cloud flows:
 2. Desktop flows: 
