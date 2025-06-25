@@ -93,77 +93,75 @@ EXPLAIN IN ANSWER:-
 — Send a confirmation email to the user
 — Update a SharePoint list with form details
 — Notify the team in Microsoft Teams
-🔹 All these actions ran simultaneously, improving performance and reducing wait time compared to step-by-step execution.
+👉 All these actions ran simultaneously, improving performance and reducing wait time compared to step-by-step execution.
 ---------------------------------------------------------------------------------------------------------------------------
 
 6. What is a Scope in Power Automate?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 A Scope is like a container in Power Automate that groups multiple actions together. I use it mainly for organizing flows and implementing error handling.
+👉 Scope is like a container control in Power Automate that is used to group multiple actions together.
+👉 It helps in organizing flows and especially useful for error handling, modular logic, and status tracking.
 
-🔹 For example, 
+🔧 Example (Real-time use):
 👉 One of my flows, I grouped all the main actions — like creating a record, sending an email, and updating SharePoint — inside a Scope called ‘Try’.
-👉 Then I added a separate ‘Catch’ Scope, which runs only if the Try Scope fails (using Configure Run After).
-👉 This way, I could log the error and send a Teams alert without stopping the flow.
+🔹 If it failed, a second Scope “Catch” was triggered using (Configure Run After) to send an error notification email.
+🔹 A third “Finally” Scope logged the flow status, regardless of success or failure.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 7. How can you handle errors in Power Automate flows?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-🔹 I usaually Common Error Handling Techniques:
+🔹 I usually handle errors in Power Automate using common techniques like:
 
 1. Configure Run After:
-➤ Lets you specify when an action should run — e.g., only if the previous action fails or is skipped.
+👉 Lets you specify when an action should run — e.g., only if the previous action fails or is skipped.
 📌 Used to send alerts or log errors when something goes wrong.
 
 2. Scope with Run Status Check:
-➤ Group actions inside a Scope, then use another Scope to handle success or failure.
+👉 Group actions inside a Scope, then use another Scope to handle success or failure.
 📌 Helps in building try-catch-finally style logic.
 
 3. Terminate Action:
-➤ Used to end a flow early with a custom status (Success, Failed, Cancelled).
+👉 Used to end a flow early with a custom status (Success, Failed, Cancelled).
 
 4. Failure Notifications:
-➤ Add an action (like Send an email) in the error branch to notify admins or users.
+👉 Add an action (like Send an email) in the error branch to notify admins or users.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 8. What are Expressions in Power Automate?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Expressions in Power Automate are used to manipulate data and add logic inside a flow. I use them when I need more control than basic actions can provide.
+👉 Expressions in Power Automate are used to manipulate data, perform calculations, and apply logic within the flows.
 
-👉 For example, I’ve used expressions like formatDateTime() to format dates,
-👉 if() to apply conditional logic inside actions,
-👉 and length() to check if a list or array has items before proceeding.
---------------------------------------------------------------------------------------------------------------------------------------------------------------
+🔧 Example (Real-Time Use): I used formatDateTime(utcNow(), 'yyyy-MM-dd') to store the current date in a custom format while creating a SharePoint record.
+.---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-9. Describe a flow you have built end-to-end: Have you used approval flows? How did you implement them?
+9. Describe a flow you have built end-to-end? Have you used approval flows? How did you implement them?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Yes, I built an end-to-end leave approval workflow using Power Automate integrated with SharePoint, Outlook.
+✅ Yes, I have built several approval flows using Power Automate — here's one real-time example:
 
-🔹 Step 1 – Trigger: 
-👉 The process starts when a new leave request is submitted to a SharePoint list.
+🔧 Use Case: Leave Request Approval Flow (Real-Time Project)
+🔹 Step 1 – Trigger:
+👉 The flow is triggered automatically when a user submits a leave request form in SharePoint.
 
-🔹 Step 2 – Flow Triggered: 
-👉 A Power Automate flow is triggered automatically when a new item is created in the SharePoint list.
+🔹 Step 2 – Condition Check:
+👉 I added a condition to check if the number of leave days is more than 5.
+– If more than 5, the request is goes to the Senior Manager
+– If not, it goes to the Team Lead
 
-🔹 Step 3 – Condition Check: 
-👉 I added a condition to check if the leave days are more than 5.
-👉 If it's more than 5, the request goes to the senior manager for approval.
-👉 Otherwise, it goes to the team lead.
+🔹 Step 3 – Approval Process:
+👉 I used the "Start and Wait for an Approval" action (Approve/Reject – First to respond).
+👉 Based on the approval outcome:
+– If Approved, I update the SharePoint item status to "Approved" and send a confirmation email
+– If Rejected, I update the status to "Rejected" and notify the requester
 
-🔹 Step 4 – Approval Process: 
-👉 I used the Start and Wait for an Approval action. Based on the response: I updated the SharePoint item status.
-👉 If approved, the SharePoint list is updated with the new status.
-👉 If rejected, the flow updates the status and sends a rejection message.
-
-🔹 Step 5 – Notifications: 
-👉 The flow sends an email via Outlook and a Teams message to notify the employee about the outcome.
+🔹 Step 4 – Notifications:
+👉 The flow sends notifications via Outlook and Teams to inform the employee about the decision.
 ------------------------------------------------------------------------------------------------------------------
 
 10. What is Concurrency Control in Power Automate?
