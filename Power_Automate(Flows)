@@ -73,21 +73,27 @@ Power Automate supports five main types of flows:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Conditions in Power Automate allow flows to execute specific actions based on logic criteria.
-🔹 For example:
-👉 In a leave approval process, I set a condition to check if the leave days are more than 5. 
-   If yes, the approval goes to the senior manager; if no, it goes to the team lead. 
+👉 Conditions are used to add logic and decision-making in a flow.
+👉 It allow the flow to branch based on whether a condition is true or false — just like IF statements in programming.
+
+🔧 Example (Real-time use): 
+👉 In one of my flows, I used a Condition to check if a SharePoint item’s status is "Pending".
+🔹 If true, the flow sends an approval email.
+🔹 If false, it skips approval and just logs the data.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 5. What is Parallel branching in Power Automate?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Parallel branching to run multiple actions or sets of actions at the same time within a flow.
+👉 Parallel branching allows you to run multiple actions simultaneously — instead of executing them one after another.
 
-🔹 For example, in one workflow, after a form submission, I set up parallel branches to:
-👉 Send a confirmation email, Update a SharePoint list, and Notify the team in Teams.
-👉 All these actions ran simultaneously, improving performance and reducing wait time compared to step-by-step execution.
+🔧 Example (Real-time use): 
+👉 In one of my workflows, after a form submission, I configured parallel branches to:
+— Send a confirmation email to the user
+— Update a SharePoint list with form details
+— Notify the team in Microsoft Teams
+🔹 All these actions ran simultaneously, improving performance and reducing wait time compared to step-by-step execution.
 ---------------------------------------------------------------------------------------------------------------------------
 
 6. What is a Scope in Power Automate?
@@ -102,15 +108,25 @@ EXPLAIN IN ANSWER:-
 👉 This way, I could log the error and send a Teams alert without stopping the flow.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-7. How can you handle Errors in Power Automate flows?
+7. How can you handle errors in Power Automate flows?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-🔹 I usually handle errors in Power Automate flows using:
-👉 Configure Run After ---> I use this to run specific actions only when the previous one fails, is skipped, or times out.
-👉 Scope with Try-Catch Pattern ---> I wrap actions in a Scope block (Try), and if anything fails, the Catch scope handles logging or sending alerts.
-👉 Terminate Action ---> I use this to end a flow with a custom status (Succeeded, Failed, Cancelled).
-👉 Send Notifications ---> If something goes wrong, I trigger an email or Teams message to inform the relevant team.
+🔹 I usaually Common Error Handling Techniques:
+
+1. Configure Run After:
+➤ Lets you specify when an action should run — e.g., only if the previous action fails or is skipped.
+📌 Used to send alerts or log errors when something goes wrong.
+
+2. Scope with Run Status Check:
+➤ Group actions inside a Scope, then use another Scope to handle success or failure.
+📌 Helps in building try-catch-finally style logic.
+
+3. Terminate Action:
+➤ Used to end a flow early with a custom status (Success, Failed, Cancelled).
+
+4. Failure Notifications:
+➤ Add an action (like Send an email) in the error branch to notify admins or users.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 8. What are Expressions in Power Automate?
