@@ -33,31 +33,25 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-There are theree main types of flows:
-1. Cloud flows:
-2. Desktop flows: 
-👉 Used for Robotic Process Automation (RPA) to automate tasks on desktop apps or legacy systems that don't have APIs.
-👉 Tool: Built using Power Automate Desktop.
+Power Automate supports five main types of flows:
 
-3. Business process flows: 
-👉 Guides users through defined steps in a business process inside Model-Driven Apps/Dataverse.
-👉 Tool: Configured in Power Apps using BPF designer.
-
-1. AUTOMATED FLOW: 
-━━━━━━━━━━━━━━━━━━
+🔹 1. Automated Flow:
 👉 Triggered automatically by specific events or conditions.
-👉 For Example, when a new item is added to a SharePoint list, an email is received, or a file is created in OneDrive,
-    the flow runs automatically to perform predefined actions.
+👉 For Example, when a new item is added to a SharePoint list, an email is received, or a file is created in OneDrive.
 
-2. INSTANT FLOW: 
-━━━━━━━━━━━━━━━━
+🔹 2. Instant Flow (Button Flow):
 👉 Manually triggered by users, typically through a button press. (in Power Apps or the Power Automate mobile app).
-👉 It allows users to start actions on demand, such as sending approvals, notifications, or triggering a process when needed.
+👉 It allows users to start actions on demand, such as sending approvals, sending notifications.
 
-3. SCHEDULED FLOW:
-━━━━━━━━━━━━━━━━━━
-👉 Runs at a set schedule — like daily, weekly, or monthly — to automate repetitive tasks.
-👉 For Example, such as generating reports, data synchronization, or system cleanups.
+🔹 3. Scheduled Flow:
+👉 Runs on a define schedule — (e.g., daily, weekly, hourly) — to automate repetitive tasks.
+👉 For Example, Automatically generate and email a report every Monday at 9 AM.
+
+🔹 4. Business Process Flow (BPF):
+👉 Used in Model-Driven Apps to guide users through a multi-step business process.
+
+🔹 5. Desktop Flow (RPA):
+👉 Used for Robotic Process Automation(RPA) to automate manual tasks on desktop (e.g., legacy systems).
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 3. What are Triggers and Actions in Power Automate?
