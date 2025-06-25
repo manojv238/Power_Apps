@@ -56,15 +56,13 @@ Power Automate supports five main types of flows:
 
 3. What are Trigger and Action in Power Automate?
 
-TRIGGER:
-━━━━━━━━━
+🔹 Trigger:
 👉 A Trigger is the starting point of any flow — it defines the event that initiates the workflow.
 👉 I’ve used various triggers like:
 — When an item is created in SharePoint
 — When an email arrives in Outlook
 
-ACTION:
-━━━━━━━━━
+🔹 Action:
 👉 An Action is the response or task performed after the trigger runs.
 👉 Examples of actions I’ve used:
 — Send an approval email
