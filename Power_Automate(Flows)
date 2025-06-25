@@ -54,17 +54,21 @@ Power Automate supports five main types of flows:
 👉 Used for Robotic Process Automation(RPA) to automate manual tasks on desktop (e.g., legacy systems).
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-3. What are Triggers and Actions in Power Automate?
+3. What are Trigger and Action in Power Automate?
 
-TRIGGERS:
+TRIGGER:
 ━━━━━━━━━
 👉 A Trigger is the starting point of any flow — it defines the event that initiates the workflow.
-👉 I’ve used various triggers like — like When an item is created in SharePoint, When an email arrives in Outlook, etc.
+👉 I’ve used various triggers like:
+— When an item is created in SharePoint
+— When an email arrives in Outlook
 
-ACTIONS:
+ACTION:
 ━━━━━━━━━
-👉 An Action is the step that gets executed after a trigger fires. ("Each flow can have multiple actions")
-👉 It’s what the flow actually does — like sending an email, updating records, creating files, etc.
+👉 An Action is the response or task performed after the trigger runs.
+👉 Examples of actions I’ve used:
+— Send an approval email
+— Update a SharePoint item
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 4. What is the purpose of Conditions in Power Automate?
@@ -73,7 +77,8 @@ EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 👉 Conditions in Power Automate allow flows to execute specific actions based on logic criteria.
 🔹 For example:
-👉 In a leave approval process, I set a condition to check if the leave days are more than 5. If yes, the approval goes to the senior manager; if no, it goes to the team lead. 
+👉 In a leave approval process, I set a condition to check if the leave days are more than 5. 
+   If yes, the approval goes to the senior manager; if no, it goes to the team lead. 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 5. What is Parallel branching in Power Automate?
