@@ -360,34 +360,41 @@ EXPLAIN IN ANSWER:-
 👉 For example: To change the colour of a label based on a condition.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-20. Difference between configuration and customization?
+20. Difference between Configuration and Customization?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Configuration means using built-in settings to make the system work how you want, without any coding. 
--> Example: Changing app themes, modifying forms, enabling features, adding fields, or setting security roles. 
+👉 Configuration in Power Apps: 
+🔹 Changing app behavior using built-in settings or features without writing code.
+✅ Example: 
+➤ Adding/removing columns from views or forms in model-driven apps.
+➤ Configuring security roles and permissions in the Dataverse environment.
+➤ Changing themes, colors, screen transitions, or layout settings in Canvas Apps.
+➤ Using Power Automate to create flows through drag-and-drop actions.
 
-👉 Customization means writing code or building new features to change how the system works. 
--> Example: Creating custom connectors, writing Power Automate flows, or building custom controls.    
-
-👉 So, configuration is easier and faster, and customization is for when you need something more advanced.
+👉 Customization in Power Apps: 
+🔹 Extending app functionality using code or advanced logic.
+✅ Example: 
+➤ Writing custom JavaScript in model-driven apps.
+➤ Creating Canvas apps with complex Power Fx logic.
+➤ Developing custom connectors. 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-21. What is pagination in Power Apps?
+21. What is Pagination in Power Apps?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Pagination in Power Apps refers to dividing a large dataset into smaller chunks or pages.
-   — so that only a limited number of records are loaded or displayed at a time.
+👉 Pagination in Power Apps refers to the technique of loading and displaying large data sets in smaller, manageable chunks (pages) 
+   — instead of retrieving all records at once.
 
 🔹 Why pagination is needed:
 👉 To improve performance by avoiding loading all records at once.
 👉 To handle delegation limits (e.g., SharePoint, Dataverse often return max 500 or 2000 records).
 👉 To create user-friendly UI where users can navigate records in steps (Next/Previous).
 
-✅ Example – Pagination in a Gallery:
-Suppose you have a collection with 1000+ records.
-You want to show 10 records per page using a gallery.
+✅ Where is Pagination Used?
+👉 Canvas Apps, especially in Gallery controls showing SharePoint, Dataverse, or SQL data 1000+ records.
+👉 You want to show 10 records per page using a gallery.
 
 
 
