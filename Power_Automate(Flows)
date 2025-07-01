@@ -37,7 +37,7 @@ Power Automate supports five main types of flows:
 
 🔹 1. Automated Flow:
 👉 Triggered automatically by specific event or condition.
-👉 For Example, when a new item is added to a SharePoint list, an email is received, or a file is created in OneDrive.
+👉 For Example, when a new item is added to a SharePoint list, an email is received in Outlook, or a file is created in OneDrive.
 
 🔹 2. Instant Flow (Button Flow):
 👉 Manually triggered by users, typically through a button press. (in Power Apps or the Power Automate mobile app).
