@@ -186,11 +186,22 @@ If Rejected:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Concurrency Control is used to manage how many flow runs happen in parallel when looping through items — especially in actions like "Apply to Each."
+👉 Concurrency Control helps you manage how many simultaneous (parallel) flow runs can happen at the same time. 
+   — especially important when working with loops (Apply to each).
 
-🔹 How I used it: In one flow, I was processing SharePoint list items and sending emails. 
-👉 Initially, Power Automate ran all iterations in parallel, which caused issues — like Rate limits ⛔ and Sending emails out of order 📬.
-👉 So, I turned on Concurrency Control, set the degree of parallelism to 1, and ensured that actions ran one at a time in sequence ✅
+🔹 Why It's Needed:
+👉 When a loop processes many items (e.g., SharePoint list items, array values), Power Automate runs iterations in parallel by default.
+🔹 This can:
+👉 Improve performance ✅
+👉 But also cause data conflicts, race conditions ❌ (e.g., when updating same record or sending multiple dependent actions)
+
+🔧 How to Enable/Disable:
+👉 In your flow, go to "Apply to each" → Click ellipsis (...)
+👉 Choose "Settings"
+👉 You'll see a setting:
+🔘 Concurrency Control → Turn it On
+👉 Set Degree of Parallelism (e.g., 1 to 50)
+
 
 
 
