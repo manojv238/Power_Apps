@@ -189,22 +189,26 @@ EXPLAIN IN ANSWER:-
 1. Standard Connectors — connect to Microsoft services like SharePoint, Excel, Outlook, and OneDrive.
 2. Premium Connectors  — provide access to advanced or third-party systems such as SQL Server, Salesforce.
 
+
 ✅ Creating a Custom Connector in Power Apps:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-👉 Custom Connectors are used when I need to connect my app to an external system or API that is not available through standard connectors.
-👉 I create custom connectors when working with third-party APIs or internal company APIs.
+👉 Yes, I’ve created custom connectors in Power Apps, especially when integrating with third-party APIs,
+   or internal company services that aren't available through standard connectors.
 
-1. Navigate to Power Apps Portal > Data > Custom Connectors.
-2. Select New Custom Connector and choose a creation method (from blank, Postman file, or OpenAPI definition).
-3. Define the connector’s name and description.
-4. Configure the Security, API authentication (No auth, Basic, OAuth 2.0, or API key). For secure APIs, OAuth 2.0 or API key is recommended.
-5. Define the connector’s actions and operations (GET, POST, PUT, DELETE) matching the API endpoints.
-6. Test the connector thoroughly before integrating it into apps.
-7. It allows me to securely call external services directly from my app with easy functions.
+👉 I go to Power Apps Portal → Data → Custom Connectors, and choose ‘New Custom Connector’.
+👉 Depending on the API, I use either:
+Postman collection
+OpenAPI definition, or
+Start from blank
+🔐 I configured the security using OAuth 2.0 or API Key, depending on what the API supports.
+🔧 Then, I defined all the actions like GET, POST, PUT — mapping them to the API endpoints.
+✅ Once the connector was ready, I Test the connector thoroughly before integrating it into apps.
+Canvas Apps (for real-time data fetch)
+Power Automate flows (for background data sync)
 
 Example:
 👉 In one project, I built a custom connector to connect Power Apps to a payment gateway API, allowing users to process transactions directly inside the app.
-------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 10. Difference between Gallery, Form and Data Table?
 
