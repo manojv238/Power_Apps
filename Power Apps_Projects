@@ -1,13 +1,36 @@
-Here's a practical how you built the "INVENTORY MANAGEMENT APP" — clear, concise, and interview-ready:
+STEELCASE PROJECT EXPLANATION IN REAL-TIME:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📘 Project Description:
 
+👉 Steelcase is one of the oldest and largest furniture manufacturers in the USA, 
+   specializing in the design, production, and distribution of integrated office furniture, architectural solutions, and workplace technologies. 
+👉 Their clientele spans across office, education, healthcare, and retail sectors.
+
+👉 As a Power Apps Developer, I was responsible for designing and implementing business applications to automate internal operations and streamline workflows.
+
+🔧 Key Responsibilities & Highlights:
+👉 Developed Canvas Apps for internal teams including:
+
+1. Inventory Management App    – to track furniture stock and optimize asset availability across warehouses.
+2. Purchase Order Tracking App – enabled procurement teams to monitor vendor orders and delivery timelines.
+
+👉 Integrated SharePoint Online lists and SQL Server as data sources for real-time data operations.
+
+👉 Used Power Automate to build automated workflows for:
+✅ Approval processes and sending Notifications
+
+👉 Designed responsive and role-based UIs tailored to department-specific needs.
+
+👉 Applied patch functions, collections, and delegation techniques to improve performance and scalability.
+
+👉 Ensured data security using SharePoint permissions and Power Apps role-based access control.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ✅ App 1: Inventory Management App
 🎯 Purpose: To track furniture stock and ensure optimal asset availability across all warehouses(locations).
 
 🔧 Data Source: Used a SharePoint List (or Dataverse Table) named Inventory.
-
-Key columns:
+🗂️ Key columns included:
 
 📦 ItemID (Text)
 🪑 ItemName (Text)
@@ -40,78 +63,66 @@ Key columns:
 
 
 🧠 Logic Highlights:
-Used If() and Switch() for conditional UI rendering
-Applied Sort(), Filter(), and GroupBy() for dynamic data manipulation
-Managed delegation for performance with SharePoint
+👉 Used If() and Switch() for conditional UI rendering
+👉 Applied Sort(), Filter(), and GroupBy() for dynamic data manipulation
+👉 Managed delegation for performance with SharePoint
 
 
-✅ Impact:
-Reduced stock-out incidents by flagging low inventory early 🔔
-Helped warehouse managers with a clear view of stock distribution
-Enabled mobile access to real-time inventory 📱
+📈 Impact:
+🔔 Reduced stock-out incidents by flagging low inventory in real-time.
+🏭 Gave warehouse managers a clear and grouped view of stock per location.
+📱 Enabled mobile access for staff to track, update, and view inventory on the go.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+✅ App 2: Purchase Order Tracking App
+🎯 Purpose: To help the procurement team track vendor orders, delivery timelines, and statuses in real-time — reducing delays and improving efficiency.
 
+🔧 Data Source: Used a SharePoint List (or Dataverse Table) named 📄 PurchaseOrders
+🗂️ Key Columns:
 
+🔢 PO_ID (Text)
+🏭 VendorName (Text)
+📦 ItemOrdered (Text)
+📅 OrderDate, DeliveryDate (DateTime)
+📌 Status (Choice: Pending, In-Transit, Delivered)
+🔢 QuantityOrdered (Number)
 
-
-
-
-Perfect! 
-Here's how you can explain the Purchase Order Tracking App in an interview-ready, practical way — showing your hands-on Power Apps skills, logic, and impact:
-
-✅ App 2: Purchase Order Tracking App.
-Purpose:
-To help the procurement team easily track vendor orders, delivery dates, and order statuses in real time.
-
-🔧 Data Source:
-I used a SharePoint List (or Dataverse Table) named PurchaseOrders.
-
-Key columns included:
-
-PO_ID, VendorName, ItemOrdered, OrderDate, DeliveryDate, Status (Choice), and QuantityOrdered.
 
 🛠️ Canvas App Features I Built:
-1. Dashboard Screen
-Designed a Gallery to show all purchase orders.
 
-Used conditional formatting to highlight rows by status:
+1️⃣ Dashboard Screen:
+🖼️ Created a Gallery to list all orders
+🎨 Conditional formatting:
+🟡 Yellow = Pending
+🔵 Blue = In-Transit
+✅ Green = Delivered
 
-Yellow for Pending
+🔍 Search & Filter:
+👉 Dropdown to filter by Status
+👉 Date Picker to filter by OrderDate range
 
-Blue for In-Transit
+2️⃣ Order Details Screen:
+📋 On selecting a record → navigate to a detailed screen
+✏️ Added Edit button to update status
+💡 Used Patch() to update data directly to SharePoint/Dataverse
 
-Green for Delivered
+3️⃣ Add New Purchase Order:
+➕ Created a Form Screen to add new orders
+📨 Used SubmitForm() to save data
+✅ OnSuccess → showed a toast message and navigated back to Dashboard
 
-Enabled quick search and filter using a Dropdown (for Status) and Date Picker (for Order Date range).
-
-2. Order Details Screen
-When an order is selected, navigated to a detail screen showing full order info.
-
-Added an Edit button with a form to update the status (e.g., when the order gets delivered).
-
-Used the Patch() function to update the SharePoint/Dataverse record.
-
-3. Add New Purchase Order
-Created a Form Screen for new order entry.
-
-Used OnSuccess to show a toast message and navigate back to the Dashboard.
-
-Used SubmitForm() to save the new entry to SharePoint/Dataverse.
 
 🧠 Extra Logic Used:
-Implemented filtering using Filter() and Search() functions for better performance.
+🧮 Used Filter() + Search() for optimized querying
+🚫 Handled delegation warnings to support large data
+🔐 Applied role-based access with User().Email logic (e.g., only procurement users can edit)
 
-Handled delegation for large datasets.
 
-Applied role-based visibility using User().Email logic for procurement-specific actions.
-
-✅ Impact:
-Reduced manual tracking via Excel/email.
-
-Gave the team real-time visibility into delivery delays.
-
-Improved vendor follow-ups with live status tracking from mobile and desktop.
-
+📈 Impact:
+📉 Eliminated manual Excel/email-based tracking
+🕒 Enabled real-time order visibility across teams
+📲 Provided mobile-ready access for tracking & status updates
+🤝 Improved vendor coordination and delivery planning
 
 
 
