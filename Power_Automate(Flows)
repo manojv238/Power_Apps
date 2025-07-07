@@ -73,13 +73,18 @@ Power Automate supports five main types of flows:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Conditions are used to add logic and decision-making in a flow.
-👉 It allow the flow to branch based on whether a condition is true or false — just like IF statements in programming.
+👉 Conditions in Power Automate are used to create logic-based decision branches, 
+   — meaning the flow can take different actions depending on whether a condition is true or false.
 
 🔧 Example (Real-time use): 
 👉 In one of my flows, I used a Condition to check if a SharePoint item’s status is "Pending".
-🔹 If true, the flow sends an approval email.
-🔹 If false, it skips approval and just logs the data.
+If Approved(true):
+👉 Update the SharePoint item status to "Approved"
+👉 Send an Outlook email to employee with subject: “Leave Request Approved”
+
+If Rejected(false):
+👉 Update status to "Rejected"
+👉 Send rejection email to the employee
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 5. What is Parallel branching in Power Automate?
