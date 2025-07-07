@@ -12,23 +12,21 @@ I’ve worked on two major projects — one for Steelcase and another for Herbal
 
 🔹 Roles & Responsibilities:
 -------------------------------
-Firstly:
-– I started by understanding business requirements — like what users needed and expected from the application.
+– I started by closely understanding the business requirements — like what users needed and expected from the application.
 
-– I designed the UI and developed Canvas Apps from scratch, its aligning with client needs and use cases.
+– Based on that, I designed UI the app layout and user experience to align with client needs.
 
-– I used SharePoint as the backend data source to store and manage data. 
-– I connected the app to SharePoint lists and implemented full CRUD operations using Power Fx functions like Patch(), Remove(), and Collect().
+– Built the app from scratch using Canvas App with a fully customized UI using galleries, forms, buttons, dropdowns, and icons.
 
-– I worked with various controls such as galleries, forms, dropdowns, buttons, Icons, and customized them as per the business logic.
+– I used SharePoint Online Lists as the backend data source to store and manage data. 
 
 – I Applied data validation using functions like IsMatch() and IsBlank() functions to improve data accuracy and user input quality.
 
-– I focused on designing a responsive UI/UX, ensuring the app was both professional and user-friendly across all devices.
+– I focused on creating a responsive UI/UX, it helps to users across all devices, – whether its a desktops, tablets, and mobile phones.
 
 – Once the development was complete, I conducted end-to-end testing covering all data and UI scenarios.
 
-– I shared the app with stakeholders, gathered feedback for UI improvements, validations, and business logic enhancements, and refined the app accordingly.
+– I shared the app with stakeholders, gathered feedback for UI improvements or validations.
 
 – Finally, I published the app and configured proper role-based permissions to ensure secure access.
 
