@@ -330,7 +330,7 @@ EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 👉 Implementing role-based security in Power Apps invloves desining the app to restrict access to certain features, data or functionality, 
     — based on roles assigned to users.
-👉 Each role defines specific permissions — like Read, Write, create or Delete — across tables, forms, apps, or even specific records.
+👉 Each role defines specific permissions — like Read, Create, Update, or Delete. — across Dataverse tables, forms, views, and even records.
 
 Example:
 👉 In my recent project, Managers had access to update employee data, while Employees could only view their own profile.
