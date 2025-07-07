@@ -101,42 +101,42 @@ EXPLAIN IN ANSWER:-
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 👉 Scope is like a container control in Power Automate that is used to group multiple actions together.
-👉 It helps in organizing flows and especially useful for error handling, modular logic, and status tracking.
+👉 It helps in organizing flows and especially useful for error handling, debugging, and logical separation of actions.
 
-🔧 Example (Real-time use):
-👉 One of my flows, I grouped all the main actions — like creating a record, sending an email, and updating SharePoint — inside a Scope called ‘Try’.
-🔹 If it failed, a second Scope “Catch” was triggered using (Configure Run After) to send an error notification email.
-🔹 A third “Finally” Scope logged the flow status, regardless of success or failure.
+🔧 For Example:
+👉 I use Scopes to grouped all the main actions — like creating a record, sending an email, and updating SharePoint — inside a Scope called ‘Try’.
+👉 One key benefit is that I can apply ‘Configure Run After’ logic to an entire Scope.
+🔹 For example:
+— I have a ‘Main Actions’ scope that performs all business logic
+— Then a second ‘Error Handling’ scope that only runs if the first scope fails
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 7. How can you handle errors in Power Automate flows?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-🔹 I usually handle errors in Power Automate using common techniques like:
+👉 In Power Automate, I handle errors using a combination of Configure Run After, Scope controls, and error-handling actions, 
+    — like sending notifications or logging failures.
 
-1. Configure Run After:
-👉 Lets you specify when an action should run — e.g., only if the previous action fails or is skipped.
-📌 Used to send alerts or log errors when something goes wrong.
-
-2. Scope with Run Status Check:
-👉 Group actions inside a Scope, then use another Scope to handle success or failure.
-📌 Helps in building try-catch-finally style logic.
-
-3. Terminate Action:
-👉 Used to end a flow early with a custom status (Success, Failed, Cancelled).
-
-4. Failure Notifications:
-👉 Add an action (like Send an email) in the error branch to notify admins or users.
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+👉 I usually wrap critical steps inside a Scope block — for example, actions related to updating a SharePoint list or calling an API.
+👉 Then I use another Scope called ‘Error Handling’, and configure it to run only if the previous scope fails using the 'Configure Run After → has failed' option.
+👉 Inside the error scope, I typically:
+📧 Send an email alert to the admin or support team.
+📝 Log the error message using a Compose or Append to Array step.
+🔁 Sometimes use Retry Policies for temporary issues like timeout or throttling.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 8. What are Expressions in Power Automate?
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Expressions in Power Automate are used to manipulate data, perform calculations, and apply logic within the flows.
+👉 Expressions in Power Automate are used to manipulate data, perform calculations, format values, and apply logic within the flow.
 
-🔧 Example (Real-Time Use): I used formatDateTime(utcNow(), 'yyyy-MM-dd') to store the current date in a custom format while creating a SharePoint record.
+✅ I commonly use expressions for tasks like:
+— Formatting dates: formatDateTime(triggerOutputs()?['headers']['x-ms-file-last-modified'], 'yyyy-MM-dd')
+— String manipulation: concat(), replace(), substring()
+— Null checks: if(empty(...), 'Default', 'Value')
+— Mathematical operations: add(), div(), mod()
 .---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 9. Describe a flow you have built end-to-end? Have you used approval flows? How did you implement them?
