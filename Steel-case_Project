@@ -30,24 +30,24 @@ STEELCASE PROJECT EXPLANATION IN REAL-TIME:
 🎯 Purpose: "I developed a responsive Inventory Management App using Canvas App to help a client manage furniture stock across multiple warehouses."
 
 🔧 Key Highlights:
-📱 Responsive Design: Built using containers and relative positioning to auto-adjust across desktop, tablet, and mobile.
+📱 Responsive Design: Built using containers and relative positioning to auto-adjust across all devices desktop, tablet, and mobile.
 
 🔧 Data Source: Used a SharePoint List (or Dataverse Table) named Inventory.
-🗂️ Key columns included: ItemID, ItemName, Category, Quantity, WarehouseLocation.
+🗂️ Key columns included: ProductID, ProductName, Category, Quantity, WarehouseLocation.
 
 
 🛠️ Canvas App Features I Built:
 
 🏠 Home Screen:
-– Gallery to display inventory items.
-– Search box to filter by Item Name.
+– Gallery to display inventory Products.
+– Search box to filter by Product name.
 – Dropdowns to filter by Category and WarehouseLocation.
 
 ℹ️ Item Details Screen:
-– On selecting an inventory item → Navigate to a screen showing record details eg., Name, Quantity, Category, Location.
+– On selecting an inventory Product → Navigate to a screen showing record details eg., Product name, Quantity, Category, Location.
 
 ➕ Add Item Screen:
-– Add Item Screen: Used a Form Control for admins to add new items.
+– Add Item Screen: Used a Form Control for admins to add new Product.
 – Used SubmitForm() to save into SharePoint or Dataverse.
 
 🔴 Low Stock Alerts:
