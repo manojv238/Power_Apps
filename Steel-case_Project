@@ -27,7 +27,7 @@ STEELCASE PROJECT EXPLANATION IN REAL-TIME:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ✅ App 1: Inventory Management App
-🎯 Purpose: To track furniture stock and ensure optimal asset availability across all warehouses(locations).
+🎯 Purpose: Yes, I’ve built an Inventory Management App for a client to track and manage their furniture stock across multiple warehouses.
 
 🔧 Data Source: Used a SharePoint List (or Dataverse Table) named Inventory.
 🗂️ Key columns included:
@@ -55,7 +55,7 @@ STEELCASE PROJECT EXPLANATION IN REAL-TIME:
 💾 Used SubmitForm() to save into SharePoint or Dataverse
 
 4️⃣ Low Stock Alerts:
-🔴 Added Red Icon/Label if QuantityAvailable < 5
+🔴 Added Red Icon/Label if QuantityAvailable < 5...
 
 5️⃣ Warehouse View:
 🏭 Used GroupBy() to group inventory by warehouse
