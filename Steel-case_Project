@@ -26,46 +26,42 @@ STEELCASE PROJECT EXPLANATION IN REAL-TIME:
 👉 Ensured data security using SharePoint permissions and Power Apps role-based access control.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-✅ App 1: Inventory Management App
-🎯 Purpose: Yes, I’ve built an Inventory Management App for a client to track and manage their furniture stock across multiple warehouses.
+✅ App 1: Inventory Management App – Responsive Canvas App
+🎯 Purpose: "I developed a responsive Inventory Management App using Canvas App to help a client manage furniture stock across multiple warehouses."
+
+🔧 Key Highlights:
+📱 Responsive Design: Built using containers and relative positioning to auto-adjust across desktop, tablet, and mobile.
 
 🔧 Data Source: Used a SharePoint List (or Dataverse Table) named Inventory.
-🗂️ Key columns included:
-
-📦 ItemID (Text)
-🪑 ItemName (Text)
-🏷️ Category (Choice)
-📊 QuantityAvailable (Number)
-📍 WarehouseLocation (Choice/Text)
-🕒 LastUpdated (DateTime)
+🗂️ Key columns included: ItemID, ItemName, Category, Quantity, WarehouseLocation.
 
 
 🛠️ Canvas App Features I Built:
 
-1️⃣ Home Screen:
-🖼️ Gallery to display inventory items
-🔍 Search box to filter by Item Name
-📂 Dropdowns to filter by Category and WarehouseLocation
+🏠 Home Screen:
+– Gallery to display inventory items.
+– Search box to filter by Item Name.
+– Dropdowns to filter by Category and WarehouseLocation.
 
-2️⃣ Item Details Screen:
-📋 On selecting an inventory item → Navigate to a screen showing: Name, Quantity, Category, Location.
+ℹ️ Item Details Screen:
+– On selecting an inventory item → Navigate to a screen showing record details eg., Name, Quantity, Category, Location.
 
-3️⃣ Add New Item:
-➕ Used a Form Control for admins to add new items
-💾 Used SubmitForm() to save into SharePoint or Dataverse
+➕ Add Item Screen:
+– Add Item Screen: Used a Form Control for admins to add new items.
+– Used SubmitForm() to save into SharePoint or Dataverse.
 
-4️⃣ Low Stock Alerts:
-🔴 Added Red Icon/Label if QuantityAvailable < 5...
+🔴 Low Stock Alerts:
+– Added Red Icon/Label if QuantityAvailable < 5.
 
 5️⃣ Warehouse View:
-🏭 Used GroupBy() to group inventory by warehouse
-📈 Displayed total quantity per warehouse for better planning
+– Used GroupBy() to group inventory by warehouse
+– Displayed total quantity per warehouse for better planning.
 
 
 🧠 Logic Highlights:
-👉 Used If() and Switch() for conditional UI rendering
-👉 Applied Sort(), Filter(), and GroupBy() for dynamic data manipulation
-👉 Managed delegation for performance with SharePoint
+– Used If() and Switch() for conditional UI rendering.
+– Applied Sort(), Filter(), and GroupBy() for dynamic data manipulation.
+– Managed delegation for performance with SharePoint.
 
 
 📈 Impact:
@@ -77,7 +73,7 @@ STEELCASE PROJECT EXPLANATION IN REAL-TIME:
 ✅ App 2: Purchase Order Tracking App
 🎯 Purpose: To help the procurement team track vendor orders, delivery timelines, and statuses in real-time — reducing delays and improving efficiency.
 
-🔧 Data Source: Used a SharePoint List (or Dataverse Table) named 📄 PurchaseOrders
+🔧 Data Source: Used a SharePoint List (or Dataverse Table) named 📄 PurchaseOrders.
 🗂️ Key Columns:
 
 🔢 PO_ID (Text)
