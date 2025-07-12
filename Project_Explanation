@@ -29,11 +29,145 @@ I’ve worked on two major projects — one for Steelcase and another for Herbal
 – I shared the app with stakeholders, gathered feedback for UI improvements or validations.
 
 – Finally, I published the app and configured proper role-based permissions to ensure secure access.
-
-Overall, with hands-on experience in Canvas App development, integration with SharePoint, Power Fx customization, and workflow automation.
-
-I’m confident in my ability to contribute effectively to your team and deliver high-quality solutions.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+✅ Sample Real-Time Requirements & How You Handle Them:
+
+🔹 1. Add a new dropdown for "Department" in the Request Form
+Requirement:
+Business team wants to track the requestor’s department in the form.
+How you work on it:
+Go to the form screen.
+Add a Dropdown control.
+Connect it to the “Department” list in SharePoint or a static collection.
+Patch the selected department value to the data source.
+Update validations to make it a required field.
+
+
+🔹 2. Apply role-based visibility to “Approve” button
+Requirement:
+Only Admins should see the "Approve" button on submitted requests.
+How you work on it:
+Use Power Fx:
+Visible = If(User().Email in ["admin1@xyz.com", "admin2@xyz.com"], true, false)
+Or fetch user role from a SharePoint “UserRoles” list and filter accordingly.
+
+
+🔹 3. Add validation for mandatory fields before submission
+Requirement:
+Form should not be submitted unless "Reason" and "Start Date" are filled.
+How you work on it:
+Use Power Fx inside Submit button:
+powerfx
+Copy
+Edit
+If(
+   IsBlank(txtReason.Text) || IsBlank(dateStart.SelectedDate),
+   Notify("Please fill all required fields", NotificationType.Error),
+   Patch(...your submit logic...)
+)
+
+
+🔹 4. Replace static text with dynamic data
+Requirement:
+Display logged-in user's name and today's date at the top of the screen.
+How you work on it:
+Add label control with formula:
+Text = "Welcome, " & User().FullName & " | " & Text(Today(), "dd-mmm-yyyy")
+
+
+🔹 5. Add status update option to request cards in gallery
+Requirement:
+Manager should be able to mark requests as “In Progress” or “Completed”.
+How you work on it:
+Add a dropdown in the gallery:
+Items = ["Pending", "In Progress", "Completed"]
+OnChange of dropdown:
+Patch(DataSource, ThisItem, {Status: drpStatus.Selected.Value})
+
+
+🔹 6. Connect Power Automate to send email on submit
+Requirement:
+Trigger email with form details when a request is submitted.
+How you work on it:
+Create Power Automate flow with SharePoint or Power Apps trigger.
+From Power Apps, call:
+OnSelect = 'YourFlowName'.Run(txtName.Text, txtReason.Text, ...)
+
+
+🔹 7. Handle large SharePoint data (Pagination / Delegation)
+Requirement:
+You have 5,000+ records, and the app is slow or not showing all.
+How you work on it:
+Use With() and Filter() on indexed columns.
+Paginate manually using collections and a Next/Previous button logic:
+powerfx
+Copy
+Edit
+ClearCollect(colPagedData, FirstN(Skip(DataSource, PageNumber * PageSize), PageSize))
+
+
+🔹 8. Add search and filter by name or status
+Requirement:
+Users should be able to search for items by name and filter by status.
+How you work on it:
+Add a Text Input (txtSearch) and Dropdown (drpStatus)
+Gallery Items:
+powerfx
+Copy
+Edit
+Filter(
+  DataSource,
+  StartsWith(Title, txtSearch.Text) &&
+  (drpStatus.Selected.Value = "All" || Status = drpStatus.Selected.Value)
+)
+
+💡 Real-time Developer Workflow Summary:
+--------------------------------------------------------------------
+Get Jira ticket or Teams message from business team.
+
+Understand and clarify the requirement.
+
+Open Power Apps Studio > Open existing solution/app.
+
+Make changes (add fields, update logic, integrate flow).
+
+Test changes in sandbox/dev environment.
+
+Push changes via Solutions or manually in production.
+
+Inform the team and close the ticket.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
