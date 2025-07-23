@@ -74,8 +74,9 @@ EXPLAIN IN ANSWER:-
 👉 One of the key advantages of Canvas Apps is more flexibility.
 👉 I can integrate my apps with multiple data sources like SharePoint, Excel or Dataverse depending on the use case.
 
-👉 Model-Driven App is more data-driven — the UI is automatically generated based on the Dataverse data model, including tables, relationships, forms, and views.
-👉 I prefer Model-Driven Apps for complex business scenarios suppose when the data is already in Dataverse. (eg, Customer Service apps)
+👉 Model-Driven App is data-driven applications — the UI is automatically generated based on the Dataverse data model. 
+   — including tables, relationships, forms, and views.
+👉 I prefer Model-Driven Apps for complex business scenarios suppose when the data is already in Dataverse.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 3. Variables and types of Variables in power apps?
