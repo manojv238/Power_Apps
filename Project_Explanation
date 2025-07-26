@@ -1,4 +1,4 @@
-Hi [Interviewer’s Name], good morning. 
+Hi [Interviewer’s Name], Good Morning. 
 First of all, thank you for giving me this opportunity.
 
 My name is Manoj Kumar, and I’m from Tirupati. I completed my graduation in B.Sc. Computer Science from S.V. University.
@@ -11,7 +11,7 @@ I’ve worked on two major projects — one for Steelcase and another for Herbal
 
 
 🔹 Roles & Responsibilities:
--------------------------------
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 – I started by closely understanding the business requirements — like what users needed and expected from the application.
 
 – Based on that, I designed UI the app layout and user experience to align with client needs.
@@ -29,13 +29,13 @@ I’ve worked on two major projects — one for Steelcase and another for Herbal
 – I shared the app with stakeholders, gathered feedback for UI improvements or validations.
 
 – Finally, I published the app and configured proper role-based permissions to ensure secure access.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+-----------------------------------------------------------------------------------------------------------------------
 💡 Real-time Developer Workflow Summary for a Power Apps (Canvas/Model-Driven) Developer with 2–3 years of experience:
-
+-----------------------------------------------------------------------------------------------------------------------
 🔸 1. Receive Requirement:
 From business team via Jira, ServiceNow, or Microsoft Teams.
-Example: "Add new field to track Department in employee requests."
+Example: "Add new field to track Department in employee requests.
 
 🔸 2. Analyze the Request:
 Understand the objective and data source (SharePoint, Dataverse, SQL).
@@ -65,9 +65,10 @@ Communicate changes via release notes or Teams channel.
 🔸 8. Monitor & Support:
 After deployment, monitor usage and flow runs (Power Automate).
 Fix any bugs or enhancements raised by users.
-
-✅ Real-Time Requirements & Tasks in a Canvas App :
-
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+----------------------------------------------------
+✅ Real-Time Requirements & Tasks in a Canvas App:
+----------------------------------------------------
 🔹 1. Add a new dropdown for "Department" in the Request Form
 Requirement:
 Business team wants to track the requestor’s department in the form.
@@ -78,7 +79,6 @@ Connect it to the “Department” list in SharePoint or a static collection.
 Patch the selected department value to the data source.
 Update validations to make it a required field.
 
-
 🔹 2. Apply role-based visibility to “Approve” button
 Requirement:
 Only Admins should see the "Approve" button on submitted requests.
@@ -86,7 +86,6 @@ How you work on it:
 Use Power Fx:
 Visible = If(User().Email in ["admin1@xyz.com", "admin2@xyz.com"], true, false)
 Or fetch user role from a SharePoint “UserRoles” list and filter accordingly.
-
 
 🔹 3. Add validation for mandatory fields before submission
 Requirement:
@@ -102,14 +101,12 @@ If(
    Patch(...your submit logic...)
 )
 
-
 🔹 4. Replace static text with dynamic data
 Requirement:
 Display logged-in user's name and today's date at the top of the screen.
 How you work on it:
 Add label control with formula:
 Text = "Welcome, " & User().FullName & " | " & Text(Today(), "dd-mmm-yyyy")
-
 
 🔹 5. Add status update option to request cards in gallery
 Requirement:
@@ -120,7 +117,6 @@ Items = ["Pending", "In Progress", "Completed"]
 OnChange of dropdown:
 Patch(DataSource, ThisItem, {Status: drpStatus.Selected.Value})
 
-
 🔹 6. Connect Power Automate to send email on submit
 Requirement:
 Trigger email with form details when a request is submitted.
@@ -128,7 +124,6 @@ How you work on it:
 Create Power Automate flow with SharePoint or Power Apps trigger.
 From Power Apps, call:
 OnSelect = 'YourFlowName'.Run(txtName.Text, txtReason.Text, ...)
-
 
 🔹 7. Handle large SharePoint data (Pagination / Delegation)
 Requirement:
@@ -140,7 +135,6 @@ powerfx
 Copy
 Edit
 ClearCollect(colPagedData, FirstN(Skip(DataSource, PageNumber * PageSize), PageSize))
-
 
 🔹 8. Add search and filter by name or status
 Requirement:
@@ -156,81 +150,56 @@ Filter(
   StartsWith(Title, txtSearch.Text) &&
   (drpStatus.Selected.Value = "All" || Status = drpStatus.Selected.Value)
 )
-
-
-
-
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---------------------------------------------------------
 ✅ Real-Time Requirements & Tasks in a Model-Driven App:
+---------------------------------------------------------
 🔹 1. Add a new field “Priority” to the Case entity
 Requirement: Business wants to track if a case is High, Medium, or Low priority.
 How you handle:
-
 Open Solution > Tables > Case
-
 Add new Choice column “Priority” with values: High, Medium, Low
-
 Add this field to the Case Main form and configure visibility
-
 Set Business Rule: If Priority = High → auto assign to Senior Agent
 
 🔹 2. Create a view to display open orders by vendor
 Requirement: Business users want to filter all open Purchase Orders by Vendor.
 How you handle:
-
 Navigate to Tables > Purchase Order > Views
-
 Create new system view: "Open Orders by Vendor"
-
 Add filters: Status = “Open”
-
 Add columns: PO_ID, Vendor, Item, Quantity
-
 Add Grouping and Sorting based on Vendor Name
 
 🔹 3. Enable status transitions using Business Process Flow
 Requirement: Orders should go through stages: Draft → Approved → Delivered.
 How you handle:
-
 Create a new Business Process Flow for “Order Processing”
-
 Add stages: Draft, Review, Approve, Deliver
-
 Add required steps to each stage
-
 Publish and assign to security roles like Procurement Manager
 
 🔹 4. Apply role-based form customization
 Requirement: Finance team should see the "Cost Details" tab, but others shouldn't.
 How you handle:
-
 Edit the Main Form of the Invoice table
-
 Add a tab "Cost Details"
-
 Use form-level JavaScript or Enable Rule to show/hide based on user role or team
-
 OR use security roles to show different forms to different users
 
 🔹 5. Trigger approval workflow when new order is created
 Requirement: When a new PO is submitted, send it for approval.
 How you handle:
-
 Create Power Automate flow triggered on Create of PO in Dataverse
-
 Add Approvals connector → Send to Procurement Lead
-
 On Approval, update Status column in Dataverse to “Approved”
 
 🔹 6. Create dashboard to track open service requests by status
 Requirement: Managers want a visual chart showing how many open tickets exist in each status.
 How you handle:
-
 Create a System Dashboard
-
 Add Pie/Bar chart from “Service Request” view
-
 Segment by Status (Open, In Progress, Resolved)
-
 Add List view alongside to allow quick access
 
 
