@@ -31,8 +31,42 @@ I’ve worked on two major projects — one for Steelcase and another for Herbal
 – Finally, I published the app and configured proper role-based permissions to ensure secure access.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+💡 Real-time Developer Workflow Summary for a Power Apps (Canvas/Model-Driven) Developer with 2–3 years of experience:
 
-✅ Sample Real-Time Requirements & How You Handle Them:
+🔸 1. Receive Requirement:
+From business team via Jira, ServiceNow, or Microsoft Teams.
+Example: "Add new field to track Department in employee requests."
+
+🔸 2. Analyze the Request:
+Understand the objective and data source (SharePoint, Dataverse, SQL).
+Clarify any missing information or dependencies with stakeholders.
+
+🔸 3. Open Existing Solution/App:
+Navigate to Power Apps Studio (Canvas) or Power Apps Maker Portal (Model-Driven).
+Open the specific environment and solution.
+
+🔸 4. Implement the Change:
+Add columns, screens, logic, business rules, or Power Automate flows.
+Use Power Fx for logic (Canvas App) or configure forms/views (Model-Driven App).
+
+🔸 5. Test in Dev/Sandbox:
+Test the functionality in a non-production environment.
+Use test data to validate behavior, form rules, flow triggers, and UI logic.
+
+🔸 6. Peer Review or UAT (Optional):
+Share the updated app with internal QA or business users for feedback.
+Gather and fix any issues or UI enhancements.
+
+🔸 7. Deploy to Production:
+Publish the updated app.
+Use Managed Solution deployment if in a Model-Driven/Enterprise environment.
+Communicate changes via release notes or Teams channel.
+
+🔸 8. Monitor & Support:
+After deployment, monitor usage and flow runs (Power Automate).
+Fix any bugs or enhancements raised by users.
+
+✅ Real-Time Requirements & Tasks in a Canvas App :
 
 🔹 1. Add a new dropdown for "Department" in the Request Form
 Requirement:
@@ -123,21 +157,82 @@ Filter(
   (drpStatus.Selected.Value = "All" || Status = drpStatus.Selected.Value)
 )
 
-💡 Real-time Developer Workflow Summary:
---------------------------------------------------------------------
-Get Jira ticket or Teams message from business team.
 
-Understand and clarify the requirement.
 
-Open Power Apps Studio > Open existing solution/app.
 
-Make changes (add fields, update logic, integrate flow).
+✅ Real-Time Requirements & Tasks in a Model-Driven App:
+🔹 1. Add a new field “Priority” to the Case entity
+Requirement: Business wants to track if a case is High, Medium, or Low priority.
+How you handle:
 
-Test changes in sandbox/dev environment.
+Open Solution > Tables > Case
 
-Push changes via Solutions or manually in production.
+Add new Choice column “Priority” with values: High, Medium, Low
 
-Inform the team and close the ticket.
+Add this field to the Case Main form and configure visibility
+
+Set Business Rule: If Priority = High → auto assign to Senior Agent
+
+🔹 2. Create a view to display open orders by vendor
+Requirement: Business users want to filter all open Purchase Orders by Vendor.
+How you handle:
+
+Navigate to Tables > Purchase Order > Views
+
+Create new system view: "Open Orders by Vendor"
+
+Add filters: Status = “Open”
+
+Add columns: PO_ID, Vendor, Item, Quantity
+
+Add Grouping and Sorting based on Vendor Name
+
+🔹 3. Enable status transitions using Business Process Flow
+Requirement: Orders should go through stages: Draft → Approved → Delivered.
+How you handle:
+
+Create a new Business Process Flow for “Order Processing”
+
+Add stages: Draft, Review, Approve, Deliver
+
+Add required steps to each stage
+
+Publish and assign to security roles like Procurement Manager
+
+🔹 4. Apply role-based form customization
+Requirement: Finance team should see the "Cost Details" tab, but others shouldn't.
+How you handle:
+
+Edit the Main Form of the Invoice table
+
+Add a tab "Cost Details"
+
+Use form-level JavaScript or Enable Rule to show/hide based on user role or team
+
+OR use security roles to show different forms to different users
+
+🔹 5. Trigger approval workflow when new order is created
+Requirement: When a new PO is submitted, send it for approval.
+How you handle:
+
+Create Power Automate flow triggered on Create of PO in Dataverse
+
+Add Approvals connector → Send to Procurement Lead
+
+On Approval, update Status column in Dataverse to “Approved”
+
+🔹 6. Create dashboard to track open service requests by status
+Requirement: Managers want a visual chart showing how many open tickets exist in each status.
+How you handle:
+
+Create a System Dashboard
+
+Add Pie/Bar chart from “Service Request” view
+
+Segment by Status (Open, In Progress, Resolved)
+
+Add List view alongside to allow quick access
+
 
 
 
