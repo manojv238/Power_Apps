@@ -32,8 +32,13 @@ STEELCASE PROJECT EXPLANATION IN REAL-TIME:
 🔧 Key Highlights:
 📱 Responsive Design: Built using containers and relative positioning to auto-adjust across all devices desktop, tablet, and mobile.
 
-🔧 Data Source: Used a SharePoint List (or Dataverse Table) named Inventory.
-🗂️ Key columns included: ProductID, ProductName, Category, Quantity, WarehouseLocation.
+🔧 Data Source: Used a SharePoint List named Inventory.
+🗂️ Key columns included: 
+ProductID (Text), 
+ProductName (Text), 
+Category (Choice:Furniture, Electronics, Stationery, IT Equipment), 
+Quantity (Whole Number), 
+WarehouseLocation (Choice).
 
 
 🛠️ Canvas App Features I Built:
@@ -61,131 +66,88 @@ STEELCASE PROJECT EXPLANATION IN REAL-TIME:
 
 📈 Finally Impact:
 ------------------
-🎯 …………This app helped the client replace manual stock tracking with a digital system…………
+🎯 Replaced manual tracking:
 — Earlier they were tracking inventory manually in Excel, manual methods to track inventory,
 — now with the canvas app, all records are digital, stored in SharePoint, and easily accessible.
 
-🎯 …………Reduced errors…………
+🎯 Reduced errors:
 — Since the app uses structured forms with validation and direct integration with SharePoint.
 — it reduced Manual data entry mistakes like duplicate items, wrong quantities, or missing fields.
 
-🎯 …………Improved warehouse visibility…………
+🎯 Improved Warehouse visibility:
 — Warehouse staff can now quickly search or filter stock based on category or location and see accurate, real-time availability
 — something not possible with manual tracking
 
-🎯 …………Saved time for the operations team…………
+🎯 Saved time:
 — With this app, the team saved a lot of time — they no longer had to search through Excel or call each location. 
 — Everything was centralized and quick to update or access.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-✅ App 2: Purchase Order Tracking App
-🎯 Purpose: To help the procurement team track vendor orders, delivery timelines, and statuses in real-time — reducing delays and improving efficiency.
+✅ App 2: Order Tracking App – Model-Driven App
+🎯 Purpose:
+"I developed a Model-Driven Order Tracking App to help the procurement team track vendor purchase orders, monitor delivery timelines, 
+ and manage approval workflows using structured Dataverse tables."
 
-🔧 Data Source: Used a SharePoint List (or Dataverse Table) named 📄 PurchaseOrders.
-🗂️ Key Columns:
+🔧 Key Highlights:
+🧱 Model-Driven Design:
+– Built using Dataverse tables, forms, views, dashboards
+– UI auto-generated and responsive by default
+– Navigation customized using the App Designer with a custom Site Map
 
-🔢 PO_ID (Text)
-🏭 VendorName (Text)
-📦 ItemOrdered (Text)
-📅 OrderDate, DeliveryDate (DateTime)
-📌 Status (Choice: Pending, In-Transit, Delivered)
-🔢 QuantityOrdered (Number)
+🔧 Data Source:
+– Used a Dataverse Table named PurchaseOrders
+🗂️ Key columns included: 
+PO_ID (Text),
+VendorName (Text),
+ItemName (Text),
+Quantity (Whole Number),
+Status (Choice: Pending, Approved, In Transit, Delivered),
+ExpectedDeliveryDate (Date),
+CreatedBy (Lookup: SystemUser).
 
+🛠️ Model-Driven App Features I Built:
+🏠 Dashboard View:
+– A real-time dashboard with charts showing:
+  Total POs by status
+  Vendor-wise open POs
+– Gives managers a quick overview of pending and delivered orders
 
-🛠️ Canvas App Features I Built:
+📄 Main Form – PO Entry & Updates:
+– Created a custom Main Form for users to add or update orders
+– Used Business Rules to:
+ Show “Approval” button only if status is “Received”
+ Make ExpectedDeliveryDate required if status ≠ “Pending”
 
-1️⃣ Dashboard Screen:
-🖼️ Created a Gallery to list all orders
-🎨 Conditional formatting:
-🟡 Yellow = Pending
-🔵 Blue = In-Transit
-✅ Green = Delivered
+🔍 Custom Views:
+– Built views like:
+ All Orders
+ Pending Orders
+ Delivered Orders
+– Added filters and sorted by delivery date for easy tracking
 
-🔍 Search & Filter:
-👉 Dropdown to filter by Status
-👉 Date Picker to filter by OrderDate range
+🔁 Approval Workflow:
+– Integrated with Power Automate:
+ Triggered email when PO is approved
+ Updated status based on external response
 
-2️⃣ Order Details Screen:
-📋 On selecting a record → navigate to a detailed screen
-✏️ Added Edit button to update status
-💡 Used Patch() to update data directly to SharePoint/Dataverse
+🔐 Security Roles:
+– Configured role-based access:
+ Procurement Managers can approve orders
+ Purchase Agents can only create/edit but not approve
 
-3️⃣ Add New Purchase Order:
-➕ Created a Form Screen to add new orders
-📨 Used SubmitForm() to save data
-✅ OnSuccess → showed a toast message and navigated back to Dashboard
+📈 Final Impact:
+🎯 Replaced manual order tracking:
+— Earlier, POs were tracked using Excel and email threads
+— Now, everything is centralized in Dataverse with auto-recording
 
+🎯 Improved vendor communication:
+— Vendors get real-time email notifications with PO details
+— Delivery status is always up to date
 
-🧠 Extra Logic Used:
-🧮 Used Filter() + Search() for optimized querying
-🚫 Handled delegation warnings to support large data
-🔐 Applied role-based access with User().Email logic (e.g., only procurement users can edit)
+🎯 Enhanced tracking and planning:
+— Managers can see pending, delayed, or approved orders instantly
+— Helps with better purchase planning and forecasting
 
-
-📈 Impact:
-📉 Eliminated manual Excel/email-based tracking
-🕒 Enabled real-time order visibility across teams
-📲 Provided mobile-ready access for tracking & status updates
-🤝 Improved vendor coordination and delivery planning
-
-
-
-
-
-
-
-
-
-
-🔥 Improved Interview Answer: Inventory App
-
-"Yes, I’ve built and developed a fully responsive Inventory Management App using Canvas App. 
-The purpose was to help the client track furniture stock across multiple warehouse locations."
-
-📦 Here’s how I built it:
-I started by creating a SharePoint list named Inventory, which included columns like ID, Product Name, Quantity, Category, and Location.
-Then I connected this list to my Canvas App, where I designed two main screens:
-
-Home Screen – to view, search, and filter inventory.
-
-Details Screen – to display full item details and allow editing.
-
-🎯 Key Features I Implemented:
-On the Home Screen, I used a Gallery control to show all inventory items.
-
-I customized each gallery item layout.
-
-Added a Search box to find products by name.
-
-Used Filter() to allow users to filter by Category and Location.
-
-
-Added a “+” icon that opens a form for users to add new products.
-
-Used SubmitForm() to save data back to SharePoint.
-
-
-On selecting a gallery item, users are taken to the Details Screen, where:
-
-They can view all details in read-only mode.
-
-I enabled editing using EditForm control for authorized users.
-
-I also added a Low Stock Warning — if Quantity < 5, it shows a red icon to alert users.
-
-
-💡 Additional Value:
-The app is responsive — built with containers and flexible layouts so it works across desktop, tablet, and mobile.
-
-✅ Impact:
-"Earlier they were tracking inventory manually in Excel — now with the app, all records are digital, stored in SharePoint, and easily accessible."
-
-"Since the app uses structured forms and direct integration with SharePoint, it reduced data entry mistakes and ensured cleaner, more accurate records."
-
-"Warehouse staff can now quickly search or filter stock based on category or location and see accurate, real-time availability
-— something not possible with manual tracking
-
-"With this app, the team saved a lot of time — they no longer had to search through Excel or call each location. 
-Everything was centralized and quick to update or access.
-
-
+🎯 Reduced approval delays:
+— With built-in workflows and permissions, approvals are faster
+— No need to chase via email
