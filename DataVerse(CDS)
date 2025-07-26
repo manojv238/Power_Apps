@@ -36,11 +36,11 @@ Database:
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 ✅ FORMS: 
-👉 Forms are the primary user interface in Dataverse where users can view, enter, and update data in a table.
+👉 Forms are the primary user interface in Dataverse where users can view the data, enter the data, and update the data in a table.
 👉 Designed for working with a single record at a time, they support tabs, sections, business rules, conditional visibility, and field validations.
 
 ✅ Views: 
-👉 Views are a customized way to display data from one or more tables.
+👉 Views are a customized way to define how multiple records are displayed in a table (like a grid).
 👉 They allow defining specific filters, sorting, and columns to tailor the data presentation.
 👉 We can create different views to show a specific information based on our needs.
 --------------------------------------------------------------------------------------------------------------------------------------------------
