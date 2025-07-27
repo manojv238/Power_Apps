@@ -56,10 +56,21 @@ EXPLAIN IN ANSWER:-
 👉 Dashboards are collections of charts, views, and other components displayed together on one screen.
 👉 They provide a quick snapshot of important metrics, helping users track performance or status without hunting for data.
 👉 Dashboards are customizable for different roles or business needs.
+--------------------------------------------------------------------------------------------------------------------------------------------------
 
+5. What is Business Process Flow(BPF)?
 
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+👉 A Business Process Flow (BPF) is a visual and guided workflow that helps users to follow a set of predefined steps to complete a business process.
+👉 It standardizes data entry, enforces business rules, and ensures consistency across teams by guiding users through different stages of a process.
 
-
+✅ In my previous project, I used Business Process Flow (BPF) in a model-driven app to streamline the Customer Onboarding process. 
+✅ The business needed a standardized, step-by-step guide for sales representatives to follow, ensuring no critical step was missed.
+🔹 I created a BPF with stages like Lead Qualification → Account Setup → Document Collection → Final Approval.
+🔹 At each stage, I added mandatory fields (steps) like Email, Company Name, Document Upload.
+🔹 I implemented branching logic, so if any document was missing, the user couldn’t proceed.
+🔹 I also configured role-based access, so only managers could approve at the final stage.
 
 
 
