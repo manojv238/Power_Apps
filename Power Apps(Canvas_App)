@@ -102,7 +102,7 @@ Example:
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━━
-👉 Collections are like temporary tables where I store data locally and manage multiple records inside the app.
+👉 Collections are like temporary tables where we can store data locally and manage multiple records inside the app.
 
 🔹 Types of Collections:
 1. Collect() function: Creates a new collection or adds records to an existing one.
