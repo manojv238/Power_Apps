@@ -58,7 +58,7 @@ Power Automate supports five main types of flows:
 
 🔹 Trigger:
 👉 A Trigger is the starting point of any flow — it defines the event that initiates the workflow.
-👉 I’ve used various triggers like:
+👉 Examples of triggers I’ve used:
 — When an item is created in SharePoint
 — When an email arrives in Outlook
 
