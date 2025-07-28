@@ -107,7 +107,7 @@ If I need to extract all email addresses or all numbers from a long message, I u
                   If(Listbox.Selected.Value = "3","Welcome to 3")))
 --------------------------------------------------------------------------------------------------------------------------------------------
 
-11. Differnce between ComboBox AND DropDown Controls?
+11. Differnce between DropDown and ComboBox Controls?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ✅ DropDown Control: 
 👉 DropDown control lets users select a single value from a list of predefined options.
