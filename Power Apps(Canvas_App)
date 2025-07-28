@@ -388,7 +388,7 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Pagination in Power Apps refers to the technique of loading and displaying large data sets into smaller, manageable chunks (pages) 
+👉 Pagination in Power Apps refers to the technique of loading large data sets into smaller, manageable chunks (pages) 
    — instead of retrieving all records at once.
 
 🔹 Why pagination is needed:
