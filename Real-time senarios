@@ -27,13 +27,38 @@ Indexed the columns in SharePoint (like Title, Status) to support delegation.
 Implemented pagination logic when needed, using FirstN() and Skip() for loading large datasets in smaller chunks.
 Used ClearCollect() on app start to store only required filtered data locally to improve performance.
 
-🔹 Challenge-2: Dynamic Visibility Based on User Roles
--------------------------------------------------------
-"In one of our Canvas Apps, different users (Admins, Managers, Staff) needed to see different screens, buttons, and data based on their security role. 
-But since Canvas Apps don’t support role-based access natively like model-driven apps, it became difficult to control visibility dynamically."
+🔹 Challenge-2: File upload from Power Apps to SharePoint
+---------------------------------------------------------
+"In one of my Canvas App projects, users needed to upload files like images or PDFs and store them in a SharePoint document library.
+But Canvas Apps don’t support direct file uploads to SharePoint."
+
+💡 How I Solved It:
+I used the Add Picture control to allow users to select a file.
+Triggered a Power Automate flow using .Run(): UploadFileFlow.Run(AddMediaButton1.Media, "filename.pdf")
+In the flow:
+Used the PowerApps trigger to receive the file.
+Converted the media to Base64.
+Used the Create file action to upload it to a SharePoint document library.
+
+
+💨 If they ask, “Did you face any other challenges?”, you can say:
+
+😎 "Yes, I’ve also handled tricky scenarios like role-based screen visibility and optimizing form performance, 
+    but these two were the most impactful in terms of user experience and technical resolution." 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+3. 💬 When did you feel the app was tricky or difficult while developing it?
+
+"One of the trickiest parts during development was when I had to handle dynamic visibility and role-based access in a Canvas App. 
+Unlike model-driven apps, Canvas Apps don’t have built-in security roles, so I had to build a custom logic from scratch.
+
+It was difficult because:
+I had to ensure different roles (Admin, Manager, User) saw only what they were allowed to.
+I had to secure not just screens, but also buttons, forms, and data visibility.
+Testing this for different users without breaking other functionality was also challenging.
 
 🔧 How I Overcame It:
-I created a custom Security Role table in SharePoint (you can also use Dataverse).
+I created a custom SecurityRoleList in SharePoint Datasource.
 Each entry mapped a user's email to a role (Admin, Manager, etc.).
 On app start, 
 I used the User().Email function and stored the user’s role in a global variable:
@@ -43,26 +68,6 @@ Then, I used this variable to dynamically show/hide controls or navigate users:
 If(userRole = "Admin", Navigate(AdminScreen), Navigate(UserScreen))
 
 For buttons or components: Visible: userRole = "Manager"
-
-🔹 Challenge-3: File upload from Power Apps to SharePoint
----------------------------------------------------------
-"In one of my Canvas App projects, users needed to upload files like images or PDFs and store them in a SharePoint document library.
-But Canvas Apps don’t support direct file uploads to SharePoint."
-
-💡 How I solved it:
-I added the Add Picture control in the app so users could select a file.
-Used Power Automate to handle the upload logic.
-Called the flow from Power Apps using the .Run() function: UploadFileFlow.Run(AddMediaButton1.Media, "filename.pdf")
-In Power Automate:
-Used the PowerApps trigger
-Converted the media to Base64
-Used Create File action to upload to SharePoint
-
-
-
-
-
-
 
 
 
