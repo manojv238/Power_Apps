@@ -1,1 +1,14 @@
+How to call Power Apps to Power Automate:-
 
+"Yes, I’ve worked on calling Power Automate from Power Apps in several use cases. Here's how I approach it:
+🔹 Step 1: I create an Instant cloud flow in Power Automate
+I use the PowerApps trigger as the starting point.
+If I need to pass values like user input or form data, I use ‘Ask in PowerApps’ inside actions like Initialize variable or Compose.
+Then, I add logic like creating a SharePoint item or sending email.
+If needed, I include a ‘Respond to PowerApps’ action to return data like a confirmation message or record ID back to the app.
+
+🔹 Step 2: In Power Apps, I call the flow using the .Run() function
+For example, in a button’s OnSelect, I use:
+SubmitFlow.Run(TextInput1.Text)
+This passes user input directly to the flow.
+I also handle success/failure messages using Notify() funtion for better user experience.
