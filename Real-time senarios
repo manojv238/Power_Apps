@@ -1,3 +1,29 @@
+✅ My Day-to-Day Activities & Working Process:
+
+🔹 Task Assignment & Planning:
+Tasks are assigned by the Team Lead or Project Manager through Azure DevOps or Jira.
+I start my day by reviewing assigned tasks and attend the daily stand-up meeting for updates and planning.
+
+🔹 Canvas App Development:
+Work on building or modifying Canvas Apps based on business requirements.
+Design forms, screens, and logic using Power Fx, handle delegation, validations, and improve performance using collections and variables.
+Implement role-based visibility, patch data to SharePoint or Dataverse, and test thoroughly.
+
+🔹 Power Automate Flows:
+Create and manage flows that automate processes like approvals, notifications, file uploads.
+Connect flows with Power Apps using .Run() method and pass/receive parameters.
+Debug and improve existing flows using Run History and error handling (Scope + Configure Run After).
+
+🤝 Collaboration Tasks:
+1. Attend daily stand-ups with the team and give status updates.
+2. Coordinate with BAs for requirements, testers for bug fixes, and leads for deployment.
+3. Participate in code reviews and sprint planning sessions.
+4. Promote solutions between Dev → Test → Prod environments.
+
+🧠 Final Interview Line:
+"So overall, my daily work is a mix of development, automation, collaboration, and continuous improvement of business apps using Power Platform."
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
 1. How to call Power Apps to Power Automate:-
 
 "Yes, I’ve worked on calling Power Automate from Power Apps in several use cases. Here's how I approach it:
@@ -47,7 +73,7 @@ Used the Create file action to upload it to a SharePoint document library.
     but these two were the most impactful in terms of user experience and technical resolution." 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-3. 💬 When did you feel the app was tricky or difficult while developing it?
+3. When did you feel the app was tricky or difficult while developing it?
 
 "One of the trickiest parts during development was when I had to handle dynamic visibility and role-based access in a Canvas App. 
 Unlike model-driven apps, Canvas Apps don’t have built-in security roles, so I had to build a custom logic from scratch.
