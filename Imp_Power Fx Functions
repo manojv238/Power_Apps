@@ -116,39 +116,7 @@ If I need to extract all email addresses or all numbers from a long message, I u
 ✅ ComboBox Control:
 👉 ComboBox control allows users to select single or multiple values, and also supports searching/filtering through the options.
 👉 It is more flexible and interactive than a DropDown.
---------------------------------------------------------------------------------------------------------------------------------------
 
-12. Explain about SharePoint:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-👉 SharePoint is a web-based collaboration and document management platform developed by Microsoft. 
-👉 It’s widely used in organizations to store, share, manage, and collaborate on content, data, and documents securely.
 
-🔷 I’ve used SharePoint Online mainly as a data source for Power Apps:
-— It provides Lists for storing structured data (like tables).
-— It provides Document Libraries for storing and managing files (like Word, PDF, Excel).
-— Supports features like version control, permissions, metadata, views, and approval workflows.
---------------------------------------------------------------------------------------------------------------------------------------
 
-13. Difference Between SharePoint List and SharePoint Library?
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🔷 I’ve used both SharePoint Lists and Libraries, and they serve different purposes:
-
-— SharePoint List is mainly used to store structured data in a tabular format — similar to Excel,
-— where each item is like a row with multiple fields like text, choice, date, etc.
-
-— SharePoint Library is designed to store documents/files such as PDFs, Word docs, and images. 
-— It supports features like version history, check-in/check-out, and metadata tagging.
---------------------------------------------------------------------------------------------------------------------------------------
-
-14. Difference Between Team Site and Communication Site in SharePoint?
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🔷 I’ve worked with both Team Sites and Communication Sites, and the key difference lies in their purpose and audience:
-
-— Team Site is designed for collaboration within a team or department. 
-— It supports two-way communication, where members can add, edit, and share content like documents, lists, and tasks. 
-— It’s usually connected to a Microsoft 365 group (Teams, Planner, Outlook).
-
-— Communication Site is meant for broadcasting information to a wider audience, like the entire organization. 
-— It focuses on one-way communication, where only a few people manage the content, and others mainly view it. 
-— It’s ideal for HR portals, company announcements, or training pages.
 
