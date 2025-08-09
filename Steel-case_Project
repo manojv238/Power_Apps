@@ -26,7 +26,16 @@ STEELCASE PROJECT EXPLANATION IN REAL-TIME:
 👉 Ensured data security using SharePoint permissions and Power Apps role-based access control.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-✅ App 1: Inventory Management App – Responsive Canvas App
+✅ App 1: Inventory Management App – Responsive Canvas App:
+👉 In the Inventory Management App for Steelcase, we mainly tracked Steelcase’s office furniture products:
+👉 For example:
+Office Chairs – ergonomic chairs, task chairs, lounge seating
+Desks – adjustable desks, fixed desks, collaborative tables
+Storage Units – cabinets, mobile pedestals, lockers
+Partitions & Panels – modular partitions for open spaces
+Accessories – monitor arms, power modules, whiteboards
+
+Spare Parts – chair wheels, desk legs, and other replaceable components
 🎯 Purpose: "I developed a responsive Inventory Management App using Canvas App to help a client manage furniture stock across multiple warehouses."
 
 🔧 Key Highlights:
@@ -36,7 +45,7 @@ STEELCASE PROJECT EXPLANATION IN REAL-TIME:
 🗂️ Key columns included: 
 ProductID (Text), 
 ProductName (Text), 
-Category (Choice:Furniture, Electronics, Stationery, IT Equipment), 
+Category (Choice: Chairs, Desks, Storage, Partitions, Accessories, Spare Parts), 
 Quantity (Whole Number), 
 WarehouseLocation (Choice).
 
