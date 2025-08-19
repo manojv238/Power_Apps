@@ -31,13 +31,13 @@
 ✅ App 1: Inventory Management App – Responsive Canvas App:
 ------------------------------------------------------------
 👉 In the Inventory Management App for Steelcase, We mainly tracked Steelcase’s office furniture products:
-👉 For example:
-Office Chairs – ergonomic chairs, task chairs, lounge seating
-Desks         – adjustable desks, fixed desks, collaborative tables
-Storage Units – cabinets, mobile pedestals, lockers
-Partitions & Panels – modular partitions for open spaces
-Accessories   – monitor arms, power modules, whiteboards
-Spare Parts   – chair wheels, desk legs, and other replaceable components
+For example:
+🪑 Office Chairs – ergonomic chairs, task chairs, lounge seating
+🖥️ Desks – adjustable desks, fixed desks, collaborative tables
+🗄️ Storage Units – cabinets, mobile pedestals, lockers
+🧩 Partitions & Panels – modular partitions for open spaces
+🛠️ Accessories – monitor arms, power modules, whiteboards
+🔧 Spare Parts – chair wheels, desk legs, and other replaceable components
 
 🎯 Purpose: "I developed a responsive Inventory Management App using Canvas App to help a client manage furniture stock across multiple warehouses."
 
@@ -193,13 +193,11 @@ CreatedBy (Lookup: SystemUser).
 ---------------------------------------------------
 👉 In the Herbalife Apps, we mainly tracked Herbalife’s nutrition and wellness products:
 For example:
-🍹 Meal Replacement Shakes – Formula 1 shakes (Vanilla, Chocolate, Strawberry, Mango, Cookies & Cream, Café Latte)
-🥤 Protein & Nutrition Drinks – Protein Drink Mix, High-Protein Iced Coffee (Mocha, Latte), Tri-Blend Select
-🍵 Teas & Aloe Beverages – Herbal Tea Concentrate (Original, Lemon, Peach, Raspberry), Herbal Aloe Concentrate (Mango, Mandarin, Original)
-🏋️ Sports Nutrition (Herbalife24 Range) – Rebuild Strength, CR7 Drive, Hydrate, LiftOff®, Achieve Protein Bars
-🥗 Snacks & Fiber – Formula 1 Express Bars, Protein Bars (Citrus Lemon, Chocolate Peanut, Vanilla Almond), Protein Chips (BBQ, Sour Cream & Onion)
-💊 Vitamins & Supplements – Multivitamin Complex, Herbalifeline® (Omega-3), Thermo Complete®, Cell Activator®, RoseGuard®
-🧴 Personal Care (SKIN & Aloe Range) – Aloe Shampoo, Conditioner, Body Lotion, Herbalife SKIN Cleanser, Clay Mask, Eye Creams, Moisturizers
+🍹 Meal Replacement Shakes – Formula 1 Shakes (Vanilla, Chocolate, Strawberry, Mango, Cookies & Cream)
+🍵 Teas & Beverages – Herbal Tea Concentrate (Lemon, Peach, Raspberry), Herbal Aloe Drinks
+🏋️ Sports Nutrition (Herbalife24) – Rebuild Strength, CR7 Drive, Hydrate, LiftOff®
+🥗 Snacks & Fiber – Protein Bars, Protein Chips, Formula 1 Express Bar, Active Fiber Complex
+💊 Vitamins & Supplements – Multivitamin Complex, Herbalifeline®, Thermo Complete®, Cell Activator®
 
 🎯 Purpose:
 “I developed a responsive Canvas App to automate the distributor onboarding process which replaced manual Excel tracking and email-based verification.”
