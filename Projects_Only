@@ -26,7 +26,7 @@
 👉 Applied patch functions, collections, and delegation techniques to improve performance and scalability.
 
 👉 Ensured data security using SharePoint permissions and Power Apps role-based access control.
---------------------------------------------------------------------------------------------------------------------------------------------
+
 ------------------------------------------------------------
 ✅ App 1: Inventory Management App – Responsive Canvas App:
 ------------------------------------------------------------
@@ -93,7 +93,7 @@ WarehouseLocation (Choice).
 🎯 Saved time:
 — With this app, the team saved a lot of time — they no longer had to search through Excel or call each location. 
 — Everything was centralized and quick to update or access.
---------------------------------------------------------------------------------------------------------------------------------------------
+
 --------------------------------------------------
 ✅ App 2: Order Tracking App – Model-Driven App:
 --------------------------------------------------
@@ -174,9 +174,9 @@ CreatedBy (Lookup: SystemUser).
 
 👉 As a Power Apps & SharePoint Developer, I was responsible for building applications to streamline distributor onboarding, 
    product order tracking, and sales approvals that were earlier managed manually in Excel and emails.
-
+--------------------------------------
 🔧 Key Responsibilities & Highlights:
----------------------------------------
+--------------------------------------
 👉 Developed both Canvas Apps and Model-Driven Apps to automate daily operations.
 
 1. Distributor Onboarding App – Canvas App to register, validate, and track new Herbalife distributors.
