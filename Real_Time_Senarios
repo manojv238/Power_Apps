@@ -94,11 +94,64 @@ Then, I used this variable to dynamically show/hide controls or navigate users:
 If(userRole = "Admin", Navigate(AdminScreen), Navigate(UserScreen))
 
 For buttons or components: Visible: userRole = "Manager"
+---------------------------------------------------------------------------------------------------------------------------------------------
 
+🎯 Question: Can you tell me about your Current Project? What are the roles, responsibilities, and work?
 
+✅ Natural Answer:
+Currently, I am working on the Steelcase Project, which is a leading furniture company in the US. I’m working as a Power Platform Developer,
+where my role mainly involves developing and supporting business applications using Power Apps, Power Automate, Dataverse, and SharePoint.
 
+😎 I’ve worked on two key applications in this project:
 
+🔹 First – the Inventory Management App (Canvas App):
+🎯 Purpose: 
+Earlier, Steelcase was managing stock across multiple warehouses using Excel, which caused manual errors and delays. 
+I developed a responsive Canvas App to centralize inventory tracking.
 
+👉 So in this app, I implemented features like:
+------------------------------------------------
+✔ Search and Filter option, so users don’t have to scroll through long lists. They can quickly find products by category, warehouse, or product name.
+✔ I also designed a low-stock alert system. For example, if the quantity of any item goes below 5, a red warning symbol is shown to the warehouse manager.
+✔ Another important feature was role-based access. The warehouse managers have edit rights, so they can update stock levels, 
+  but normal staff members only have view access.
+✔ Finally, I built a warehouse grouping view, where managers can compare inventory across different locations.
+
+🔹 Second – the Order Tracking App (Model-Driven App):
+🎯 Purpose:
+Procurement teams earlier tracked purchase orders through emails and Excel, which was inefficient.
+So I built a Model-Driven App with Dataverse to streamline PO management and vendor tracking.
+
+👉 So in this app, I implemented features like:
+------------------------------------------------
+✔ I designed custom Dataverse tables and forms to capture all purchase order details,
+  I also built dashboards so that procurement teams could easily see pending approvals and vendor performance.
+✔ For the workflow, I integrated Power Automate – whenever an order was created, it automatically sent an approval request to procurement managers. 
+  Agents were only allowed to create or update orders, but managers had the final authority to approve or reject them.
+
+🎯 My Responsibilities include:
+--------------------------------
+✔ Gathering requirements from business users.
+✔ Designing and developing Power Apps (Canvas & Model-Driven).
+✔ Building automation flows in Power Automate.
+✔ Managing data sources like SharePoint & Dataverse.
+✔ Handling role-based security, validations, and performance optimization.
+✔ Collaborating with QA and deployment teams to move apps across environments.
+✔ I also participate in requirement discussions, sprint planning, and daily stand-ups, and update my work in Azure DevOps/Jira.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+😎 Warehouse Managers = People who manage and oversee stock in warehouses.
+✔ They are usually client-side users (employees of Steelcase).
+✔ They need to add/edit/update stock levels because they are responsible for inventory accuracy.
+
+😎 Normal Staff Members = The warehouse staff working under the managers.
+✔ They are also client-side users.
+✔ They might be responsible for checking stock, moving products, packing, etc.
+✔ They only need to view the stock information but should not be allowed to edit (to prevent mistakes or unauthorized changes).
+
+✔ Procurement Team (Business Users) → People in the company who handle buying goods/services from vendors.
+✔ Procurement Agents (Staff-level users) → Junior staff who create or update purchase orders (but cannot approve).
+✔ Procurement Managers (Approvers) → Senior staff who review, approve, or reject purchase orders.
+------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
