@@ -36,21 +36,65 @@
 ✔ I also participate in requirement discussions, sprint planning, and daily stand-ups, and update my work in Azure DevOps/Jira.
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
+2. Can you tell me about your Current Project?
+
+✅ Natural Answer:
+Currently, I am working on the Steelcase Project, which is a leading furniture company in the US. I’m working as a Power Platform Developer,
+where my role mainly involves developing and supporting business applications using Power Apps, Power Automate, Dataverse, and SharePoint.
+
+😎 I’ve worked on two key applications in this project:
+
+🔹 First – the Inventory Management App (Canvas App):
+🎯 Purpose: 
+Earlier, Steelcase was managing stock across multiple warehouses using Excel, which caused manual errors and delays. 
+I developed a responsive Canvas App to centralize inventory tracking.
+
+👉 So in this app, I implemented features like:
+------------------------------------------------
+✔ Search and Filter option, so users don’t have to scroll through long lists. They can quickly find products by category, warehouse, or product name.
+✔ I also designed a low-stock alert system. For example, if the quantity of any item goes below 5, a red warning symbol is shown to the warehouse manager.
+✔ Another important feature was role-based access. The warehouse managers have edit rights, so they can update stock levels, 
+  but normal staff members only have view access.
+✔ Finally, I built a warehouse grouping view, where managers can compare inventory across different locations.
+
+🔹 Second – the Order Tracking App (Model-Driven App):
+🎯 Purpose:
+Procurement teams earlier tracked purchase orders through emails and Excel, which was inefficient.
+So I built a Model-Driven App with Dataverse to streamline PO management and vendor tracking.
+
+👉 So in this app, I implemented features like:
+------------------------------------------------
+✔ I designed custom Dataverse tables and forms to capture all purchase order details,
+  I also built dashboards so that procurement teams could easily see pending approvals and vendor performance.
+✔ For the workflow, I integrated Power Automate – whenever an order was created, it automatically sent an approval request to procurement managers. 
+  Agents were only allowed to create or update orders, but managers had the final authority to approve or reject them.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+😎 Warehouse Managers = People who manage and oversee stock in warehouses.
+✔ They are usually client-side users (employees of Steelcase).
+✔ They need to add/edit/update stock levels because they are responsible for inventory accuracy.
+
+😎 Normal Staff Members = The warehouse staff working under the managers.
+✔ They are also client-side users.
+✔ They might be responsible for checking stock, moving products, packing, etc.
+✔ They only need to view the stock information but should not be allowed to edit (to prevent mistakes or unauthorized changes).
+
+✔ Procurement Team (Business Users) → People in the company who handle buying goods/services from vendors.
+✔ Procurement Agents (Staff-level users) → Junior staff who create or update purchase orders (but cannot approve).
+✔ Procurement Managers (Approvers) → Senior staff who review, approve, or reject purchase orders.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1. How to call Power Apps to Power Automate:-
 
-"Yes, I’ve worked on calling Power Automate from Power Apps in several use cases. Here's how I approach it:
-🔹 Step 1: I create an Instant cloud flow in Power Automate
-I use the PowerApps trigger as the starting point.
-If I need to pass values like user input or form data, I use ‘Ask in PowerApps’ inside actions like Initialize variable or Compose.
-Then, I add logic like creating a SharePoint item or sending email.
-If needed, I include a ‘Respond to PowerApps’ action to return data like a confirmation message or record ID back to the app.
+👉 Yes, I’ve used Power Automate flows inside Power Apps many times.
+For example: In my Steelcase Inventory App, whenever a user added a new product,I had to trigger a workflow to send a notification and log details in another list.
 
-🔹 Step 2: In Power Apps, I call the flow using the .Run() function
-For example, in a button’s OnSelect, I use:
-SubmitFlow.Run(TextInput1.Text)
-This passes user input directly to the flow.
-I also handle success/failure messages using Notify() funtion for better user experience.
-----------------------------------------------------------------------------------------------------------------------------------------
+👉 To do that, I created a Power Automate flow first, and then I exposed it as a function inside Power Apps using the Power Automate connector. 
+In the app, I simply called it from a button’s OnSelect property like:
+
+✅ MyFlow.Run(Parameters)
+
+👉 This way, I could pass values like Product Name, Category, or Quantity from the app into the flow, 
+and the flow handled the background automation — such as approvals, emails, or updates.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 2. Explain real-time challenges you faced while working on Canvas App and Model-Driven App, and how you overcame them:
 
@@ -108,52 +152,6 @@ If(userRole = "Admin", Navigate(AdminScreen), Navigate(UserScreen))
 For buttons or components: Visible: userRole = "Manager"
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-🎯 Question: Can you tell me about your Current Project? What are the roles, responsibilities, and work?
-
-✅ Natural Answer:
-Currently, I am working on the Steelcase Project, which is a leading furniture company in the US. I’m working as a Power Platform Developer,
-where my role mainly involves developing and supporting business applications using Power Apps, Power Automate, Dataverse, and SharePoint.
-
-😎 I’ve worked on two key applications in this project:
-
-🔹 First – the Inventory Management App (Canvas App):
-🎯 Purpose: 
-Earlier, Steelcase was managing stock across multiple warehouses using Excel, which caused manual errors and delays. 
-I developed a responsive Canvas App to centralize inventory tracking.
-
-👉 So in this app, I implemented features like:
-------------------------------------------------
-✔ Search and Filter option, so users don’t have to scroll through long lists. They can quickly find products by category, warehouse, or product name.
-✔ I also designed a low-stock alert system. For example, if the quantity of any item goes below 5, a red warning symbol is shown to the warehouse manager.
-✔ Another important feature was role-based access. The warehouse managers have edit rights, so they can update stock levels, 
-  but normal staff members only have view access.
-✔ Finally, I built a warehouse grouping view, where managers can compare inventory across different locations.
-
-🔹 Second – the Order Tracking App (Model-Driven App):
-🎯 Purpose:
-Procurement teams earlier tracked purchase orders through emails and Excel, which was inefficient.
-So I built a Model-Driven App with Dataverse to streamline PO management and vendor tracking.
-
-👉 So in this app, I implemented features like:
-------------------------------------------------
-✔ I designed custom Dataverse tables and forms to capture all purchase order details,
-  I also built dashboards so that procurement teams could easily see pending approvals and vendor performance.
-✔ For the workflow, I integrated Power Automate – whenever an order was created, it automatically sent an approval request to procurement managers. 
-  Agents were only allowed to create or update orders, but managers had the final authority to approve or reject them.
---------------------------------------------------------------------------------------------------------------------------------------------------------
-😎 Warehouse Managers = People who manage and oversee stock in warehouses.
-✔ They are usually client-side users (employees of Steelcase).
-✔ They need to add/edit/update stock levels because they are responsible for inventory accuracy.
-
-😎 Normal Staff Members = The warehouse staff working under the managers.
-✔ They are also client-side users.
-✔ They might be responsible for checking stock, moving products, packing, etc.
-✔ They only need to view the stock information but should not be allowed to edit (to prevent mistakes or unauthorized changes).
-
-✔ Procurement Team (Business Users) → People in the company who handle buying goods/services from vendors.
-✔ Procurement Agents (Staff-level users) → Junior staff who create or update purchase orders (but cannot approve).
-✔ Procurement Managers (Approvers) → Senior staff who review, approve, or reject purchase orders.
-------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
