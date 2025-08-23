@@ -154,11 +154,23 @@ If(userRole = "Admin", Navigate(AdminScreen), Navigate(UserScreen))
 For buttons or components: Visible: userRole = "Manager"
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
+7. How do you manage permissions in PowerApps?
 
+👉 Yes, I’ve worked with permission handling in multiple projects.In Power Apps, permissions are usually managed in two ways:
+— One is at the data source level (SharePoint or Dataverse), 
+— Another one is app level using role-based logic.
 
+👉 In SharePoint-based apps (Steelcase Inventory App):
+— I used SharePoint list permissions. For example, item-level permissions were applied through Power Automate, 
+— when a new item was created, the flow would break inheritance and give the creator full control, and assign read-only rights to a specific group.
+— Inside the app, I also used the User() function to check the logged-in user and apply conditional visibility.
+  Example: Only managers could see the “Approve” button, others couldn’t.
 
-
-
+👉 In Dataverse-based apps (Steelcase Order Tracking App):
+— Here it was more structured. I configured security roles in Dataverse, 
+— Procurement Manager had approve rights, while Procurement Agent could only create and edit records.
+— In the Model-Driven App, this worked automatically because security roles control what tables, fields, and rows each role can access.
+— On top of that, I sometimes added Power Fx conditions in Canvas screens for hiding/showing controls based on role.
 
 
 
