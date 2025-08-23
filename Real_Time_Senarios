@@ -1,27 +1,39 @@
-✅ My Day-to-Day Activities & Working Process:
+1. What is your day-to-day activities and what is the process and what is the role and responsibilities? So how you worked on it?
 
-🔹 Task Assignment & Planning:
-Tasks are assigned by the Team Lead or Project Manager through Azure DevOps or Jira.
-I start my day by reviewing assigned tasks and attend the daily stand-up meeting for updates and planning.
+👉 In my current role as a Power Platform Developer at Wipro, my work follows an Agile process.
+-------------------------
+🔹 Day-to-day activities:
+-------------------------
+👉 My day usually starts with a daily stand-up meeting, where I share yesterday’s progress, today’s plan, and if i have any blockers.
+👉 After that, I pick the tasks form Jira Tool, Tasks are assigned by the Team Lead or Project Manager through Jira Board.
+😎 These tasks can be:
+— sometimes it’s designing and building new Canvas or Model-Driven apps, 
+— sometimes creating or updating Power Automate flows for approvals and notifications, 
+— and other times enhancing existing apps with new features or bug fixes.
 
-🔹 Canvas App Development:
-Work on building or modifying Canvas Apps based on business requirements.
-Design forms, screens, and logic using Power Fx, handle delegation, validations, and improve performance using collections and variables.
-Implement role-based visibility, patch data to SharePoint or Dataverse, and test thoroughly.
+😎 During development:
+— I focus a lot on responsive UI design for Canvas App, 
+— Writing Power Fx formulas,
+— handling delegation issues when working with large datasets in SharePoint,
+— integrating with SharePoint or Dataverse, 
+— and setting up role-based security in apps.
+👉 I spend time on requirement discussions with the Business Analyst or Product Owner,
+   — to make sure I fully understand the requirements and business needs before starting development.
+👉 Once development is done, I do unit testing for my features and support QA if needed.
+👉 At the end of day, I update task status in DevOps/Jira and push my changes for review.
 
-🔹 Power Automate Flows:
-Create and manage flows that automate processes like approvals, notifications, file uploads.
-Connect flows with Power Apps using .Run() method and pass/receive parameters.
-Debug and improve existing flows using Run History and error handling (Scope + Configure Run After).
+🧠 So overall, my daily work is a mix of development, automation, collaboration, and continuous improvement of business apps using Power Platform.
 
-🤝 Collaboration Tasks:
-1. Attend daily stand-ups with the team and give status updates.
-2. Coordinate with BAs for requirements, testers for bug fixes, and leads for deployment.
-3. Participate in code reviews and sprint planning sessions.
-4. Promote solutions between Dev → Test → Prod environments.
-
-🧠 Final Interview Line:
-"So overall, my daily work is a mix of development, automation, collaboration, and continuous improvement of business apps using Power Platform."
+------------------------------
+🎯 My Role & Responsibilities:
+------------------------------
+✔ Gathering requirements from business users.
+✔ Designing and developing Power Apps (Canvas & Model-Driven).
+✔ Building automation flows in Power Automate.
+✔ Managing data sources like SharePoint & Dataverse.
+✔ Handling role-based security, validations, and performance optimization.
+✔ Collaborating with QA and deployment teams to move apps across environments.
+✔ I also participate in requirement discussions, sprint planning, and daily stand-ups, and update my work in Azure DevOps/Jira.
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 1. How to call Power Apps to Power Automate:-
@@ -128,16 +140,6 @@ So I built a Model-Driven App with Dataverse to streamline PO management and ven
   I also built dashboards so that procurement teams could easily see pending approvals and vendor performance.
 ✔ For the workflow, I integrated Power Automate – whenever an order was created, it automatically sent an approval request to procurement managers. 
   Agents were only allowed to create or update orders, but managers had the final authority to approve or reject them.
-
-🎯 My Responsibilities include:
---------------------------------
-✔ Gathering requirements from business users.
-✔ Designing and developing Power Apps (Canvas & Model-Driven).
-✔ Building automation flows in Power Automate.
-✔ Managing data sources like SharePoint & Dataverse.
-✔ Handling role-based security, validations, and performance optimization.
-✔ Collaborating with QA and deployment teams to move apps across environments.
-✔ I also participate in requirement discussions, sprint planning, and daily stand-ups, and update my work in Azure DevOps/Jira.
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 😎 Warehouse Managers = People who manage and oversee stock in warehouses.
 ✔ They are usually client-side users (employees of Steelcase).
