@@ -22,7 +22,8 @@
 👉 Once development is done, I do unit testing for my features and support QA if needed.
 👉 At the end of day, I update task status in DevOps/Jira Board and push my changes for review.
 
-🧠 So overall, my daily work is a mix of development, automation, collaboration, and continuous improvement of business apps using Power Platform.
+🎯 So overall, my role has been end-to-end development — designing, building, and automating workflows 
+   — and these apps really helped the business by reducing manual errors, improving visibility, and speeding up approval cycles.
 
 ------------------------------
 🎯 My Role & Responsibilities:
@@ -38,17 +39,13 @@
 
 2. Can you tell me about your Current Project?
 
-✅ Natural Answer:
-Currently, I am working on the Steelcase Project, which is a leading furniture company in the US. I’m working as a Power Platform Developer,
-where my role mainly involves developing and supporting business applications using Power Apps, Power Automate, Dataverse, and SharePoint.
-
+👉 Currently, I am working on the STEELCASE PROJECT, which is a leading furniture company in the US. I’m working as a Power Platform Developer,
+   – where my role mainly involves developing and supporting business applications using Power Apps, Power Automate, Dataverse, and SharePoint.
 😎 I’ve worked on two key applications in this project:
-
-🔹 First – the Inventory Management App (Canvas App):
+✅ First – the Inventory Management App (Canvas App):
 🎯 Purpose: 
-Earlier, Steelcase was managing stock across multiple warehouses using Excel, which caused manual errors and delays. 
-I developed a responsive Canvas App to centralize inventory tracking.
-
+– Earlier, Steelcase was managing furniture stock using Excel, which caused manual errors and delays. 
+– I developed a responsive Canvas App to track furniture stock across multiple warehouses.
 👉 So in this app, I implemented features like:
 ------------------------------------------------
 ✔ Search and Filter option, so users don’t have to scroll through long lists. They can quickly find products by category, warehouse, or product name.
@@ -57,11 +54,10 @@ I developed a responsive Canvas App to centralize inventory tracking.
   but normal staff members only have view access.
 ✔ Finally, I built a warehouse grouping view, where managers can compare inventory across different locations.
 
-🔹 Second – the Order Tracking App (Model-Driven App):
+✅ Second – the Order Tracking App (Model-Driven App):
 🎯 Purpose:
-Procurement teams earlier tracked purchase orders through emails and Excel, which was inefficient.
-So I built a Model-Driven App with Dataverse to streamline PO management and vendor tracking.
-
+– Procurement teams earlier tracked purchase orders through emails and Excel, which was inefficient.
+– So I built a Model-Driven App with Dataverse to monitor vendor purchase orders, delivery timelines, and approvals.
 👉 So in this app, I implemented features like:
 ------------------------------------------------
 ✔ I designed custom Dataverse tables and forms to capture all purchase order details,
@@ -81,20 +77,21 @@ So I built a Model-Driven App with Dataverse to streamline PO management and ven
 ✔ Procurement Team (Business Users) → People in the company who handle buying goods/services from vendors.
 ✔ Procurement Agents (Staff-level users) → Junior staff who create or update purchase orders (but cannot approve).
 ✔ Procurement Managers (Approvers) → Senior staff who review, approve, or reject purchase orders.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 1. How to call Power Apps to Power Automate:-
 
 👉 Yes, I’ve used Power Automate flows inside Power Apps many times.
-For example: In my Steelcase Inventory App, whenever a user added a new product,I had to trigger a workflow to send a notification and log details in another list.
+For example: 
+In my Steelcase Inventory App, whenever a user added a new product,I had to trigger a workflow to send a notification and log details in another list.
 
 👉 To do that, I created a Power Automate flow first, and then I exposed it as a function inside Power Apps using the Power Automate connector. 
-In the app, I simply called it from a button’s OnSelect property like:
+Inside Power Apps, I can call the flow from a control, usually a button’s OnSelect property, using:
 
 ✅ MyFlow.Run(Parameters)
 
 👉 This way, I could pass values like Product Name, Category, or Quantity from the app into the flow, 
 and the flow handled the background automation — such as approvals, emails, or updates.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 2. Explain real-time challenges you faced while working on Canvas App and Model-Driven App, and how you overcame them:
 
