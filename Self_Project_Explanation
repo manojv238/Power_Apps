@@ -20,9 +20,9 @@ I’ve worked on two major projects — one for Steelcase and another for Herbal
 
 – I used SharePoint Online Lists as the backend data source to store and manage data. 
 
-– I Applied data validation using functions like IsMatch() and IsBlank() functions to improve data accuracy and user input quality.
+– I implemented Validation rules to maintain data quality (for ex, make sure email and phone numbers are entered in the correct format.
 
-– I designed the app with a responsive UI so it works across desktop, tablet, and mobile.
+– I designed the app with a responsive UI so it works across any devices – whether it's a desktop, tablet, and mobile.
 
 – Once the development was complete, I conducted end-to-end testing covering all data and UI scenarios.
 
