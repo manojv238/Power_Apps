@@ -78,55 +78,60 @@
 ✔ Procurement Agents (Staff-level users) → Junior staff who create or update purchase orders (but cannot approve).
 ✔ Procurement Managers (Approvers) → Senior staff who review, approve, or reject purchase orders.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-1. How to call Power Apps to Power Automate:-
+3. How to call Power Apps to Power Automate:-
 
 👉 Yes, I’ve used Power Automate flows inside Power Apps many times.
 For example: 
 In my Steelcase Inventory App, whenever a user added a new product,I had to trigger a workflow to send a notification and log details in another list.
 
 👉 To do that, I created a Power Automate flow first, and then I exposed it as a function inside Power Apps using the Power Automate connector. 
-Inside Power Apps, I can call the flow from a control, usually a button’s OnSelect property, using:
+— Inside Power Apps, I can call the flow from a control, usually a button’s OnSelect property, using:
 
-✅ MyFlow.Run(Parameters)
+✅ MyFlow.Run(Parameters) function
 
 👉 This way, I could pass values like Product Name, Category, or Quantity from the app into the flow, 
 and the flow handled the background automation — such as approvals, emails, or updates.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-2. Explain real-time challenges you faced while working on Canvas App and Model-Driven App, and how you overcame them:
+4. Explain real-time challenges you faced while working on Canvas App, and how you overcame them:
 
-🔹 Challenge-1: Delegation Limit with SharePoint (5000+ items)
----------------------------------------------------------------
-"In one of my Canvas Apps, we were using SharePoint as the data source, and the list had more than 5000 records.
-Because of the delegation limit, only 500 records were loading, and filters or searches didn’t work properly for the full list.
+👉 While working on Canvas Apps, I faced a few real challenges:
 
-💡 How I Solved It:
-I used delegable functions like Filter() and StartsWith() instead of non-delegable ones like Search() and ForAll().
-Indexed the columns in SharePoint (like Title, Status) to support delegation.
-Implemented pagination logic when needed, using FirstN() and Skip() for loading large datasets in smaller chunks.
-Used ClearCollect() on app start to store only required filtered data locally to improve performance.
+— The biggest one was Delegation, For example:
+when I connected my app to a SharePoint list with thousands of items, only 500 records were loading due to delegation limits.
+At first, it was really frustrating because users needed full data.
+What I did was optimize my formulas with delegable functions like StartsWith() and Filter().
+And in some cases where delegation still didn’t work, I called a Power Automate flow from the app to fetch only the required records. 
+🎯 Impact: The app became scalable and users could search across the entire dataset smoothly.
 
-🔹 Challenge-2: File upload from Power Apps to SharePoint
----------------------------------------------------------
-"In one of my Canvas App projects, users needed to upload files like images or PDFs and store them in a SharePoint document library.
-But Canvas Apps don’t support direct file uploads to SharePoint."
+— Another challenge was Performance. 
+In the beginning, the app was loading slow because too many data calls were happening. 
+I fixed it by using collections to cache data and by loading data on-demand instead of all at once. 
+🎯 Impact: The app performance improved a lot, and users had a much faster experience.
 
-💡 How I Solved It:
-I used the Add Picture control to allow users to select a file.
-Triggered a Power Automate flow using .Run(): UploadFileFlow.Run(AddMediaButton1.Media, "filename.pdf")
-In the flow:
-Used the PowerApps trigger to receive the file.
-Converted the media to Base64.
-Used the Create file action to upload it to a SharePoint document library.
+— I also had to deal with responsiveness.
+Since the app was used on desktop, mobile, and tablets, the layout was not adjusting properly.
+I handled that using containers for responsive design.
+🎯 Impact: The app became responsive and worked well across all devices.
 
+— Finally, Role-based Security.
+SharePoint doesn’t provide row-level security by default in Power Apps.
+I handled this by maintaining a UserRole list and using User().Email to apply conditional permissions and visibility.
+🎯 Impact: Ensured data security and correct access for different user roles.
+---------------------------------------------------------------------------------------------------------------------------------------------
 
-💨 If they ask, “Did you face any other challenges?”, you can say:
+5. Explain real-time challenges you faced while working on Model-Driven Apps, and how you overcame them:
 
-😎 "Yes, I’ve also handled tricky scenarios like role-based screen visibility and optimizing form performance, 
-    but these two were the most impactful in terms of user experience and technical resolution." 
+👉 While working on Model-Driven Apps, I faced a few real challenges:
+
+— The first one was Approval Workflow Delays. For example,
+In the purchase order process, sometimes managers didn’t respond to approval emails on time.
+To solve this, I created a Power Automate flow with reminders and escalation.
+If no response came in 2 days, the system automatically sent reminders or escalated to the next approver.
+🎯 Impact: Approvals became much faster and orders didn’t get stuck anymore.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-3. When did you feel the app was tricky or difficult while developing it?
+6. When did you feel the app was tricky or difficult while developing it?
 
 "One of the trickiest parts during development was when I had to handle dynamic visibility and role-based access in a Canvas App. 
 Unlike model-driven apps, Canvas Apps don’t have built-in security roles, so I had to build a custom logic from scratch.
