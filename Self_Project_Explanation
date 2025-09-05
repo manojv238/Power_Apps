@@ -2,10 +2,12 @@
 Hi [Interviewer’s Name], A very good afternoon. I'm Manoj Kumar, I’m from Tirupati, 
 and I’m working as a Power Platform Developer with 3.4 years of experience in my current organisation.
 
-I mainly worked on Power Apps and Power Automate,
+I mainly work on Power Apps, Power Automate, SharePoint and Dataverse.
 
-My role starts with understanding the business requirements from users or clients. 
-Based on that, I design the UI of the app, plan the data structure, and choose the right data source — usually SharePoint Online or Dataverse.
+My role starts with understanding the business requirements from business stakeholders. 
+Based on those requirements, I design the app’s UI and plan the data structure.
+
+(Business stakeholders means: could be clients, end users, business teams, or managers who give you the requirements)
 
 For Canvas Apps, 
 I build the app end-to-end: creating galleries, forms, dropdowns, and applying custom logic using Power Fx formulas.
