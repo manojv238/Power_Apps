@@ -5,16 +5,17 @@ and I’m working as a Power Platform Developer with 3.4 years of experience in 
 I mainly work on Power Apps, Power Automate, SharePoint and Dataverse.
 
 My role starts with understanding the business requirements from business stakeholders. 
-Based on those requirements, I design the app’s UI and plan the data structure.
+Based on those requirements, I designed the app with a responsive UI so it works across any devices – whether it's a desktop, tablet, and mobile.
 
 (Business stakeholders means: could be clients, end users, business teams, or managers who give you the requirements)
 
-For Canvas Apps, 
-I build the app end-to-end: creating galleries, forms, dropdowns, and applying custom logic using Power Fx formulas.
-I also implement validation rules like email/phone formats, set mandatory fields, and design responsive layouts so the apps work on desktop, tablet, and mobile.
+I have developed applications using both Canvas Apps and Model-Driven Apps.
 
-On the automation side, 
-I design and implement Power Automate flows for approvals, notifications, — such as sending automated emails when a new request is submitted.
+I have integrated them with different data sources like Sharepoint, Dataverse..
+
+I also implement validation rules to maintain data quality — for example, making sure emails and phone numbers are entered in the correct format.
+
+I have also designed and implemented Power Automate workflows to handle approval processes, automated email notifications.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Hi [Interviewer’s Name], Good Morning. 
