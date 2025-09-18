@@ -15,7 +15,7 @@
 1. Inventory Management App    – to track furniture stock and optimize asset availability across warehouses.
 2. Purchase Order Tracking App – enabled procurement teams to monitor vendor orders and delivery timelines.
 
-👉 Integrated SharePoint Online lists and SQL Server as data sources for real-time data operations.
+👉 Integrated SharePoint Online lists and DataVerse as data sources for real-time data operations.
 
 👉 Used Power Automate to build automated workflows for:
 ✅ Approval processes and sending Notifications
