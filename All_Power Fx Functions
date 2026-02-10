@@ -88,7 +88,7 @@ Coalesce() – Returns the first non-blank value from a list. ━━━━━ Co
 --------------------------------------------------
 Remove() – Remove a first/last record from a collection. ━━━━━ Remove(CollectionName,First/Last(CollectionName))
 
-RemoveIf() – Remove a specific record from a collection. ━━━━━ Remove(CollectionName,ID=2)
+RemoveIf() – Remove a specific record from a collection. ━━━━━ RemoveIf(CollectionName,ID=2)
 
 CountRows()  – Counts the number of records in a Gallery. ━━━━━ "Total no. of records: "& CountRows(Gallery1.AllItems)
 
