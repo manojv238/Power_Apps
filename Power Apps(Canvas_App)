@@ -169,7 +169,6 @@ Common delegable functions:
 Filter()
 Sort()
 SortByColumns()
-LookUp() (simple conditions)
 StartsWith()
 Logical operators: =, <, >, <=, >=, And, Or
 
