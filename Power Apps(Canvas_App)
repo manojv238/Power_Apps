@@ -163,6 +163,23 @@ EXPLAIN IN ANSWER:-
 To problem slove this, 
 👉 I always use delegable functions like Filter, Sort, and StartsWith, and it return accurate results efficiently. 
 🔹 This improved both accuracy and performance.
+
+Common delegable functions:
+----------------------------
+Filter()
+Sort()
+SortByColumns()
+LookUp() (simple conditions)
+StartsWith()
+Logical operators: =, <, >, <=, >=, And, Or
+
+Common non-delegable functions:
+-------------------------------
+Text: Left(), Right(), Mid(), Len(), Upper(), Lower()
+Logical: If(), Switch()
+Table: GroupBy(), Distinct(), Concat()
+Date: Today(), Now(), DateDiff()
+Operator: in
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 8. Validations in Power Apps?
