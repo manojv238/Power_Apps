@@ -3,8 +3,8 @@
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
 👉 Dataverse is a relational database built specifically for power platform.
-👉 I also customized tables, with features like relationships, lookups, choice fields, and created views and forms.
-👉 It's supports for enterprise-applications that require complex data modeling, role-based security and Business rules.
+👉 It's supports tables, with  different features like relationships, lookups, choice fields, and created views and forms.
+👉 It's designed for enterprise-applications that require complex data modeling, role-based security and Business rules.
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 2. What is Table, Relationships and Database in Dataverse?
