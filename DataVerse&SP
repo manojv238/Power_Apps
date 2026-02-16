@@ -2,11 +2,9 @@
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-✅ Dataverse (formerly known as Common Data Service - CDS):-
-👉 It is a cloud-based data stroage platform provided by Microsoft as part of the Power Platform.
-👉 It allows users to securely store, manage, and access business data used by Power Apps, Power Automate.
-👉 I also customized tables, with features like relationships, lookups, choice fields, and created views and forms for different user roles.
-👉 Dataverse provides a secure and scalable environment, that supporting data modeling, role-based security and Business rules.
+👉 Dataverse is a relational database built specifically for power platform.
+👉 I also customized tables, with features like relationships, lookups, choice fields, and created views and forms.
+👉 It's supports for enterprise-applications that require complex data modeling, role-based security and Business rules.
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 2. What is Table, Relationships and Database in Dataverse?
@@ -78,13 +76,8 @@ EXPLAIN IN ANSWER:-
 
 1. Explain about SharePoint:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-👉 SharePoint is a web-based collaboration and document management platform developed by Microsoft. 
-👉 It’s widely used in organizations to store, share, manage, and collaborate on content, data, and documents securely.
-
-🔷 I’ve used SharePoint Online mainly as a data source for Power Apps:
-— It provides Lists for storing structured data (like tables).
-— It provides Document Libraries for storing and managing files (like Word, PDF, Excel).
-— Supports features like version control, permissions, metadata, views, and approval workflows.
+👉 SharePoint is primarliy a document management and web-based collabortion platform developed by Microsoft. 
+👉 It’s a great for storing lists, documents and simple struched data.
 --------------------------------------------------------------------------------------------------------------------------------------
 
 2. Difference Between SharePoint List and SharePoint Library?
