@@ -1,10 +1,17 @@
-1. Define Dataverse (CDS)? why should use them?
 
-EXPLAIN IN ANSWER:-
-━━━━━━━━━━━━━━━━━━━
+Dataverse:-
+━━━━━━━━━━━
 👉 Dataverse is a relational database built specifically for power platform.
 👉 It's supports tables, with  different features like relationships, lookups, choice fields.
 👉 It's designed for enterprise-applications that require complex data modeling, role-based security and Business rules.
+
+
+SharePoint:-
+━━━━━━━━━━━
+👉 SharePoint is primarliy a document management and web-based collabortion platform developed by Microsoft. 
+👉 It’s a great for storing lists, documents and simple struched data.
+👉 It works well for lightweight power apps with moderate data, simple relationships and standard connectors(Included in M365L).
+👉 However,it's not an optimized for complex relationships and large datasets.
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 2. What is Table, Relationships and Database in Dataverse?
@@ -72,13 +79,7 @@ EXPLAIN IN ANSWER:-
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 ✔✔ SHAREPOINT INTERVIEW QUESTIONS AND ANSWERS!!
---------------------------------------------------------------------------------------------------------------------------------------------------
-
-1. Explain about SharePoint:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-👉 SharePoint is primarliy a document management and web-based collabortion platform developed by Microsoft. 
-👉 It’s a great for storing lists, documents and simple struched data.
---------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 2. Difference Between SharePoint List and SharePoint Library?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
