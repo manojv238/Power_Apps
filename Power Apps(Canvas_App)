@@ -421,7 +421,7 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-Named formulas are reusable expressions or calculations that we can define once and we can user anywhere in the app.
-It's is automatically calculate and update when the related data changes, without using variables like Set or UpdateContext.
+👉 Named formulas are reusable expressions or calculations that we can define once and we can user anywhere in the app.
+👉 It's is automatically calculate and update when the related data changes, without using variables like Set or UpdateContext.
 
 
