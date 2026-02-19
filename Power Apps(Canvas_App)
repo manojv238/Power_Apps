@@ -415,6 +415,13 @@ EXPLAIN IN ANSWER:-
 ✅ Where is Pagination Used?
 👉 Canvas Apps, especially in Gallery controls showing SharePoint, Dataverse, or SQL data 1000+ records.
 👉 You want to show 10 records per page using a gallery.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+22. What is Named Formulas in Power Apps?
+
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+Named formulas are reusable expressions or calculations that we can define once and we can user anywhere in the app.
+It's is automatically calculate and update when the related data changes, without using variables like Set or UpdateContext.
 
 
