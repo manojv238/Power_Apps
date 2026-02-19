@@ -1,11 +1,20 @@
 1. What is your day-to-day activities and what is the process and what is the role and responsibilities? So how you worked on it?
 
-👉 In my current role as a Power Platform Developer at Wipro, I work in an Agile environment.
--------------------------
-🔹 Day-to-day activities:
--------------------------
+"In my day-to-day work activities, 
+I mainly focus on developing and maintaining applications using Power Apps, Power Automate, SharePoint, and Dataverse. 
+I usually start my day by checking my assigned tasks and attending the daily Srcum meeting where I discuss my progress and any blockers. 
+Based on the requirements given by the business users, I analyze the requirement, design the data structure, and decide whether to use SharePoint or Dataverse. 
+Then I develop the Power App, connect it to the data source, and implement the business logic using formulas and conditions.
+
+I also create Power Automate flows to automate processes like approval workflows, email notifications, and updating data automatically. 
+After development, I test the application, fix any issues, and support the UAT process with business users. 
+Once everything is approved, I deploy the solution to production. 
+
+Apart from development, I also handle bug fixes, performance improvements, and enhancements based on user feedback. 
+Overall, my role involves end-to-end development, automation, deployment, and support of Power Platform solutions."
+
 👉 My day usually starts with a daily stand-up meeting, where I share yesterday’s progress, today’s plan, and if i have any blockers.
-👉 After that, I pick the tasks form Jira Board, Tasks are assigned by the Team Lead or Project Manager through a Jira.
+👉 After that, I pick the tasks form Azure Board, Tasks are assigned by the Team Lead or Project Manager through a Jira.
 😎 These tasks like:
 — sometimes it’s designing and building new Canvas apps or Model-Driven apps, 
 — sometimes creating or updating Power Automate flows for approvals and notifications, 
