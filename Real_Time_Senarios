@@ -140,7 +140,19 @@ For buttons or components: Visible: userRole = "Manager"
 
 👉 Yes, I’ve worked with permission handling in multiple projects.In Power Apps, permissions are usually managed in two ways:
 — One is at the data source level (SharePoint or Dataverse), 
-— Another one is app level using role-based logic.
+— Another one is Azure AD groups.
+
+In the App OnStart property, I write a variable to check whether the logged-in user belongs to a specific Azure AD group by using the Office365Groups connector. 
+First, I connect the Office365Groups connector to the app. 
+Then, I create a global variable using the Set() function and check the group membership using the group ID. 
+For example, I write:
+
+Set(varIsManager, Office365Groups.IsMemberOfGroup("GroupID", User().Email).value)
+
+This variable stores true or false based on whether the user is a member of that Azure AD group. 
+Then throughout the app, I use this variable to control permissions, such as showing or hiding buttons, enabling edit access, or restricting certain features. 
+This approach helps implement role-based access control dynamically when the app starts."
+
 
 👉 In SharePoint-based apps (Steelcase Inventory App):
 — I used SharePoint list permissions. For example, item-level permissions were applied through Power Automate, 
