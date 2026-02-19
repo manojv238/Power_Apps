@@ -120,15 +120,11 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 In Power Automate, I handle errors using a combination of Configure Run After, Scope controls, and error-handling actions, 
-    — like sending notifications or logging failures.
-
-👉 I usually wrap critical steps inside a Scope block — for example, actions related to updating a SharePoint list or calling an API.
-👉 Then I use another Scope called ‘Error Handling’, and configure it to run only if the previous scope fails using the 'Configure Run After → has failed' option.
-👉 Inside the error scope, I typically:
-📧 Send an email alert to the admin or support team.
-📝 Log the error message using a Compose or Append to Array step.
-🔁 Sometimes use Retry Policies for temporary issues like timeout or throttling.
+👉"In Power Automate,
+I handle errors using a combination of Configure Run After, Scope actions, and proper error logging.
+For example, I usually create separate scopes like Try, Catch, and Finally. 
+In the Try scope, I place the main logic of the flow, and in the Catch scope, I configure it to run only if the Try scope fails using the 'Configure Run After' option. 
+Inside the Catch scope, I log the error details in SharePoint or Dataverse and send a failure notification email to the support team so they are aware of the issue.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 8. What are Expressions in Power Automate?
