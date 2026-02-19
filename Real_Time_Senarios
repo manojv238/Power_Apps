@@ -111,17 +111,6 @@ I handled that using containers for responsive design.
 SharePoint doesn’t provide row-level security by default in Power Apps.
 I handled this by maintaining a UserRole list and using User().Email to apply conditional permissions and visibility.
 🎯 Impact: Ensured data security and correct access for different user roles.
----------------------------------------------------------------------------------------------------------------------------------------------
-
-5. Explain real-time challenges you faced while working on Model-Driven Apps, and how you overcame them:
-
-👉 While working on Model-Driven Apps, I faced a few real challenges:
-
-— The first one was Approval Workflow Delays. For example,
-In the purchase order process, sometimes managers didn’t respond to approval emails on time.
-To solve this, I created a Power Automate flow with reminders and escalation.
-If no response came in 2 days, the system automatically sent reminders or escalated to the next approver.
-🎯 Impact: Approvals became much faster and orders didn’t get stuck anymore.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 6. When did you feel the app was tricky or difficult while developing it?
