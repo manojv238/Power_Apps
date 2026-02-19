@@ -1,6 +1,6 @@
 1. What is your day-to-day activities and what is the process and what is the role and responsibilities? So how you worked on it?
 
-"In my day-to-day work activities, 
+In my day-to-day work activities, 
 I mainly focus on developing and maintaining applications using Power Apps, Power Automate, SharePoint, and Dataverse. 
 I usually start my day by checking my assigned tasks and attending the daily Srcum meeting where I discuss my progress and any blockers. 
 Based on the requirements given by the business users, I analyze the requirement, design the data structure, and decide whether to use SharePoint or Dataverse. 
@@ -11,7 +11,7 @@ After development, I test the application, fix any issues, and support the UAT p
 Once everything is approved, I deploy the solution to production. 
 
 Apart from development, I also handle bug fixes, performance improvements, and enhancements based on user feedback. 
-Overall, my role involves end-to-end development, automation, deployment, and support of Power Platform solutions."
+Overall, my role involves end-to-end development, automation, deployment, and support of Power Platform solutions.
 
 👉 My day usually starts with a daily stand-up meeting, where I share yesterday’s progress, today’s plan, and if i have any blockers.
 👉 After that, I pick the tasks form Azure Board, Tasks are assigned by the Team Lead or Project Manager through a Jira.
@@ -73,33 +73,17 @@ Overall, my role involves end-to-end development, automation, deployment, and su
   I also built dashboards so that procurement teams could easily see pending approvals and vendor performance.
 ✔ For the workflow, I integrated Power Automate – whenever an order was created, it automatically sent an approval request to procurement managers. 
   Agents were only allowed to create or update orders, but managers had the final authority to approve or reject them.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
-😎 Warehouse Managers = People who manage and oversee stock in warehouses.
-✔ They are usually client-side users (employees of Steelcase).
-✔ They need to add/edit/update stock levels because they are responsible for inventory accuracy.
-
-😎 Normal Staff Members = The warehouse staff working under the managers.
-✔ They are also client-side users.
-✔ They might be responsible for checking stock, moving products, packing, etc.
-✔ They only need to view the stock information but should not be allowed to edit (to prevent mistakes or unauthorized changes).
-
-✔ Procurement Team (Business Users) → People in the company who handle buying goods/services from vendors.
-✔ Procurement Agents (Staff-level users) → Junior staff who create or update purchase orders (but cannot approve).
-✔ Procurement Managers (Approvers) → Senior staff who review, approve, or reject purchase orders.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 3. How to call Power Apps to Power Automate:-
 
-👉 Yes, I’ve used Power Automate flows inside Power Apps many times.
-For example: 
-In my Steelcase Inventory App, whenever a user added a new product,I had to trigger a workflow to send a notification and log details in another list.
+In my experience, we can call Power Automate from Power Apps by creating an instant cloud flow with the Power Apps trigger. 
+First, I create a flow in Power Automate and select the 'Power Apps' trigger. 
+Then I define the required input parameters such as ID, name, or any field that I want to pass from Power Apps. 
+After creating the flow logic, like sending an email or updating Dataverse, I save the flow.
 
-👉 To do that, I created a Power Automate flow first, and then I exposed it as a function inside Power Apps using the Power Automate connector. 
-— Inside Power Apps, I can call the flow from a control, usually a button’s OnSelect property, using:
-
-✅ MyFlow.Run(Parameters) function
-
-👉 This way, I could pass values like Product Name, Category, or Quantity from the app into the flow, 
-and the flow handled the background automation — such as approvals, emails, or updates.
+Then in Power Apps, I connect the flow using the Power Automate option and call it using the FlowName.Run() function. 
+For example, when a user clicks a Submit button, I call the flow and pass the required parameters. 
+This way, Power Apps triggers Power Automate to perform background operations like approvals, notifications.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 4. Explain real-time challenges you faced while working on Canvas App, and how you overcame them:
