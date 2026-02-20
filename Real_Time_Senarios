@@ -27,31 +27,16 @@ At the end of day, I update task status in Azure Board and push my changes for r
 
 2. Can you tell me about your Current Project?
 
-👉 Currently, I am working on the STEELCASE PROJECT, which is a leading furniture company in the US. I’m working as a Power Platform Developer,
-   – where my role mainly involves developing and supporting business applications using Power Apps, Power Automate, Dataverse, and SharePoint.
-😎 I’ve worked on two key applications in this project:
-✅ First – the Inventory Management App (Canvas App):
-🎯 Purpose: 
-– Earlier, Steelcase was managing furniture stock using Excel, which caused manual errors and delays. 
-– I developed a responsive Canvas App to track furniture stock across multiple warehouses.
-👉 So in this app, I implemented features like:
-------------------------------------------------
-✔ Search and Filter option, so users don’t have to scroll through long lists. They can quickly find products by category, warehouse, or product name.
-✔ I also designed a low-stock alert system. For example, if the quantity of any item goes below 5, a red warning symbol is shown to the warehouse manager.
-✔ Another important feature was role-based access. The warehouse managers have edit rights, so they can update stock levels, 
-  but normal staff members only have view access.
-✔ Finally, I built a warehouse grouping view, where managers can compare inventory across different locations.
+"In my recent project, I worked for Steelcase as a Power Apps Developer, 
+where I developed internal business applications using Power Apps, Power Automate, Dataverse, and SharePoint.
+The main objective of the project was to replace manual Excel-based processes with automated and centralized applications to improve efficiency and data accuracy.
 
-✅ Second – the Order Tracking App (Model-Driven App):
-🎯 Purpose:
-– Procurement teams earlier tracked purchase orders through emails and Excel, which was inefficient.
-– So I built a Model-Driven App with Dataverse to monitor vendor purchase orders, delivery timelines, and approvals.
-👉 So in this app, I implemented features like:
-------------------------------------------------
-✔ I designed custom Dataverse tables and forms to capture all purchase order details,
-  I also built dashboards so that procurement teams could easily see pending approvals and vendor performance.
-✔ For the workflow, I integrated Power Automate – whenever an order was created, it automatically sent an approval request to procurement managers. 
-  Agents were only allowed to create or update orders, but managers had the final authority to approve or reject them.
+I developed two major applications. 
+The first was an Inventory Management Canvas App to track furniture stock across multiple warehouses.
+It included features like search and filter, low-stock alerts, and role-based access control. 
+The second was a Model-Driven Order Tracking application built on Dataverse to manage purchase orders and approvals. 
+I also implemented approval workflows using Power Automate, automated notifications, handled security roles, and managed deployments. 
+This project significantly reduced manual errors, improved tracking, and streamlined approval processes across departments."
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 3. How to call Power Apps to Power Automate:-
 
@@ -65,33 +50,28 @@ For example, when a user clicks a Submit button, I call the flow and pass the re
 This way, Power Apps triggers Power Automate to perform background operations like approvals, notifications.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-4. Explain real-time challenges you faced while working on Canvas App, and how you overcame them:
+4. Explain real-time challenges you faced while developing an app and how you overcame them?
 
-👉 While working on Canvas Apps, I faced a few real challenges:
+I have faced a some of real challenges:
 
-— One of the challenges I faced, To export Gallery data to Excel, I use Power Automate with Power Apps integration.
-I use Power Automate integrated with Power Apps, because Power Apps alone cannot generate and download Excel files directly. 
-When the user clicks the Export button, I trigger a Power Automate flow from Power Apps and pass the required data, such as filter parameters or collection data from the Gallery.
+— While developing the export-to-Excel functionality in my application, 
+one of the main challenges I faced was handling large datasets and data formatting issues. 
+Business users wanted to export filtered records from a Gallery directly into Excel, but Power Apps does not have a built-in feature to generate Excel files. 
+Initially, when I tried passing the entire collection to Power Automate, the flow performance was slow, and sometimes it failed due to payload size limits.
+To resolve this, 
+I optimized the approach by passing only filter parameters instead of the full dataset. 
+Inside Power Automate, I queried the data source directly using those filters, 
+then used the Create CSV table action followed by Create file in OneDrive for Business. 
 
-Inside the Power Automate flow, I retrieve the corresponding records from SharePoint or Dataverse based on the parameters received. 
-The flow then generated a CSV file and stored it in OneDrive for Business, and I shared the file link with the user.
-This approach ensures proper formatting, supports large datasets, and provides a reliable export functionality for users."
+— Another challenge was handling date and number format conversions, 
+so I implemented proper formatting expressions and added error handling using Scopes and Configure Run After. 
+After implementing these improvements, the export process became stable, faster, and more reliable for users.
 
-
-— The biggest one was Delegation, For example:
+— One more challenge i was faced Delegation,
 when I connected my app to a SharePoint list with thousands of items, only 500 records were loading due to delegation limits.
 At first, it was really frustrating because users needed full data.
 What I did was optimize my formulas with delegable functions like StartsWith() and Filter().
 And in some cases where delegation still didn’t work, I called a Power Automate flow from the app to fetch only the required records. 
-🎯 Impact: The app became scalable and users could search across the entire dataset smoothly.
-
-
-— Another challenge was Performance. 
-In the beginning, the app was loading slow because too many data calls were happening. 
-I fixed it by using collections to cache data and by loading data on-demand instead of all at once. 
-🎯 Impact: The app performance improved a lot, and users had a much faster experience.
-
-
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 6. When did you feel the app was tricky or difficult while developing it?
@@ -134,7 +114,6 @@ Set(varIsManager, Office365Groups.IsMemberOfGroup("GroupID", User().Email).value
 This variable stores true or false based on whether the user is a member of that Azure AD group. 
 Then throughout the app, I use this variable to control permissions, such as showing or hiding buttons, enabling edit access, or restricting certain features. 
 This approach helps implement role-based access control dynamically when the app starts."
-
 
 In SharePoint, 
 I handle permissions by using SharePoint groups and permission levels to control access to lists and libraries.
