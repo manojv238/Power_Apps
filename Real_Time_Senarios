@@ -69,6 +69,9 @@ After that, I can easily use those fields in actions like Create CSV table, to g
 Then I use the Create file action in SharePoint or OneDrive for Busines to store the file.
 Finally, I generate a shareable link and send it back in power apps so that user can download the Excel file. 
 
+("I use JSON format because it is the standard way to send structured data from Power Apps to Power Automate. 
+  When I export data from a Gallery, there are multiple records and multiple fields, so JSON helps represent that data in a structured format with key-value pairs.")
+
 — Another challenge was handling date and number format conversions, 
 so I implemented proper formatting expressions and added error handling using Scopes and Configure Run After. 
 After implementing these improvements, the export process became stable, faster, and more reliable for users.
