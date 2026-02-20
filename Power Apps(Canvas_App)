@@ -41,6 +41,8 @@ POWER APPS INTERVIEW PREPARATION QUESTIONS AND ANSWERS :-
 20. Difference between configuration and customization?
 
 21. What is pagination in Power Apps?
+
+22. What is Named Formulas in Power Apps?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 1. Explain about Power Apps?
@@ -69,14 +71,15 @@ EXPLAIN IN ANSWER:-
 
 EXPLAIN IN ANSWER:-
 ━━━━━━━━━━━━━━━━━━━
-👉 Canvas App provides a blank canvas where i can design fully customized UI by dragging and dropping controls — like galleries, forms, buttons and media components.
-   — It gives me full complete control over the UI.
-👉 One of the key advantages of Canvas Apps is more flexibility, So we can design however we want!!
-👉 I can integrate my apps with multiple data sources like SharePoint, Excel or Dataverse depending on the use case.
+In a Canvas App, the UI design is fully controlled by the developer. 
+We design the layout by dragging and placing controls like a blank canvas.
+It gives full flexibility in terms of design, user experience, and customization. 
+It is mainly used when we need a highly customized interface or when connecting to multiple data sources like SharePoint, Dataverse, Excel lot more.
 
-👉 Model-Driven App is data-driven applications — the UI is automatically generated based on the Dataverse data model. 
-   — including tables, relationships, forms, and views.
-👉 I prefer Model-Driven Apps for complex business scenarios suppose when the data is already in Dataverse.
+In Model-Driven App is data-driven applications and built on Dataverse. 
+The UI is automatically generated based on the data model, inculding tables,r elationships, forms, and views. 
+Instead of focusing on UI design, we focus more on data structure, business logic, and security roles. 
+It is mainly used for complex business applications where relational data, security, and scalability are important.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 3. Variables and types of Variables in power apps?
