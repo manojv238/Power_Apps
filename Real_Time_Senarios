@@ -59,16 +59,15 @@ one of the main challenges I faced was handling large datasets and data formatti
 Business users wanted to export filtered records from a Gallery directly into Excel, but Power Apps does not have a built-in feature to generate Excel files. 
 Initially, when I tried passing the entire collection to Power Automate, the flow performance was slow, and sometimes it failed due to payload size limits.
 
-"To export data from a Power Apps Gallery to Excel, 
-I use Power Automate because Power Apps does not have a direct Excel export feature. 
-When the user clicks the Export button, 
-I trigger a Power Automate flow and pass either the filtered parameters or selected records from the Gallery.
-I usually use ShowColumns fucntion to ensure only required fields are sent to the flow.
-Inside Power Automate, I retrieve the data from SharePoint or Dataverse based on the received parameters. 
-Then I use the Create CSV table action or the Excel Online connector to generate the file. 
-After that, I use the Create file action in OneDrive for Business or SharePoint to store the file.
-Finally, I generate a shareable link and send it back to the user so they can download the Excel file. 
-This approach ensures proper formatting, handles large datasets efficiently, and avoids performance issues in Power Apps."
+— In my project,
+when users wanted to export Gallery data to Excel, I handled it using Power Apps and Power Automate together. 
+When the user clicks the Export button, I pass the Gallery data to Power Automate in JSON format using the JSON function.
+I use ShowColumns to send only the required fields instead of all columns, which improves performance.
+Now in Power Automate, the data is received as a JSON string, so the first thing I do is use the Parse JSON action.
+This step is very important because it converts the JSON text into structured data so I can access individual fields.
+Then I use the Create CSV table action to generate the file. 
+After that, I use the Create file action in SharePoint or OneDrive for Busines to store the file.
+Finally, I generate a shareable link and send it back in power apps so that user can download the Excel file. 
 
 — Another challenge was handling date and number format conversions, 
 so I implemented proper formatting expressions and added error handling using Scopes and Configure Run After. 
