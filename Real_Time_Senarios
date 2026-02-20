@@ -173,8 +173,17 @@ Requestors had only Create and Read access to their records, while Managers had 
 
 After creating the security role, I assign it to users either directly or through Dataverse teams,
 This way, whenever a user is added to that group, they automatically get the assigned permissions.
+---------------------------------------------------------------------------------------------------------------------------------------------
 
+8. How to move files from one folder to another folder using Power Automate? How do you achieve that?
 
+In Power Automate, I move files from one folder to another using triggers and the Move file action from SharePoint or OneDrive connector. 
+First, I create an automated cloud flow with a trigger like 'When a file is created in a folder' in SharePoint or OneDrive. 
+This trigger detects whenever a new file is added to the source folder.
+
+After the trigger, I use the 'Move file' action and specify the File Identifier from the trigger and the destination folder path where the file needs to be moved.
+This automatically transfers the file from the source folder to the target folder. 
+In some scenarios, I also add conditions to move files based on file name, extension, or status.
 
 
 
