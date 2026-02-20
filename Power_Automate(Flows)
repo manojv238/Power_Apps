@@ -152,10 +152,27 @@ Then I created an automated cloud flow with the trigger 'When a row is added' in
 Whenever a new order was created from Power Apps, the flow was triggered automatically. 
 After that, I used the 'Get user profile (V2)' action to fetch the manager’s email dynamically.
 I used the 'Start and wait for an approval' action to send the approval request to the manager with all the order details.
-#Used the "Start and wait for an approval" action ----   #Approval Type: "Approve/Reject – First to respond"
 Once the manager approved or rejected the request, 
+I add "Update item "action for SP & Dataverse .
 I used a condition to check the outcome and updated the status in the Dataverse table accordingly. 
 I also sent email notifications to the employee informing them about the approval or rejection.
+
+# 5 Types of Approvals:
+1. Approve/Reject – First to respond
+2. Approve/Reject – Everyone must approve
+3. Custom Responses – Wait for one response
+4. Custom Responses – Wait for all responses
+
+✅ How to send an Reminder emails using approvals:
+
+"To achieve reminder emails for pending approvals, I implement it using Power Automate with parallel branch and delay functionality. 
+After the 'Start and wait for an approval' action, 
+I add a parallel branch. 
+In one branch, the flow waits for the approval response, and in the other branch, I use a 'Delay' action for 3 days.
+
+After the delay, I add a condition to check the approval status. 
+If the approval is still pending, I send a reminder email to the manager using the 'Send an email (V2)' action. 
+If the approval is already completed, the reminder email is not sent.
 ------------------------------------------------------------------------------------------------------------------
 
 10. What is Concurrency Control in Power Automate?
