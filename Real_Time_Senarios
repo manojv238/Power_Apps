@@ -90,6 +90,15 @@ This way, Power Apps triggers Power Automate to perform background operations li
 
 👉 While working on Canvas Apps, I faced a few real challenges:
 
+— One of the challenges I faced, To export Gallery data to Excel, I use Power Automate with Power Apps integration.
+I use Power Automate integrated with Power Apps, because Power Apps alone cannot generate and download Excel files directly. 
+When the user clicks the Export button, I trigger a Power Automate flow from Power Apps and pass the required data, such as filter parameters or collection data from the Gallery.
+
+Inside the Power Automate flow, I retrieve the corresponding records from SharePoint or Dataverse based on the parameters received. 
+The flow then generated a CSV file and stored it in OneDrive for Business, and I shared the file link with the user.
+This approach ensures proper formatting, supports large datasets, and provides a reliable export functionality for users."
+
+
 — The biggest one was Delegation, For example:
 when I connected my app to a SharePoint list with thousands of items, only 500 records were loading due to delegation limits.
 At first, it was really frustrating because users needed full data.
@@ -97,20 +106,13 @@ What I did was optimize my formulas with delegable functions like StartsWith() a
 And in some cases where delegation still didn’t work, I called a Power Automate flow from the app to fetch only the required records. 
 🎯 Impact: The app became scalable and users could search across the entire dataset smoothly.
 
+
 — Another challenge was Performance. 
 In the beginning, the app was loading slow because too many data calls were happening. 
 I fixed it by using collections to cache data and by loading data on-demand instead of all at once. 
 🎯 Impact: The app performance improved a lot, and users had a much faster experience.
 
-— I also had to deal with responsiveness.
-Since the app was used on desktop, mobile, and tablets, the layout was not adjusting properly.
-I handled that using containers for responsive design.
-🎯 Impact: The app became responsive and worked well across all devices.
 
-— Finally, Role-based Security.
-SharePoint doesn’t provide row-level security by default in Power Apps.
-I handled this by maintaining a UserRole list and using User().Email to apply conditional permissions and visibility.
-🎯 Impact: Ensured data security and correct access for different user roles.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 6. When did you feel the app was tricky or difficult while developing it?
