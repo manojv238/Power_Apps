@@ -185,7 +185,26 @@ After the trigger, I use the 'Move file' action and specify the File Identifier 
 This automatically transfers the file from the source folder to the target folder. 
 In some scenarios, I also add conditions to move files based on file name, extension, or status.
 
+---------------------------------------------------------------------------------------------------------------------------------------------
 
+9. There is a SP List 5 fields, so i want retire 2 fields only how do you achieve that?
+
+To display only two fields instead of all fields, I handle it either in Power Apps using the ShowColumns function or in Power Automate using the Select action.
+
+If I am doing it in Power Apps, I use ShowColumns to retrieve only the required fields. For example:
+ShowColumns(EmployeeList, "EmployeeName", "EmployeeID")
+This ensures only Employee Name and Employee ID are displayed in the Gallery or passed to Power Automate.
+
+If I am handling it in Power Automate, after retrieving the records using Get items or List rows,
+I use the Select action and map only the required fields like EmployeeName and EmployeeID. 
+This way, the output will contain only those two fields instead of all columns.
+This improves performance and ensures only required data is displayed or exported."
+
+For example:
+if I am retrieving employee data from SharePoint but only need specific records, 
+I use the Get items action and apply an OData filter query like: EmployeeID eq 'EMP001'
+This ensures Power Automate retrieves only the required records instead of all records.
+If the data is already retrieved, I use the Filter array action to filter based on conditions like Employee Type or Status.
 
 
 
