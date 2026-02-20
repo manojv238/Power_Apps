@@ -12,28 +12,7 @@ Once everything is approved, I deploy the solution to production.
 
 Apart from development, I also handle bug fixes, performance improvements, and enhancements based on user feedback. 
 Overall, my role involves end-to-end development, automation, deployment, and support of Power Platform solutions.
-
-👉 My day usually starts with a daily stand-up meeting, where I share yesterday’s progress, today’s plan, and if i have any blockers.
-👉 After that, I pick the tasks form Azure Board, Tasks are assigned by the Team Lead or Project Manager through a Jira.
-😎 These tasks like:
-— sometimes it’s designing and building new Canvas apps or Model-Driven apps, 
-— sometimes creating or updating Power Automate flows for approvals and notifications, 
-— and other times enhancing existing apps with new features or bug any issues.
-
-😎 During development:
-— I focus a lot on responsive UI design for Canvas App, 
-— Writing Power Fx formulas,
-— handling delegation issues when working with large datasets in SharePoint,
-— integrating with SharePoint or Dataverse, 
-— and setting up role-based security in apps.
-👉 I spend time on requirement discussions with the Business Analyst or Product Owner,
-   — to make sure I fully understand the requirements and business needs before a starting development.
-👉 Once development is done, I do unit testing for my features and support QA if needed.
-👉 At the end of day, I update task status in DevOps/Jira Board and push my changes for review.
-
-🎯 So overall, my role has been end-to-end development — designing, building, and automating workflows 
-   — and these apps really helped the business by reducing manual errors, improving visibility, and speeding up approval cycles.
-
+At the end of day, I update task status in Azure Board and push my changes for review.
 ------------------------------
 🎯 My Role & Responsibilities:
 ------------------------------
@@ -43,7 +22,7 @@ Overall, my role involves end-to-end development, automation, deployment, and su
 ✔ Managing data sources like SharePoint & Dataverse.
 ✔ Handling role-based security, validations, and performance optimization.
 ✔ Collaborating with QA and deployment teams to move apps across environments.
-✔ I also participate in requirement discussions, sprint planning, and daily stand-ups, and update my work in Azure DevOps/Jira.
+✔ I also participate in requirement discussions, sprint planning, and daily stand-ups, and update my work in Azure Board.
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 2. Can you tell me about your Current Project?
