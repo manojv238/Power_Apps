@@ -123,7 +123,9 @@ EXPLAIN IN ANSWER:-
 👉"In Power Automate,
 I handle errors using a combination of Configure Run After, Scope actions, and proper error logging.
 For example, I usually create separate scopes like Try, Catch, and Finally. 
-In the Try scope, I place the main logic of the flow, and in the Catch scope, I configure it to run only if the Try scope fails using the 'Configure Run After' option. 
+In the Try scope, I place the main logic of the flow, and
+in the Catch scope, I configure it to run only if the Try scope fails using the 'Configure Run After' option.(Has Failed,Is Skipped, Has timeout) 
+
 Inside the Catch scope, I log the error details in SharePoint or Dataverse and send a failure notification email to the support team so they are aware of the issue.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
