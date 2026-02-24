@@ -23,7 +23,7 @@ At the end of day, I update task status in Azure Board and push my changes for r
 ✔ Handling role-based security, validations, and performance optimization.
 ✔ Collaborating with QA and deployment teams to move apps across environments.
 ✔ I also participate in requirement discussions, sprint planning, and daily stand-ups, and update my work in Azure Board.
----------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 2. Can you tell me about your Current Project?
 
@@ -37,7 +37,7 @@ It included features like search and filter, low-stock alerts, and role-based ac
 The second was a Model-Driven Order Tracking application built on Dataverse to manage purchase orders and approvals. 
 I also implemented approval workflows using Power Automate, automated notifications, handled security roles, and managed deployments. 
 This project significantly reduced manual errors, improved tracking, and streamlined approval processes across departments."
--------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 3. How to call Power Apps to Power Automate:-
 
 In my experience, we can call Power Automate from Power Apps by creating an instant cloud flow with the Power Apps trigger. 
@@ -68,16 +68,27 @@ This step is very important because it converts the JSON text into structured da
 After that, I can easily use those fields in actions like Create CSV table, then I use the Create file action in SharePoint or OneDrive for Busines to store the file.
 Finally, I generate a shareable link and send it back in power apps so that user can download the Excel file. 
 
-("I use JSON format because it is the standard way to send structured data from Power Apps to Power Automate. 
+  ("I use JSON format because it is the standard way to send structured data from Power Apps to Power Automate. 
   When I export data from a Gallery, there are multiple records and multiple fields, 
   so JSON helps represent that data in a structured format with key-value pairs.")
 
-— One more challenge i was faced Delegation,
-when I connected my app to a SharePoint list with thousands of items, only 500 records were loading due to delegation limits.
-At first, it was really frustrating because users needed full data.
-What I did was optimize my formulas with delegable functions like StartsWith() and Filter().
-And in some cases where delegation still didn’t work, I called a Power Automate flow from the app to fetch only the required records. 
-----------------------------------------------------------------------------------------------------------------------------------------------
+— One more i faced the challenge is Deligation, 
+I faced while working with large datasets in Power Apps was dealing with delegation limits when connecting to a SharePoint list with thousands of records. 
+By default, Power Apps was only loading 500 records, which meant users couldn’t access the complete data they needed.
+To resolve this, I first optimized my formulas by using delegable functions,
+which allowed Power Apps to query data directly from SharePoint instead of loading it locally. 
+his significantly improved data retrieval and ensured users could access relevant records efficiently.
+
+However, in some scenarios where delegation was still not fully supported, 
+I implemented Pagination to manage large datasets more effectively.
+Instead of loading all records at once, I displayed a fixed number of records per page, such as 100, 300, 500.
+
+I achieved this by:
+Creating variables to track the current page number and page size
+Using functions like FirstN() and LastN() to display only the required records for each page
+Adding Next and Previous buttons so users could navigate easily between pages.
+This approach improves app performance, reduces data load, and provides a better user experience, especially when working with large datasets.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 6. How do you manage permissions in PowerApps?
 
@@ -114,7 +125,7 @@ Requestors had only Create and Read access to their records, while Managers had 
 
 After creating the security role, I assign it to users either directly or through Dataverse teams,
 This way, whenever a user is added to that group, they automatically get the assigned permissions.
----------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 8. How to move files from one folder to another folder using Power Automate? How do you achieve that?
 
@@ -126,7 +137,7 @@ After the trigger, I use the 'Move file' action and specify the File Identifier 
 This automatically transfers the file from the source folder to the target folder. 
 In some scenarios, I also add conditions to move files based on file name, extension, or status.
 
----------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 9. There is a SP List 5 fields, so i want retire 2 fields only how do you achieve that?
 
