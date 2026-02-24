@@ -69,11 +69,8 @@ After that, I can easily use those fields in actions like Create CSV table, then
 Finally, I generate a shareable link and send it back in power apps so that user can download the Excel file. 
 
 ("I use JSON format because it is the standard way to send structured data from Power Apps to Power Automate. 
-  When I export data from a Gallery, there are multiple records and multiple fields, so JSON helps represent that data in a structured format with key-value pairs.")
-
-— Another challenge was handling date and number format conversions, 
-so I implemented proper formatting expressions and added error handling using Scopes and Configure Run After. 
-After implementing these improvements, the export process became stable, faster, and more reliable for users.
+  When I export data from a Gallery, there are multiple records and multiple fields, 
+  so JSON helps represent that data in a structured format with key-value pairs.")
 
 — One more challenge i was faced Delegation,
 when I connected my app to a SharePoint list with thousands of items, only 500 records were loading due to delegation limits.
@@ -82,30 +79,7 @@ What I did was optimize my formulas with delegable functions like StartsWith() a
 And in some cases where delegation still didn’t work, I called a Power Automate flow from the app to fetch only the required records. 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-6. When did you feel the app was tricky or difficult while developing it?
-
-"One of the trickiest parts during development was when I had to handle dynamic visibility and role-based access in a Canvas App. 
-Unlike model-driven apps, Canvas Apps don’t have built-in security roles, so I had to build a custom logic from scratch.
-
-It was difficult because:
-I had to ensure different roles (Admin, Manager, User) saw only what they were allowed to.
-I had to secure not just screens, but also buttons, forms, and data visibility.
-Testing this for different users without breaking other functionality was also challenging.
-
-🔧 How I Overcame It:
-I created a custom SecurityRoleList in SharePoint Datasource.
-Each entry mapped a user's email to a role (Admin, Manager, etc.).
-On app start, 
-I used the User().Email function and stored the user’s role in a global variable:
-Set(userRole, LookUp(SecurityRoleList, UserEmail = User().Email, Role))
-
-Then, I used this variable to dynamically show/hide controls or navigate users:
-If(userRole = "Admin", Navigate(AdminScreen), Navigate(UserScreen))
-
-For buttons or components: Visible: userRole = "Manager"
----------------------------------------------------------------------------------------------------------------------------------------------
-
-7. How do you manage permissions in PowerApps?
+6. How do you manage permissions in PowerApps?
 
 In Power Apps, permissions are usually managed in two ways:
 — One is at the data source level (SharePoint or Dataverse), 
@@ -116,9 +90,7 @@ I write a variable to check whether the logged-in user belongs to a specific Azu
 First, I connect the Office365Groups connector to the app. 
 Then, I create a global variable using the Set() function and check the group membership using the group ID. 
 For example, I write:
-
-Set(varIsManager, Office365Groups.IsMemberOfGroup("GroupID", User().Email).value)
-
+🙌 Set(varIsManager, Office365Groups.IsMemberOfGroup("GroupID", User().Email).value)
 This variable stores true or false based on whether the user is a member of that Azure AD group. 
 Then throughout the app, I use this variable to control permissions, such as showing or hiding buttons, enabling edit access, or restricting certain features. 
 This approach helps implement role-based access control dynamically when the app starts."
@@ -127,7 +99,10 @@ In SharePoint,
 I handle permissions by using SharePoint groups and permission levels to control access to lists and libraries.
 First, I create groups like Owners, Members, and Visitors, or custom groups such as Managers and Employees based on business requirements. 
 Then I assign permission levels like Read for view-only access, Contribute for adding and editing records, and Full Control for complete access. 
-This ensures users only have the permissions required for their role.
+On app start, 
+I used the User().Email function and stored the user’s role in a global variable:
+🙌 Set(userRole, LookUp(SecurityRoleList, UserEmail = User().Email, Role))
+Then, I used this variable to dynamically show/hide controls, This ensures users only have the permissions required for their role.
 
 In Dataverse, 
 I manage security using security roles, which control what users can access and what actions they can perform on specific tables. 
@@ -158,7 +133,7 @@ In some scenarios, I also add conditions to move files based on file name, exten
 To display only two fields instead of all fields, I handle it either in Power Apps using the ShowColumns function or in Power Automate using the Select action.
 
 If I am doing it in Power Apps, I use ShowColumns to retrieve only the required fields. For example:
-ShowColumns(EmployeeList, "EmployeeName", "EmployeeID")
+🙌 ShowColumns(EmployeeList, "EmployeeName", "EmployeeID")
 This ensures only Employee Name and Employee ID are displayed in the Gallery or passed to Power Automate.
 
 If I am handling it in Power Automate, after retrieving the records using Get items or List rows,
