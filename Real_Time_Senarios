@@ -63,9 +63,11 @@ Initially, when I tried passing the entire collection to Power Automate, the flo
 when users wanted to export Gallery data to Excel, I handled it using Power Apps and Power Automate together. 
 When the user clicks the Export button, I pass the Gallery data to Power Automate in JSON format using the JSON function.
 I use ShowColumns to send only the required fields instead of all columns, which improves performance. (ShowColumns(EmployeeList, "EmployeeName", "EmployeeID"))
+
 Now in Power Automate, the data is received as a JSON string, so the first thing I do is use the Parse JSON action.
 This step is very important because it converts the JSON text into structured data so that I can access individual fields.
-After that, I can easily use those fields in actions like Create CSV table, then I use the Create file action in SharePoint or OneDrive for Busines to store the file.
+After that, I can easily use those fields in actions like Create CSV table, 
+then I use the Create file action in SharePoint or OneDrive for Busines to store the file.
 Finally, I generate a shareable link and send it back in power apps so that user can download the Excel file. 
 
   ("I use JSON format because it is the standard way to send structured data from Power Apps to Power Automate. 
@@ -120,12 +122,12 @@ I manage security using security roles, which control what users can access and 
 First, I create or modify a security role in the Power Platform Admin Center and define permissions 
 like Create, Read, Write, Delete, Append, and Append To for the required tables.
 For example, 
-in my project, I created separate roles like Requestor, Manager, and Admin. 
+I created separate roles like Requestor, Manager, and Admin. 
 Requestors had only Create and Read access to their records, while Managers had Read and Write access, and Admins had full control.
 
 After creating the security role, I assign it to users either directly or through Dataverse teams,
 This way, whenever a user is added to that group, they automatically get the assigned permissions.
-------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 7. How to move files from one folder to another folder using Power Automate? How do you achieve that?
 
@@ -139,11 +141,12 @@ In some scenarios, I also add conditions to move files based on file name, exten
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-8. There is a SharePoint List 5 fields, so i want retire 2 fields only how do you achieve that?
+8. There is a SharePoint List 5 fields, So I want retrive 2 fields only how do you achieve that?
 
 To display only two fields instead of all fields, I handle it either in Power Apps using the ShowColumns function or in Power Automate using the Select action.
 
-If I am doing it in Power Apps, I use ShowColumns to retrieve only the required fields. For example:
+If I am doing it in Power Apps, I use ShowColumns to retrieve only the required fields. 
+For example:
 🙌 ShowColumns(EmployeeList, "EmployeeName", "EmployeeID")
 This ensures only Employee Name and Employee ID are displayed in the Gallery or passed to Power Automate.
 
