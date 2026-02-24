@@ -127,7 +127,7 @@ After creating the security role, I assign it to users either directly or throug
 This way, whenever a user is added to that group, they automatically get the assigned permissions.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-8. How to move files from one folder to another folder using Power Automate? How do you achieve that?
+7. How to move files from one folder to another folder using Power Automate? How do you achieve that?
 
 In Power Automate, I move files from one folder to another using triggers and the Move file action from SharePoint or OneDrive connector. 
 First, I create an automated cloud flow with a trigger like 'When a file is created in a folder' in SharePoint or OneDrive. 
@@ -139,7 +139,7 @@ In some scenarios, I also add conditions to move files based on file name, exten
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-9. There is a SP List 5 fields, so i want retire 2 fields only how do you achieve that?
+8. There is a SharePoint List 5 fields, so i want retire 2 fields only how do you achieve that?
 
 To display only two fields instead of all fields, I handle it either in Power Apps using the ShowColumns function or in Power Automate using the Select action.
 
@@ -157,6 +157,21 @@ if I am retrieving employee data from SharePoint but only need specific records,
 I use the Get items action and apply an OData filter query like: EmployeeID eq 'EMP001'
 This ensures Power Automate retrieves only the required records instead of all records.
 If the data is already retrieved, I use the Filter array action to filter based on conditions like Employee Type or Status.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+9. In Power apps how to upload multiples files form SharePoint Library?
+
+In my application, 
+I upload multiple files to a SharePoint Document Library by using the Attachment control in Power Apps along with Power Automate. 
+First, I add an Attachment control in Power Apps to allow users to select multiple files. 
+This control supports multiple file selection using the MaxAttachments property.
+
+Next, I create a flow in Power Automate with the trigger "Power Apps (V2)". 
+In the flow, I use the Create file action from SharePoint and configure the Site Address and Document Library where files need to be stored.
+
+Since multiple files are coming from Power Apps, I use an Apply to each loop in the flow to process each file individually. 
+Inside the loop, I pass the file name and file content, and the Create file action uploads each file to the SharePoint Document Library.
+This approach, all selected files are uploaded successfully to the SharePoint Document Library.
 
 
 
