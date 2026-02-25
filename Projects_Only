@@ -1,4 +1,84 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. TA Complaints Management System Project Explanation:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Main Objective:
+The main objective of the TA Complaints Management System was to create a centralized platform,
+where users can submit their complaints and track the status easily,
+and administrators can manage and resolve complaints efficiently.
+
+Problem Solved:
+Before this system, complaints were handled manually, which caused delays, lack of tracking, and poor transparency.
+I solved this problem by automating the entire process using Power Apps and Power Automate, 
+which improved tracking, reduced manual work, and helped resolve complaints faster.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 1. STEELCASE PROJECT EXPLANATION IN REAL-TIME:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📘 Project Description:
@@ -164,118 +244,3 @@ CreatedBy (Lookup: SystemUser).
 — With built-in workflows and permissions, approvals are faster
 — No need to chase via email
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2. Herbalife Project Explanation in Real-Time:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📘 Project Description:
-
-👉 Herbalife is an American multinational company specializing in nutrition, weight management, personal care, and sports products, 
-   operating across 95+ countries with over 3.2 million independent distributors.
-
-👉 As a Power Apps & SharePoint Developer, I was responsible for building applications to streamline distributor onboarding, 
-   product order tracking, and sales approvals that were earlier managed manually in Excel and emails.
---------------------------------------
-🔧 Key Responsibilities & Highlights:
---------------------------------------
-👉 Developed both Canvas Apps and Model-Driven Apps to automate daily operations.
-
-1. Distributor Onboarding App – Canvas App to register, validate, and track new Herbalife distributors.
-
-2. Sales Order Management App – Model-Driven App to handle product sales, approvals, and delivery tracking.
-
-👉 Integrated SharePoint Online for document storage (KYC docs, contracts) and Dataverse for structured business data.
-👉 Used Power Automate to build automated workflows for approvals, notifications, and compliance checks.
-👉 Designed role-based and responsive UIs tailored to Distributors, Sales Managers, and Admins.
-👉 Applied validation rules, JSON formatting, delegation techniques for performance and better UX.
-👉 Ensured data security using Power Platform security roles and SharePoint permissions.
----------------------------------------------------
-✅ App 1: Distributor Onboarding App – Canvas App:
----------------------------------------------------
-👉 In the Herbalife Apps, we mainly tracked Herbalife’s nutrition and wellness products:
-For example:
-🍹 Meal Replacement Shakes – Formula 1 Shakes (Vanilla, Chocolate, Strawberry, Mango, Cookies & Cream)
-🍵 Teas & Beverages – Herbal Tea Concentrate (Lemon, Peach, Raspberry), Herbal Aloe Drinks
-🏋️ Sports Nutrition (Herbalife24) – Rebuild Strength, CR7 Drive, Hydrate, LiftOff®
-🥗 Snacks & Fiber – Protein Bars, Protein Chips, Formula 1 Express Bar, Active Fiber Complex
-💊 Vitamins & Supplements – Multivitamin Complex, Herbalifeline®, Thermo Complete®, Cell Activator®
-
-🎯 Purpose:
-“I developed a responsive Canvas App to automate the distributor onboarding process which replaced manual Excel tracking and email-based verification.”
-
-🔧 Key Highlights:
-📱 Responsive Design: Built using flexible containers for mobile, tablet, and desktop users.
-🔧 Data Source: SharePoint List – Distributors
-🗂️ Key Columns: DistributorID, Name, Email, Country, Status (Pending, Verified, Active), KYC_DocumentURL
-
-🛠️ Canvas App Features I Built:
-🏠 Home Screen:
-– Gallery showing all pending distributor applications.
-– Search box & dropdown filters by Country/Status.
-
-➕ Add New Distributor:
-– Form to register new distributors with validations (unique email, mandatory KYC upload).
-– SubmitForm() to save data into SharePoint.
-
-✔️ Verification Workflow:
-– Used Power Automate to trigger an approval email to the Sales Manager.
-– On approval → Status auto-updates from Pending → Active.
-
-📂 Document Handling:
-– Integrated with SharePoint Document Library to store & retrieve KYC/ID proofs.
-
-📈 Impact:
-– Reduced manual onboarding effort by 70%
-– Centralized all distributor records in SharePoint
-– Improved transparency with automated status updates
---------------------------------------------------------
-✅ App 2: Sales Order Management App – Model-Driven App:
---------------------------------------------------------
-🎯 Purpose:
-“I developed a Model-Driven App in Dataverse to help sales teams manage product orders, approvals, and delivery status with real-time visibility.”
-
-🔧 Key Highlights:
-🧱 Model-Driven Design: Built using Dataverse tables, forms, dashboards.
-🔧 Data Source: Dataverse Table – SalesOrders
-🗂️ Key Columns: OrderID, DistributorID (Lookup), ProductName, Quantity, OrderStatus (Pending, Approved, Shipped, Delivered), DeliveryDate
-
-🛠️ Model-Driven App Features I Built:
-🏠 Dashboard:
-– Charts showing Total Orders by Status, Top Products Ordered, Distributor-wise Sales.
-
-📄 Main Order Form:
-– Custom form for sales agents to create/update orders.
-– Business rules for validation:
-
-Quantity > 0 mandatory
-
-DeliveryDate required if status ≠ Pending
-
-🔍 Custom Views:
-– Pending Orders, Approved Orders, Delivered Orders
-– Filter & sort by Delivery Date for easy tracking
-
-🔁 Approval Workflow (Power Automate):
-– Auto-email to Sales Manager for approval.
-– Status auto-updates once approved.
-– Distributor gets email notification with order details.
-
-🔐 Security Roles:
-– Sales Agents: Create orders only
-– Sales Managers: Approve orders
-– Admins: Full access
-
-📈 Impact:
-– Eliminated manual Excel-based order tracking
-– Improved distributor communication with automated email updates
-– Managers gained real-time visibility of pending vs delivered orders
-– Approval delays reduced from days to hours
-
-
-
-
-
-
-
-
-
-
-
