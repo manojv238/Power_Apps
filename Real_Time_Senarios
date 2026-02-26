@@ -1,16 +1,14 @@
 1. What is your day-to-day activities and what is the process and what is the role and responsibilities? So how you worked on it?
 
-In my day-to-day work activities, 
-I mainly focus on developing and maintaining applications using Power Apps, Power Automate, SharePoint, and Dataverse. 
-I usually start my day by checking my assigned tasks and attending the daily Srcum meeting where I discuss my progress and any blockers. 
-Based on the requirements given by the business users, I analyze the requirement, design the data structure, and decide whether to use SharePoint or Dataverse. 
-Then I develop the Power App, connect it to the data source, and implement the business logic using formulas and conditions.
-
-I also create Power Automate flows to automate processes like approval workflows, email notifications, and updating data automatically. 
-After development, I test the application, fix any issues, and support the UAT process with business users. 
-Once everything is approved, I deploy the solution to production. 
+My day-to-day activities mainly involve developing and maintaining applications using Power Apps, Power Automate, Dataverse and SharePoint. 
+First, I check the requirements from business users and understand what changes or new features they need. 
+Based on that, I design or modify the Power Apps screens, forms, and logics.
+I connect the app to the SharePoint/Dataverse as a data source, implement business logic, and test the functionality. 
+I also work on role-based access, Data validation, and improving performance if needed.
 
 Apart from development, I also handle bug fixes, performance improvements, and enhancements based on user feedback. 
+I also work with Power Automate when there is a requirement for workflow automation like approval processes.
+
 Overall, my role involves end-to-end development, automation, deployment, and support of Power Platform solutions.
 At the end of day, I update task status in Azure Board and push my changes for review.
 ------------------------------
