@@ -94,39 +94,33 @@ This approach improves app performance, reduces data load, and provides a better
 
 6. How do you manage permissions in PowerApps?
 
-In Power Apps, permissions are usually managed in two ways:
-— One is at the data source level (SharePoint or Dataverse), 
-— Another one is Azure AD groups.
-
-In the App OnStart property, 
-I write a variable to check whether the logged-in user belongs to a specific Azure AD group by using the Office365Groups connector. 
-First, I connect the Office365Groups connector to the app. 
-Then, I create a global variable using the Set() function and check the group membership using the group ID. 
-For example, I write:
-🙌 Set(varIsManager, Office365Groups.IsMemberOfGroup("GroupID", User().Email).value)
+In my project, 
+I implemented role-based permissions using Azure AD groups. 
+I connected the Office365Groups connector in Power Apps and used the App OnStart property to check whether the logged-in user belongs to a specific group.
+I created a global variable using the Set() function and used Office365Groups.IsMemberOfGroup function to verify the user’s group membership. 
 This variable stores true or false based on whether the user is a member of that Azure AD group. 
-Then throughout the app, I use this variable to control permissions, such as showing or hiding buttons, enabling edit access, or restricting certain features. 
-This approach helps implement role-based access control dynamically when the app starts."
+For example:- 
+In the App OnStart property, I used the User().Email function and stored the user’s role in a global variable:
+✅ Set(varIsManager, Office365Groups.IsMemberOfGroup("GroupID", User().Email).value)
+Based on this variable, 
+I use control permissions, such as showing or hiding buttons, enabling edit access, or restricting certain features. 
+This approach helps implement role-based access control dynamically when the app starts.
 
-In SharePoint, 
-I handle permissions by using SharePoint groups and permission levels to control access to lists and libraries.
-First, I create groups like Owners, Members, and Visitors, or custom groups such as Managers and Employees based on business requirements. 
+In SharePoint:
+I manage permissions using SharePoint list permissions. I assign users or groups with permission levels like Read, Contribute, or Edit.
+First, I create groups like Admins, Manager, and Users based on business requirements. 
 Then I assign permission levels like Read for view-only access, Contribute for adding and editing records, and Full Control for complete access. 
-On app start, 
-I used the User().Email function and stored the user’s role in a global variable:
-🙌 Set(userRole, LookUp(SecurityRoleList, UserEmail = User().Email, Role))
-Then, I used this variable to dynamically show/hide controls, This ensures users only have the permissions required for their role.
+For example:- 
+In the App OnStart property, I used the User().Email function and stored the user’s role in a global variable:
+✅ Set(userRole, LookUp(SecurityRoleList, UserEmail = User().Email, Role))
+Based on this variable, 
+I use control permissions, such as showing or hiding buttons, enabling edit access, or restricting certain features.
+This ensures users only have the permissions required for their role.
 
-In Dataverse, 
-I manage security using security roles, which control what users can access and what actions they can perform on specific tables. 
-First, I create or modify a security role in the Power Platform Admin Center and define permissions 
-like Create, Read, Write, Delete, Append, and Append To for the required tables.
-For example, 
-I created separate roles like Requestor, Manager, and Admin. 
-Requestors had only Create and Read access to their records, while Managers had Read and Write access, and Admins had full control.
-
-After creating the security role, I assign it to users either directly or through Dataverse teams,
-This way, whenever a user is added to that group, they automatically get the assigned permissions.
+In Dataverse:
+I manage permissions using security roles, which control what users can access and what actions they can perform on specific tables. 
+First, I create a security role in the Power Platform Admin Center and define permissions like Create, Read, Write, Delete for the required tables.
+Then I assign those roles to users. This ensures users can only access the data based on their role.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 7. How to move files from one folder to another folder using Power Automate? How do you achieve that?
