@@ -10,75 +10,38 @@ Problem Solved:
 Before this system, complaints were handled manually, which caused delays, lack of tracking, and poor transparency.
 I solved this problem by automating the entire process using Power Apps and Power Automate, 
 which improved tracking, reduced manual work, and helped resolve complaints faster.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+My recent project was TA Complaints Management System, which I developed using Microsoft Power Platform.
+The main objective of this project was to provide a centralized application where users can log complaints and easily track their complaint status. 
+This helped replace the manual process and improved transparency and efficiency.
+
+I developed a Canvas App & Model-Driven App based on the requirements. 
+where I designed around 8 screens such as Home Screen, Log a Complaint, Complaint Search, Dashboard, Reporting, Complaints Overview, and View Complaints. 
+Each screen had a specific role and functionality.
+
+I used Dataverse and SharePoint as backend data sources to securely store and manage complaint data and attachments.
+
+I implemented various Power Apps controls such as Galleries to display complaint records, Forms to capture user input lot more.
+
+I also implemented role-based access control, where different users like Managers, Developers, and Business Users had different access levels. 
+Based on user roles and regions such as Ireland and UK, specific controls and data were displayed according to business requirements.
+
+Additionally, 
+I developed Power Automate flows to automate processes. 
+One key feature I implemented was exporting complaint data to Excel. 
+When the user selects report such as report names and date range and clicks the export button, 
+the flow automatically generates and exports the data to Excel.
+
+I also developed reporting and dashboard screens to allow users to search, filter, and analyze complaint records easily.
+
+My overall work was to design, develop, and deploy the application, manage data storage, create workflows, and provide support.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+
+
 1. STEELCASE PROJECT EXPLANATION IN REAL-TIME:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📘 Project Description:
@@ -118,43 +81,6 @@ For example:
 🛠️ Accessories – monitor arms, power modules, whiteboards
 🔧 Spare Parts – chair wheels, desk legs, and other replaceable components
 
-🎯 Purpose: "I developed a responsive Inventory Management App using Canvas App to help a client manage furniture stock across multiple warehouses."
-
-🔧 Key Highlights:
-📱 Responsive Design: Built using containers and relative positioning to auto-adjust across all devices desktop, tablet, and mobile.
-
-🔧 Data Source: Used a SharePoint List named Inventory.
-🗂️ Key columns included: 
-ProductID (Text), 
-ProductName (Text), 
-Category (Choice: Chairs, Desks, Storage, Partitions, Accessories, Spare Parts), 
-Quantity (Whole Number), 
-WarehouseLocation (Choice).
-
-
-🛠️ Canvas App Features I Built:
-🏠 Home Screen:
-– Gallery to display inventory Products, I customized each gallery item layouts.
-– Added a Search box to find products by name.
-– Add a Dropdowns to Filter() to allow users to filter by Category and Location.
-
-➕ Add Item Screen:
-– Added a “+” icon that opens a form for users to add new products.
-– Used SubmitForm() to save data into SharePoint.
-
-ℹ️ Item Details Screen:
-– On selecting a gallery item, → Navigate to a screen to display full item details (eg., Product name, Quantity, Category, Location).
-– They can view all details in read-only mode.
-– I enabled editing using EditForm control for authorized users.
-
-🔴 Low Stock Alerts:
-– I also added a Low Stock Warning — if Quantity < 5, it shows a red icon to alert users.
-
-5️⃣ Warehouse View:
-– Used GroupBy() to group inventory by warehouse
-– Displayed total quantity per warehouse for better planning.
-
-
 📈 Finally Impact:
 ------------------
 🎯 Replaced manual tracking:
@@ -186,48 +112,8 @@ WarehouseLocation (Choice).
 – UI auto-generated and responsive by default
 – Navigation customized using the App Designer with a custom Site Map
 
-🔧 Data Source:
-– Used a Dataverse Table named PurchaseOrders
-🗂️ Key columns included: 
-PO_ID (Text),
-VendorName (Text),
-ItemName (Text),
-Quantity (Whole Number),
-Status (Choice: Pending, Approved, In Transit, Delivered),
-ExpectedDeliveryDate (Date),
-CreatedBy (Lookup: SystemUser).
-
-🛠️ Model-Driven App Features I Built:
-🏠 Dashboard View:
-– A real-time dashboard with charts showing:
-  Total POs by status
-  Vendor-wise open POs
-– Gives managers a quick overview of pending and delivered orders
-
-📄 Main Form – PO Entry & Updates:
-– Created a custom Main Form for users to add or update orders
-– Used Business Rules to:
- Show “Approval” button only if status is “Received”
- Make ExpectedDeliveryDate required if status ≠ “Pending”
-
-🔍 Custom Views:
-– Built views like:
- All Orders
- Pending Orders
- Delivered Orders
-– Added filters and sorted by delivery date for easy tracking
-
-🔁 Approval Workflow:
-– Integrated with Power Automate:
- Triggered email when PO is approved
- Updated status based on external response
-
-🔐 Security Roles:
-– Configured role-based access:
- Procurement Managers can approve orders
- Purchase Agents can only create/edit but not approve
-
 📈 Final Impact:
+------------------
 🎯 Replaced manual order tracking:
 — Earlier, POs were tracked using Excel and email threads
 — Now, everything is centralized in Dataverse with auto-recording
@@ -243,4 +129,4 @@ CreatedBy (Lookup: SystemUser).
 🎯 Reduced approval delays:
 — With built-in workflows and permissions, approvals are faster
 — No need to chase via email
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
