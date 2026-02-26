@@ -1,4 +1,45 @@
-1. What is your day-to-day activities and what is the process and what is the role and responsibilities? So how you worked on it?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. TA Complaints Management System Project Explanation:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Main Objective:
+The main objective of the TA Complaints Management System was to create a centralized platform,
+where users can submit their complaints and track the status easily,
+and administrators can manage and resolve complaints efficiently.
+
+Problem Solved:
+Before this system, complaints were handled manually, which caused delays, lack of tracking, and poor transparency.
+I solved this problem by automating the entire process using Power Apps and Power Automate, 
+which improved tracking, reduced manual work, and helped resolve complaints faster.
+------------------------------------------------------------------------------------------------------------------------
+1. Can you tell me about your Current Project?
+
+My recent project was "TA Complaints Management System", which I developed using Microsoft Power Platform.
+The main objective of this project was to provide a centralized application where users can log complaints and easily track their complaint status. 
+This helped replace the manual process and improved transparency and efficiency.
+
+I developed a Canvas App & Model-Driven App based on the requirements. 
+where I designed around 8 screens such as Home Screen, Log a Complaint, Complaint Search, Dashboard, Reporting, Complaints Overview, and View Complaints. 
+Each screen had a specific role and functionality.
+
+I used Dataverse and SharePoint as backend data sources to securely store and manage complaint data and attachments.
+
+I implemented various Power Apps controls such as Galleries to display complaint records, Forms to capture user input lot more.
+
+I also implemented role-based access control, where different users like Managers, Developers, and Business Users had different access levels. 
+Based on user roles and regions such as Ireland and UK, specific controls and data were displayed according to business requirements.
+
+Additionally, 
+I developed Power Automate flows to automate processes. 
+One key feature I implemented was exporting complaint data to Excel. 
+When the user selects report such as report names and date range and clicks the export button, 
+the flow automatically generates and exports the data to Excel.
+
+I also developed reporting and dashboard screens to allow users to search, filter, and analyze complaint records easily.
+
+My overall work was to design, develop, and deploy the application, manage data storage, create workflows, and provide support.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. What is your day-to-day activities and what is the process and what is the role and responsibilities? So how you worked on it?
 
 My day-to-day activities mainly involve developing and maintaining applications using Power Apps, Power Automate, Dataverse and SharePoint. 
 First, I check the requirements from business users and understand what changes or new features they need. 
@@ -21,21 +62,8 @@ At the end of day, I update task status in Azure Board and push my changes for r
 ✔ Handling role-based security, validations, and performance optimization.
 ✔ Collaborating with QA and deployment teams to move apps across environments.
 ✔ I also participate in requirement discussions, sprint planning, and daily stand-ups, and update my work in Azure Board.
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-2. Can you tell me about your Current Project?
-
-"In my recent project, I worked for Steelcase as a Power Apps Developer, 
-where I developed internal business applications using Power Apps, Power Automate, Dataverse, and SharePoint.
-The main objective of the project was to replace manual Excel-based processes with automated and centralized applications to improve efficiency and data accuracy.
-
-I developed two major applications. 
-The first was an Inventory Management Canvas App to track furniture stock across multiple warehouses.
-It included features like search and filter, low-stock alerts, and role-based access control. 
-The second was a Model-Driven Order Tracking application built on Dataverse to manage purchase orders and approvals. 
-I also implemented approval workflows using Power Automate, automated notifications, handled security roles, and managed deployments. 
-This project significantly reduced manual errors, improved tracking, and streamlined approval processes across departments."
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 3. How to call Power Apps to Power Automate:-
 
 In my experience, we can call Power Automate from Power Apps by creating an instant cloud flow with the Power Apps trigger. 
@@ -46,16 +74,13 @@ After creating the flow logic, like sending an email or updating Dataverse, I sa
 Then in Power Apps, I connect the flow using the Power Automate option and call it using the FlowName.Run() function. 
 For example, when a user clicks a Submit button, I call the flow and pass the required parameters. 
 This way, Power Apps triggers Power Automate to perform background operations like approvals, notifications.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 4. Explain real-time challenges you faced while developing an app and how you overcame them?
 
-I have faced a some of real challenges:
-
-— While developing the export-to-Excel functionality in my application, 
-one of the main challenges I faced was handling large datasets and data formatting issues. 
+I have faced a some of few challenges:
+While developing the export-to-Excel functionality in my application, 
 Business users wanted to export filtered records from a Gallery directly into Excel, but Power Apps does not have a built-in feature to generate Excel files. 
-Initially, when I tried passing the entire collection to Power Automate, the flow performance was slow, and sometimes it failed due to payload size limits.
 
 — In my project,
 when users wanted to export Gallery data to Excel, I handled it using Power Apps and Power Automate together. 
@@ -88,7 +113,7 @@ Creating variables to track the current page number and page size
 Using functions like FirstN() and LastN() to display only the required records for each page
 Adding Next and Previous buttons so users could navigate easily between pages.
 This approach improves app performance, reduces data load, and provides a better user experience, especially when working with large datasets.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 6. How do you manage permissions in PowerApps?
 
@@ -119,7 +144,7 @@ In Dataverse:
 I manage permissions using security roles, which control what users can access and what actions they can perform on specific tables. 
 First, I create a security role in the Power Platform Admin Center and define permissions like Create, Read, Write, Delete for the required tables.
 Then I assign those roles to users. This ensures users can only access the data based on their role.
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 7. How to move files from one folder to another folder using Power Automate? How do you achieve that?
 
@@ -130,8 +155,7 @@ This trigger detects whenever a new file is added to the source folder.
 After the trigger, I use the 'Move file' action and specify the File Identifier from the trigger and the destination folder path where the file needs to be moved.
 This automatically transfers the file from the source folder to the target folder. 
 In some scenarios, I also add conditions to move files based on file name, extension, or status.
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 8. There is a SharePoint List 5 fields, So I want retrive 2 fields only how do you achieve that?
 
@@ -152,7 +176,7 @@ if I am retrieving employee data from SharePoint but only need specific records,
 I use the Get items action and apply an OData filter query like: EmployeeID eq 'EMP001'
 This ensures Power Automate retrieves only the required records instead of all records.
 If the data is already retrieved, I use the Filter array action to filter based on conditions like Employee Type or Status.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 9. In Power apps how to upload multiples files form SharePoint Library?
 
