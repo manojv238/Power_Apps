@@ -23,10 +23,10 @@ Each screen had a specific role and functionality.
 
 I used Dataverse and SharePoint as backend data sources to securely store and manage complaint data and attachments.
 
-I implemented various Power Apps controls such as Galleries to display complaint records, Forms to capture user input lot more.
+I implemented various Power Apps controls such as Galleries to display complaint records, Forms to display enter the fields and lot more..
 
-I also implemented role-based access control, where different users like Managers, Developers, and Business Users had different access levels. 
-Based on user roles and regions such as Ireland and UK, specific controls and data were displayed according to business requirements.
+I also implemented role-based access using Azure AD Grops, where different users like Managers, Developers, and Business Users had different access levels. 
+Based on user roles,I'll display specific controls and data were displayed according to business requirements.
 
 Additionally, 
 I developed Power Automate flows to automate processes. 
@@ -36,7 +36,7 @@ the flow automatically generates and exports the data to Excel.
 
 I also developed reporting and dashboard screens to allow users to search, filter, and analyze complaint records easily.
 
-My overall work was to design, develop, and deploy the application, manage data storage, create workflows, and provide support.
+Overall, my role involves end-to-end development, automation, deployment, and support of Power Platform solutions.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 2. What is your day-to-day activities and what is the process and what is the role and responsibilities? So how you worked on it?
