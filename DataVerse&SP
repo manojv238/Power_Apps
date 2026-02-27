@@ -66,6 +66,21 @@ EXPLAIN IN ANSWER:-
 "Business Process Flow (BPF) is a feature in Microsoft Dataverse that helps define and manage business processes in a structured and step-by-step way. 
 It guides users through different stages and ensures they follow the correct process. 
 It also helps in tracking progress and maintaining consistency across the organization."
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+6.How many types of tables in Dataverse?
+
+EXPLAIN IN ANSWER:-
+━━━━━━━━━━━━━━━━━━━
+"There are three types of tables in Dataverse: Standard tables, Custom tables, and Activity tables."
+
+1. Standard tables: Pre-built tables provided by Dataverse.
+Example: Account, Contact, User.
+
+2. Custom tables: Tables created by us based on business requirements.
+Example: TA Complaints table.
+
+3. Activity tables: Used to track activities like tasks, emails, appointments, etc.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 ✔✔ SHAREPOINT INTERVIEW QUESTIONS AND ANSWERS!!
