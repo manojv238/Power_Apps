@@ -7,11 +7,11 @@ The Perfect Structure to Explain the Project:-
 -----------------------------------
 My project is TA Complaints Management System, which is an internal enterprise application developed to automate and simplify the complaint management process. 
 Previously, complaints were handled manually, which made tracking and resolution was difficult. 
-The purpose of this project was to provide a centralized system where users can log complaints, track their status in real time within organisation.
+The purpose of this project was to provide a centralized system within the organisation.
 
 2. What the application does (2–3 sentences):
 ---------------------------------------------
-I developed a Canvas App using Power Apps where users can log complaints and track their status. 
+I developed a Canvas App using Power Apps where users can log complaints, track their status in real time. 
 The application has multiple screens like Log a Complaint, Complaint Search, Dashboard, Reporting, Complaints Overview, and View Complaints. 
 Each screen had a specific role and functionality. 
 It provides a centralized platform for users and admins to manage complaints efficiently.
