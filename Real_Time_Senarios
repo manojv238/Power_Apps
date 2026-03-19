@@ -117,7 +117,7 @@ I created a global variable using the Set() function and used Office365Groups.Is
 This variable stores true or false based on whether the user is a member of that Azure AD group. 
 For example:- 
 In the App OnStart property, I used the User().Email function and stored the user’s role in a global variable:
-✅ Set(varIsManager, Office365Groups.IsMemberOfGroup("GroupID", User().Email).value)
+✅ Set(varIsManager, Office365Groups.ListGroupMembers("GroupID").Value);
 Based on this variable, 
 I use control permissions, such as showing or hiding buttons, enabling edit access, or restricting certain features. 
 This approach helps implement role-based access control dynamically when the app starts.
